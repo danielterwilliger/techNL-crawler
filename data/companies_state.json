@@ -1,13 +1,947 @@
 [
   {
-    "company_name": "CoLab Software",
-    "career_page_url": "https://www.colabsoftware.com/careers",
-    "status": "active"
+    "member_id": "4462194",
+    "company_name": "AbbaTek Group Inc",
+    "website_url": "http://www.abbatekgroup.com/",
+    "location": null,
+    "career_page_url": "https://ca.linkedin.com/company/abbatek",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
   },
   {
-    "company_name": "Verafin",
-    "career_page_url": "https://verafin.com/careers/",
-    "status": "active"
+    "member_id": "3925834",
+    "company_name": "Academy Canada",
+    "website_url": "http://www.academycanada.com/",
+    "location": null,
+    "career_page_url": "https://www.academycanada.com/graduates/job-postings/",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "member_id": "1408219",
+    "company_name": "ACENET",
+    "website_url": "https://www.ace-net.ca/",
+    "location": null,
+    "career_page_url": "https://www.ace-net.ca/careers.html",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "member_id": "4453785",
+    "company_name": "Aera",
+    "website_url": "http://aerafarms.com/",
+    "location": null,
+    "career_page_url": null,
+    "status": "failed",
+    "map_method": null,
+    "last_checked": "2026-05-25T04:46:01+00:00"
+  },
+  {
+    "member_id": "4185701",
+    "company_name": "Alt Hotel St John's - Germain Hotels",
+    "website_url": "http://www.germainhotels.com/en/alt-hotel/st-johns/menus/banquet-menu",
+    "location": null,
+    "career_page_url": "https://www.germainhotels.com/en/careers",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "member_id": "2548680",
+    "company_name": "AltoMaxx Technologies Inc",
+    "website_url": "http://www.altomaxx.com/",
+    "location": null,
+    "career_page_url": "https://altomaxx.com/careers/",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "member_id": "3399963",
+    "company_name": "Amal Youth & Family Centre",
+    "website_url": "http://amalnl.ca/",
+    "location": null,
+    "career_page_url": "https://amalnl.ca/employment-opportunities/",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "member_id": "3142013",
+    "company_name": "Amba Health and Care Canada Limited",
+    "website_url": "https://amba-care.com",
+    "location": null,
+    "career_page_url": "https://amba.co/careers/",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "member_id": "3484359",
+    "company_name": "Angler Solutions Inc.",
+    "website_url": "https://www.anglersolutions.ca/",
+    "location": null,
+    "career_page_url": "https://ca.linkedin.com/company/angler-solutions-inc",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "company_name": "Atlantic Controls (Laurentide)",
+    "website_url": "https://laurentide.com",
+    "career_page_url": "https://www.laurentide.com/en-ca/careers/",
+    "status": "inactive"
+  },
+  {
+    "member_id": "3927737",
+    "company_name": "Atlantic Controls a Division of Laurentide Controls",
+    "website_url": "http://www.laurentide.com/atlantic",
+    "location": null,
+    "career_page_url": "https://www.laurentide.com/atlantic/careers/",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "member_id": "1408216",
+    "company_name": "Atlantic XL",
+    "website_url": "https://www.xlg.co.uk/divisions/atlantic/",
+    "location": null,
+    "career_page_url": "https://uk.linkedin.com/company/atlantic-xl-inc.",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "member_id": "3361186",
+    "company_name": "atlantiq AI",
+    "website_url": "http://atlantiq.ai/",
+    "location": null,
+    "career_page_url": null,
+    "status": "failed",
+    "map_method": null,
+    "last_checked": "2026-05-25T04:46:01+00:00"
+  },
+  {
+    "member_id": "1519745",
+    "company_name": "Audyse Technology",
+    "website_url": "https://audysetech.com/",
+    "location": null,
+    "career_page_url": "https://www.audyseindustrial.com/careers",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "member_id": "4054827",
+    "company_name": "Avalon Employment",
+    "website_url": "https://avalonemploy.com",
+    "location": null,
+    "career_page_url": "https://www.avalonemploy.com/jobs",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "member_id": "1408215",
+    "company_name": "Avalon Holographics",
+    "website_url": "http://www.avalonholographics.com/",
+    "location": null,
+    "career_page_url": "https://avalonholographics.com/careers/",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "company_name": "AXIS Career Services",
+    "website_url": "https://axiscareers.net",
+    "career_page_url": "https://ancnl.ca/about-anc/careers-at-the-anc/",
+    "status": "inactive"
+  },
+  {
+    "member_id": "1408214",
+    "company_name": "AXIS Career Services-Association for New Canadians",
+    "website_url": "https://ancnl.ca/employers/anc-employment-services/",
+    "location": null,
+    "career_page_url": "https://ancnl.ca/about-anc/careers-at-the-anc/",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "member_id": "3953890",
+    "company_name": "Barrington Consulting",
+    "website_url": "http://barringtongrp.ca/",
+    "location": null,
+    "career_page_url": "https://barringtongrp.ca/careers/",
+    "status": "active",
+    "map_method": "heuristic",
+    "last_checked": "2026-05-25T04:46:01+00:00"
+  },
+  {
+    "member_id": "1408203",
+    "company_name": "BDC",
+    "website_url": "https://www.bdc.ca/en/pages/home.aspx",
+    "location": null,
+    "career_page_url": "https://www.bdc.ca/en/careers",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "member_id": "1408213",
+    "company_name": "BDO Canada LLP",
+    "website_url": "https://www.bdo.ca/",
+    "location": null,
+    "career_page_url": "https://www.bdo.ca/careers",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "member_id": "3627834",
+    "company_name": "Beena",
+    "website_url": "http://hibeena.com/",
+    "location": null,
+    "career_page_url": null,
+    "status": "failed",
+    "map_method": null,
+    "last_checked": "2026-05-25T04:46:01+00:00"
+  },
+  {
+    "member_id": "1408209",
+    "company_name": "Bethany Downer",
+    "website_url": "https://bethanydowner.com",
+    "location": null,
+    "career_page_url": null,
+    "status": "failed",
+    "map_method": null,
+    "last_checked": "2026-05-25T04:46:01+00:00"
+  },
+  {
+    "member_id": "2257831",
+    "company_name": "Big Land Networks Ltd",
+    "website_url": "http://www.blnx.ca/",
+    "location": null,
+    "career_page_url": "https://blnx.ca/jobs/",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "member_id": "2682784",
+    "company_name": "Birch Scientific",
+    "website_url": "https://birchscientific.com",
+    "location": null,
+    "career_page_url": null,
+    "status": "failed",
+    "map_method": null,
+    "last_checked": "2026-05-25T04:46:01+00:00"
+  },
+  {
+    "member_id": "1408207",
+    "company_name": "Bluedrop ISM",
+    "website_url": "https://bluedropism.com/",
+    "location": null,
+    "career_page_url": "https://bluedropism.com/careers/",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "member_id": "4391487",
+    "company_name": "Bonocle",
+    "website_url": "http://www.bonocle.co/",
+    "location": null,
+    "career_page_url": "https://www.bonocle.co/career",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "member_id": "1408206",
+    "company_name": "BreatheSuite",
+    "website_url": "https://www.breathesuite.com/",
+    "location": null,
+    "career_page_url": "https://www.breathesuite.com/vprinfo",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "member_id": "1408205",
+    "company_name": "Breton Group",
+    "website_url": "https://www.bretongroup.ca/",
+    "location": null,
+    "career_page_url": "https://bretongroup.ca/careers/",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "member_id": "1467294",
+    "company_name": "C-CORE",
+    "website_url": "http://www.c-core.ca/",
+    "location": null,
+    "career_page_url": "https://c-core.ca/working-at-c-core/",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "company_name": "C-NLOER (formerly C-NLOPB)",
+    "website_url": "https://c-nloer.ca",
+    "career_page_url": "https://www.cnloer.ca/careers/",
+    "status": "inactive"
+  },
+  {
+    "member_id": "1830973",
+    "company_name": "Canada-Newfoundland and Labrador Offshore Energy Regulator (C-NLOER)",
+    "website_url": "http://www.cnlopb.ca/",
+    "location": null,
+    "career_page_url": "https://www.cnloer.ca/careers/",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "member_id": "3275840",
+    "company_name": "Canadian Global Maritime",
+    "website_url": "http://www.globalmaritime.com/",
+    "location": null,
+    "career_page_url": "https://globalmaritime.com/careers/",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "member_id": "4215945",
+    "company_name": "Canadian Manufacturers & Exporters",
+    "website_url": "https://cme-mec.ca",
+    "location": null,
+    "career_page_url": "https://cme-mec.ca/careers/",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "member_id": "1517810",
+    "company_name": "Carnegie Learning Canada",
+    "website_url": "https://zorbitsmath.com/",
+    "location": null,
+    "career_page_url": "https://www.carnegielearning.com/company/careers/",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "member_id": "1408199",
+    "company_name": "Caron Hawco Group Inc.",
+    "website_url": "http://www.caronhawco.com/",
+    "location": null,
+    "career_page_url": null,
+    "status": "failed",
+    "map_method": null,
+    "last_checked": "2026-05-25T04:46:01+00:00"
+  },
+  {
+    "member_id": "2682786",
+    "company_name": "CGI Inc.",
+    "website_url": "http://www.cgi.com/",
+    "location": null,
+    "career_page_url": "https://www.cgi.com/en/careers",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "member_id": "4124557",
+    "company_name": "ChecKin",
+    "website_url": "https://checkin.ca",
+    "location": null,
+    "career_page_url": "https://group.checkin.com/careers/",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "member_id": "2359839",
+    "company_name": "CIBC",
+    "website_url": "https://www.cibc.com/en/about-cibc.html",
+    "location": null,
+    "career_page_url": "https://www.cibc.com/en/about-cibc/careers.html",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "company_name": "City of St. John's - Economic Dev",
+    "website_url": "https://stjohns.ca",
+    "career_page_url": "https://www.stjohns.ca/en/city-hall/careers.aspx",
+    "status": "inactive"
+  },
+  {
+    "member_id": "1408197",
+    "company_name": "City of St. John's - Economic Development",
+    "website_url": "http://www.stjohns.ca/",
+    "location": null,
+    "career_page_url": "https://www.stjohns.ca/en/city-hall/careers.aspx",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "member_id": "1408196",
+    "company_name": "ClearRisk",
+    "website_url": "http://www.clearrisk.com/",
+    "location": null,
+    "career_page_url": "https://www.clearrisk.com/about-clearrisk/careers",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "member_id": "4392698",
+    "company_name": "Cloud North Bookkeeping & Tax",
+    "website_url": "http://www.cloudnorthbookkeeping.ca/",
+    "location": null,
+    "career_page_url": "https://ca.linkedin.com/company/cloud-north-bookkeeping-tax",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "member_id": "1408194",
+    "company_name": "CoLab Software",
+    "website_url": "https://www.colabsoftware.com/",
+    "location": null,
+    "career_page_url": "https://www.colabsoftware.com/careers",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "member_id": "1408192",
+    "company_name": "College of the North Atlantic",
+    "website_url": "https://www.cna.nl.ca/",
+    "location": null,
+    "career_page_url": "https://www.cna.nl.ca/careers/",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "member_id": "4449679",
+    "company_name": "Compactica",
+    "website_url": "http://compactica.com/",
+    "location": null,
+    "career_page_url": "https://www.compactica.com/careers",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "member_id": "1408191",
+    "company_name": "Compusult Limited",
+    "website_url": "http://www.compusult.net/",
+    "location": null,
+    "career_page_url": "https://www.compusult.com/careers",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "member_id": "2563490",
+    "company_name": "Copsys Technologies",
+    "website_url": "http://www.copsys.ca/",
+    "location": null,
+    "career_page_url": "https://ca.linkedin.com/company/copsys-technologies-inc",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "member_id": "4194112",
+    "company_name": "Courtyard by Marriott Hotel St. John's",
+    "website_url": "http://www.marriott.com/en-us/hotels/yytcy-courtyard-st-johns-newfoundland",
+    "location": null,
+    "career_page_url": "https://careers.marriott.com/",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "company_name": "Courtyard by Marriott St. John's",
+    "website_url": "https://marriott.com",
+    "career_page_url": "https://careers.marriott.com/",
+    "status": "inactive"
+  },
+  {
+    "member_id": "3827473",
+    "company_name": "Cove Public Affairs Inc",
+    "website_url": "http://www.covepublicaffairs.ca/",
+    "location": null,
+    "career_page_url": null,
+    "status": "failed",
+    "map_method": null,
+    "last_checked": "2026-05-25T04:46:01+00:00"
+  },
+  {
+    "member_id": "1950563",
+    "company_name": "Cox & Palmer",
+    "website_url": "https://coxandpalmerlaw.com/",
+    "location": null,
+    "career_page_url": "https://coxandpalmerlaw.com/career-listings/",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "member_id": "1638023",
+    "company_name": "Crosbie Salamis Limited",
+    "website_url": "http://www.crosbieworld.com/",
+    "location": null,
+    "career_page_url": "https://crosbiegroup.com/careers/",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "member_id": "2545841",
+    "company_name": "CSIpix",
+    "website_url": "http://www.csipix.com/",
+    "location": null,
+    "career_page_url": "https://ca.indeed.com/q-csipix-jobs.html",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "member_id": "1408190",
+    "company_name": "Deloitte Management Services LP",
+    "website_url": "https://www.deloitte.com/",
+    "location": null,
+    "career_page_url": "https://careers.deloitte.ca/",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "member_id": "4629540",
+    "company_name": "Design By Analysis Engineering Inc.",
+    "website_url": "https://dbaeng.com",
+    "location": null,
+    "career_page_url": "https://ca.linkedin.com/company/design-by-analysis-engineering-inc-",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "member_id": "1408189",
+    "company_name": "Design Smith Inc.",
+    "website_url": "http://www.designsmithnl.com/",
+    "location": null,
+    "career_page_url": null,
+    "status": "failed",
+    "map_method": null,
+    "last_checked": "2026-05-25T04:46:01+00:00"
+  },
+  {
+    "member_id": "1934941",
+    "company_name": "Digital Nova Scotia",
+    "website_url": "http://digitalnovascotia.com/",
+    "location": null,
+    "career_page_url": "https://digitalnovascotia.com/job-posts/",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "member_id": "1408187",
+    "company_name": "Digital Six Consulting",
+    "website_url": "https://www.digitalsixconsulting.com/",
+    "location": null,
+    "career_page_url": "https://digitalsixconsulting.com/careers/",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "member_id": "1408186",
+    "company_name": "Dockridge Digital",
+    "website_url": "http://www.dockridge.ca/",
+    "location": null,
+    "career_page_url": "https://www.dockridge.ca/home/",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "member_id": "2327385",
+    "company_name": "Dovre Group",
+    "website_url": "https://dovregroup.com",
+    "location": null,
+    "career_page_url": "https://www.dovreglobal.com/jobs/",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "member_id": "1408183",
+    "company_name": "Eastern Audio Limited",
+    "website_url": "http://www.easternaudio.com/",
+    "location": null,
+    "career_page_url": null,
+    "status": "failed",
+    "map_method": null,
+    "last_checked": "2026-05-25T04:46:01+00:00"
+  },
+  {
+    "member_id": "4451834",
+    "company_name": "EcoBloc Inc.",
+    "website_url": "http://www.bloc.eco/",
+    "location": null,
+    "career_page_url": null,
+    "status": "failed",
+    "map_method": null,
+    "last_checked": "2026-05-25T04:46:01+00:00"
+  },
+  {
+    "member_id": "4053387",
+    "company_name": "econext",
+    "website_url": "https://econext.ca",
+    "location": null,
+    "career_page_url": "https://econext.ca/jobs-and-skills/",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "member_id": "1408182",
+    "company_name": "eDNAtec Inc.",
+    "website_url": "http://www.ednatec.com/",
+    "location": null,
+    "career_page_url": "https://ednatec.com/site/uploads/2024/05/HUR-002C1-R1-Project-Manager-Job-Ad.pdf",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "member_id": "1813249",
+    "company_name": "Enaimco",
+    "website_url": "http://www.enaimco.com/",
+    "location": null,
+    "career_page_url": "https://enaimco.com/careers/",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "member_id": "1519734",
+    "company_name": "Energy NL",
+    "website_url": "https://energynl.ca/",
+    "location": null,
+    "career_page_url": "https://energynl.ca/petroleum-industry-human-resources-committee/",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "member_id": "2351804",
+    "company_name": "Energy Research & Innovation Newfoundland & Labrador",
+    "website_url": "https://energyresearchinnovation.ca/",
+    "location": null,
+    "career_page_url": "https://www.careerbeacon.com/en/employer/energy-research-innovation-newfoundland-labrador",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "company_name": "Energy Research & Innovation NL",
+    "website_url": "https://erinl.ca",
+    "career_page_url": "https://www.careerbeacon.com/en/employer/energy-research-innovation-newfoundland-labrador",
+    "status": "inactive"
+  },
+  {
+    "member_id": "2052206",
+    "company_name": "EPRA-NL",
+    "website_url": "http://recyclemyelectronics.ca/",
+    "location": null,
+    "career_page_url": "https://recyclemyelectronics.ca/nl/careers",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "member_id": "1408181",
+    "company_name": "Ernst & Young",
+    "website_url": "http://www.ey.com/",
+    "location": null,
+    "career_page_url": "https://www.ey.com/en_ca/careers",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "member_id": "1918948",
+    "company_name": "Ethree Online Inc.",
+    "website_url": "http://www.ethreeonline.ca/",
+    "location": null,
+    "career_page_url": "https://ethree.ca/employment-opportunities/",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "company_name": "Evans Consulting and Recruitment",
+    "website_url": "https://evansconsulting.ca",
+    "career_page_url": "https://apply.workable.com/evans-consulting-1/",
+    "status": "inactive"
+  },
+  {
+    "member_id": "3511703",
+    "company_name": "Evans Consulting and Recruitment Limited",
+    "website_url": null,
+    "location": null,
+    "career_page_url": null,
+    "status": "pending",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "member_id": "1408179",
+    "company_name": "EXCITE Corporation",
+    "website_url": "http://www.excitecorp.nf.ca/",
+    "location": null,
+    "career_page_url": null,
+    "status": "failed",
+    "map_method": null,
+    "last_checked": "2026-05-25T04:46:01+00:00"
+  },
+  {
+    "member_id": "1408178",
+    "company_name": "Export Development Canada",
+    "website_url": "https://www.edc.ca/",
+    "location": null,
+    "career_page_url": "https://www.edc.ca/en/about-us/careers.html",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "company_name": "Find My Way",
+    "website_url": "https://findmyway.ca",
+    "career_page_url": null,
+    "status": "inactive"
+  },
+  {
+    "member_id": "1408176",
+    "company_name": "Focus FS",
+    "website_url": "https://www.focusfs.com/",
+    "location": null,
+    "career_page_url": "https://focusfs.com/careers/",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "member_id": "1446618",
+    "company_name": "Fonemed North America",
+    "website_url": "http://www.fonemed.com/",
+    "location": null,
+    "career_page_url": "https://www.fonemed.com/careers/",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "member_id": "3142020",
+    "company_name": "Fortis Inc.",
+    "website_url": "http://www.fortisinc.com/",
+    "location": null,
+    "career_page_url": "https://www.fortisinc.com/careers",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "member_id": "1934968",
+    "company_name": "Fugro GeoSurveys",
+    "website_url": "http://www.fugro.com/",
+    "location": null,
+    "career_page_url": "https://www.fugro.com/careers/jobs",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "member_id": "1408175",
+    "company_name": "Genesis",
+    "website_url": "http://www.genesiscentre.ca/",
+    "location": null,
+    "career_page_url": "https://www.genesiscentre.ca/careers",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "member_id": "1408174",
+    "company_name": "Genoa Design International Ltd.",
+    "website_url": "http://www.genoadesign.com/",
+    "location": null,
+    "career_page_url": "https://genoadesign.com/careers/",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "member_id": "2544860",
+    "company_name": "Geotexera Inc.",
+    "website_url": "http://www.geotexera.com/",
+    "location": null,
+    "career_page_url": "https://www.geotexera.com/about/careers",
+    "status": "active",
+    "map_method": "heuristic",
+    "last_checked": "2026-05-25T04:46:01+00:00"
+  },
+  {
+    "member_id": "1808963",
+    "company_name": "Get Building",
+    "website_url": "http://www.get-building.ca/",
+    "location": null,
+    "career_page_url": null,
+    "status": "failed",
+    "map_method": null,
+    "last_checked": "2026-05-25T04:46:01+00:00"
+  },
+  {
+    "member_id": "1408172",
+    "company_name": "Global Affairs Canada",
+    "website_url": "http://tradecommissioner.gc.ca/",
+    "location": null,
+    "career_page_url": "https://staffing-les.international.gc.ca/en/",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "member_id": "1408171",
+    "company_name": "Granville Biomedical Inc.",
+    "website_url": "https://www.granvillebiomedical.ca/",
+    "location": null,
+    "career_page_url": "https://www.granvillebiomedical.ca/pages/careers",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "member_id": "1408170",
+    "company_name": "GRi Simulations Inc.",
+    "website_url": "http://www.grisim.com/",
+    "location": null,
+    "career_page_url": "https://grisim.com/careers/",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "member_id": "4149262",
+    "company_name": "GroundControl",
+    "website_url": "http://rungroundcontrol.com/",
+    "location": null,
+    "career_page_url": "https://uk.linkedin.com/showcase/ground-control-careers/",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "company_name": "Hampton Inn & Suites By Hilton",
+    "website_url": "https://hilton.com",
+    "career_page_url": "https://jobs.hilton.com/us/en",
+    "status": "inactive"
+  },
+  {
+    "member_id": "3944572",
+    "company_name": "Hampton Inn and Suites By Hilton St. John's Airport",
+    "website_url": "http://www.hilton.com/en/hotels/yytaphx-hampton-suites-st-johns-airport",
+    "location": null,
+    "career_page_url": "https://jobs.hilton.com/us/en",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "member_id": "4449330",
+    "company_name": "Hariat Technologies Inc",
+    "website_url": "http://hariat.ca/",
+    "location": null,
+    "career_page_url": null,
+    "status": "failed",
+    "map_method": null,
+    "last_checked": "2026-05-25T04:46:01+00:00"
+  },
+  {
+    "member_id": "1408168",
+    "company_name": "Hatch Ltd.",
+    "website_url": "https://www.hatch.com/",
+    "location": null,
+    "career_page_url": "https://www.hatch.com/careers",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "member_id": "1408167",
+    "company_name": "Higher Talent Inc.",
+    "website_url": "http://www.highertalent.ca/",
+    "location": null,
+    "career_page_url": "https://highertalent.ca/current-opportunities/",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "member_id": "1408166",
+    "company_name": "HiTech Communications",
+    "website_url": "http://www.hitechcomm.ca/",
+    "location": null,
+    "career_page_url": "https://ca.indeed.com/cmp/Hi--tech-Communications",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "member_id": "2860691",
+    "company_name": "HVAC Specialties Inc.",
+    "website_url": "http://www.hvacspecialties.ca/",
+    "location": null,
+    "career_page_url": null,
+    "status": "failed",
+    "map_method": null,
+    "last_checked": "2026-05-25T04:46:01+00:00"
+  },
+  {
+    "member_id": "3627984",
+    "company_name": "Ignite Financial Solutions",
+    "website_url": "https://ignitefinancial.ca",
+    "location": null,
+    "career_page_url": "https://www.linkedin.com/company/ignite-financial-solutions",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "member_id": "2313942",
+    "company_name": "IMP Solutions",
+    "website_url": "http://www.impsolutions.com/",
+    "location": null,
+    "career_page_url": "https://www.impsolutions.com/careers",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
   },
   {
     "company_name": "Inactive Company",
@@ -15,1377 +949,1318 @@
     "status": "inactive"
   },
   {
-    "company_name": "ACENET",
-    "website_url": "https://ace-net.ca",
-    "career_page_url": "https://www.ace-net.ca/careers.html",
-    "status": "active"
-  },
-  {
-    "company_name": "AXIS Career Services",
-    "website_url": "https://axiscareers.net",
-    "career_page_url": "https://ancnl.ca/about-anc/careers-at-the-anc/",
-    "status": "active"
-  },
-  {
-    "company_name": "AXIS Career Services-Association for New Canadians",
-    "website_url": "https://ancnl.ca/employers/anc-employment-services/",
-    "career_page_url": "https://ancnl.ca/about-anc/careers-at-the-anc/",
-    "status": "active"
-  },
-  {
-    "company_name": "AbbaTek Group Inc",
-    "website_url": "https://abbatek.com",
-    "career_page_url": "https://ca.linkedin.com/company/abbatek",
-    "status": "active"
-  },
-  {
-    "company_name": "Academy Canada",
-    "website_url": "https://academycanada.com",
-    "career_page_url": "https://www.academycanada.com/graduates/job-postings/",
-    "status": "active"
-  },
-  {
-    "company_name": "Aera",
-    "website_url": "http://aerafarms.com",
-    "career_page_url": null,
-    "status": "failed"
-  },
-  {
-    "company_name": "Alt Hotel St John's - Germain Hotels",
-    "website_url": "https://germainhotels.com",
-    "career_page_url": "https://www.germainhotels.com/en/careers",
-    "status": "active"
-  },
-  {
-    "company_name": "AltoMaxx Technologies Inc",
-    "website_url": "https://altomaxx.com",
-    "career_page_url": "https://altomaxx.com/careers/",
-    "status": "active"
-  },
-  {
-    "company_name": "Amal Youth & Family Centre",
-    "website_url": "https://amalyouth.ca",
-    "career_page_url": "https://amalnl.ca/employment-opportunities/",
-    "status": "active"
-  },
-  {
-    "company_name": "Amba Health and Care Canada Limited",
-    "website_url": "https://amba-care.com",
-    "career_page_url": "https://amba.co/careers/",
-    "status": "active"
-  },
-  {
-    "company_name": "Angler Solutions Inc.",
-    "website_url": "https://anglersolutions.ca",
-    "career_page_url": "https://ca.linkedin.com/company/angler-solutions-inc",
-    "status": "active"
-  },
-  {
-    "company_name": "Atlantic Controls (Laurentide)",
-    "website_url": "https://laurentide.com",
-    "career_page_url": "https://www.laurentide.com/en-ca/careers/",
-    "status": "active"
-  },
-  {
-    "company_name": "Atlantic Controls a Division of Laurentide Controls",
-    "website_url": "http://www.laurentide.com/atlantic",
-    "career_page_url": "https://www.laurentide.com/atlantic/careers/",
-    "status": "active"
-  },
-  {
-    "company_name": "Atlantic XL",
-    "website_url": "https://atlanticxl.com",
-    "career_page_url": "https://uk.linkedin.com/company/atlantic-xl-inc.",
-    "status": "active"
-  },
-  {
-    "company_name": "Audyse Technology",
-    "website_url": "https://audyse.com",
-    "career_page_url": "https://www.audyseindustrial.com/careers",
-    "status": "active"
-  },
-  {
-    "company_name": "Avalon Employment",
-    "website_url": "https://avalonemploy.com",
-    "career_page_url": "https://www.avalonemploy.com/jobs",
-    "status": "active"
-  },
-  {
-    "company_name": "Avalon Holographics",
-    "website_url": "https://avalonholographics.com",
-    "career_page_url": "https://avalonholographics.com/careers/",
-    "status": "active"
-  },
-  {
-    "company_name": "BDC",
-    "website_url": "https://bdc.ca",
-    "career_page_url": "https://www.bdc.ca/en/careers",
-    "status": "active"
-  },
-  {
-    "company_name": "BDO Canada LLP",
-    "website_url": "https://bdo.ca",
-    "career_page_url": "https://www.bdo.ca/careers",
-    "status": "active"
-  },
-  {
-    "company_name": "Barrington Consulting",
-    "website_url": "https://barringtonedge.com",
-    "career_page_url": null,
-    "status": "failed"
-  },
-  {
-    "company_name": "Beena",
-    "website_url": "https://beena.ai",
-    "career_page_url": null,
-    "status": "failed"
-  },
-  {
-    "company_name": "Bethany Downer",
-    "website_url": "https://bethanydowner.com",
-    "career_page_url": null,
-    "status": "failed"
-  },
-  {
-    "company_name": "Big Land Networks Ltd",
-    "website_url": "https://biglandnetworks.com",
-    "career_page_url": "https://blnx.ca/jobs/",
-    "status": "active"
-  },
-  {
-    "company_name": "Birch Scientific",
-    "website_url": "https://birchscientific.com",
-    "career_page_url": null,
-    "status": "failed"
-  },
-  {
-    "company_name": "Bluedrop ISM",
-    "website_url": "https://bluedropism.com",
-    "career_page_url": "https://bluedropism.com/careers/",
-    "status": "active"
-  },
-  {
-    "company_name": "Bonocle",
-    "website_url": "https://bonocle.co",
-    "career_page_url": "https://www.bonocle.co/career",
-    "status": "active"
-  },
-  {
-    "company_name": "BreatheSuite",
-    "website_url": "https://breathesuite.com",
-    "career_page_url": "https://www.breathesuite.com/vprinfo",
-    "status": "active"
-  },
-  {
-    "company_name": "Breton Group",
-    "website_url": "https://bretongroup.ca",
-    "career_page_url": "https://bretongroup.ca/careers/",
-    "status": "active"
-  },
-  {
-    "company_name": "C-CORE",
-    "website_url": "https://c-core.ca",
-    "career_page_url": "https://c-core.ca/working-at-c-core/",
-    "status": "active"
-  },
-  {
-    "company_name": "C-NLOER (formerly C-NLOPB)",
-    "website_url": "https://c-nloer.ca",
-    "career_page_url": "https://www.cnloer.ca/careers/",
-    "status": "active"
-  },
-  {
-    "company_name": "CGI Inc.",
-    "website_url": "https://cgi.com",
-    "career_page_url": "https://www.cgi.com/en/careers",
-    "status": "active"
-  },
-  {
-    "company_name": "CIBC",
-    "website_url": "https://cibc.com",
-    "career_page_url": "https://www.cibc.com/en/about-cibc/careers.html",
-    "status": "active"
-  },
-  {
-    "company_name": "CSIpix",
-    "website_url": "https://csipix.com",
-    "career_page_url": "https://ca.indeed.com/q-csipix-jobs.html",
-    "status": "active"
-  },
-  {
-    "company_name": "Canada-Newfoundland and Labrador Offshore Energy Regulator (C-NLOER)",
-    "website_url": "http://www.cnlopb.ca/",
-    "career_page_url": "https://www.cnloer.ca/careers/",
-    "status": "active"
-  },
-  {
-    "company_name": "Canadian Global Maritime",
-    "website_url": "https://global-maritime.com",
-    "career_page_url": "https://globalmaritime.com/careers/",
-    "status": "active"
-  },
-  {
-    "company_name": "Canadian Manufacturers & Exporters",
-    "website_url": "https://cme-mec.ca",
-    "career_page_url": "https://cme-mec.ca/careers/",
-    "status": "active"
-  },
-  {
-    "company_name": "Carnegie Learning Canada",
-    "website_url": "https://carnegielearning.com",
-    "career_page_url": "https://www.carnegielearning.com/company/careers/",
-    "status": "active"
-  },
-  {
-    "company_name": "Caron Hawco Group Inc.",
-    "website_url": "https://caronhawcogroup.com",
-    "career_page_url": null,
-    "status": "failed"
-  },
-  {
-    "company_name": "ChecKin",
-    "website_url": "https://checkin.ca",
-    "career_page_url": "https://group.checkin.com/careers/",
-    "status": "active"
-  },
-  {
-    "company_name": "City of St. John's - Economic Dev",
-    "website_url": "https://stjohns.ca",
-    "career_page_url": "https://www.stjohns.ca/en/city-hall/careers.aspx",
-    "status": "active"
-  },
-  {
-    "company_name": "City of St. John's - Economic Development",
-    "website_url": "http://www.stjohns.ca/",
-    "career_page_url": "https://www.stjohns.ca/en/city-hall/careers.aspx",
-    "status": "active"
-  },
-  {
-    "company_name": "ClearRisk",
-    "website_url": "https://clearrisk.com",
-    "career_page_url": "https://www.clearrisk.com/about-clearrisk/careers",
-    "status": "active"
-  },
-  {
-    "company_name": "Cloud North Bookkeeping & Tax",
-    "website_url": "https://cloudnorth.ca",
-    "career_page_url": "https://ca.linkedin.com/company/cloud-north-bookkeeping-tax",
-    "status": "active"
-  },
-  {
-    "company_name": "College of the North Atlantic",
-    "website_url": "https://cna.nl.ca",
-    "career_page_url": "https://www.cna.nl.ca/careers/",
-    "status": "active"
-  },
-  {
-    "company_name": "Compactica",
-    "website_url": "https://compactica.com",
-    "career_page_url": "https://www.compactica.com/careers",
-    "status": "active"
-  },
-  {
-    "company_name": "Compusult Limited",
-    "website_url": "https://compusult.com",
-    "career_page_url": "https://www.compusult.com/careers",
-    "status": "active"
-  },
-  {
-    "company_name": "Copsys Technologies",
-    "website_url": "https://copsys.com",
-    "career_page_url": "https://ca.linkedin.com/company/copsys-technologies-inc",
-    "status": "active"
-  },
-  {
-    "company_name": "Courtyard by Marriott Hotel St. John's",
-    "website_url": "http://www.marriott.com/en-us/hotels/yytcy-courtyard-st-johns-newfoundland",
-    "career_page_url": "https://careers.marriott.com/",
-    "status": "active"
-  },
-  {
-    "company_name": "Courtyard by Marriott St. John's",
-    "website_url": "https://marriott.com",
-    "career_page_url": "https://careers.marriott.com/",
-    "status": "active"
-  },
-  {
-    "company_name": "Cove Public Affairs Inc",
-    "website_url": "https://covepublicaffairs.ca",
-    "career_page_url": null,
-    "status": "failed"
-  },
-  {
-    "company_name": "Cox & Palmer",
-    "website_url": "https://coxandpalmerlaw.com",
-    "career_page_url": "https://coxandpalmerlaw.com/career-listings/",
-    "status": "active"
-  },
-  {
-    "company_name": "Crosbie Salamis Limited",
-    "website_url": "https://crosbiegroup.com",
-    "career_page_url": "https://crosbiegroup.com/careers/",
-    "status": "active"
-  },
-  {
-    "company_name": "Deloitte Management Services LP",
-    "website_url": "https://deloitte.ca",
-    "career_page_url": "https://careers.deloitte.ca/",
-    "status": "active"
-  },
-  {
-    "company_name": "Design By Analysis Engineering Inc.",
-    "website_url": "https://dbaeng.com",
-    "career_page_url": "https://ca.linkedin.com/company/design-by-analysis-engineering-inc-",
-    "status": "active"
-  },
-  {
-    "company_name": "Design Smith Inc.",
-    "website_url": "https://designsmith.ca",
-    "career_page_url": null,
-    "status": "failed"
-  },
-  {
-    "company_name": "Digital Six Consulting",
-    "website_url": "https://digitalsix.ca",
-    "career_page_url": "https://digitalsixconsulting.com/careers/",
-    "status": "active"
-  },
-  {
-    "company_name": "Dockridge Digital",
-    "website_url": "https://dockridge.com",
-    "career_page_url": "https://www.dockridge.ca/home/",
-    "status": "active"
-  },
-  {
-    "company_name": "Dovre Group",
-    "website_url": "https://dovregroup.com",
-    "career_page_url": "https://www.dovreglobal.com/jobs/",
-    "status": "active"
-  },
-  {
-    "company_name": "EPRA-NL",
-    "website_url": "https://recyclemyelectronics.ca/nl",
-    "career_page_url": "https://recyclemyelectronics.ca/nl/careers",
-    "status": "active"
-  },
-  {
-    "company_name": "EXCITE Corporation",
-    "website_url": "https://excitecorp.nf.ca",
-    "career_page_url": null,
-    "status": "failed"
-  },
-  {
-    "company_name": "Eastern Audio Limited",
-    "website_url": "https://easternaudio.com",
-    "career_page_url": null,
-    "status": "failed"
-  },
-  {
-    "company_name": "EcoBloc Inc.",
-    "website_url": "https://ecobloc.ca",
-    "career_page_url": null,
-    "status": "failed"
-  },
-  {
-    "company_name": "Enaimco",
-    "website_url": "https://enaimco.com",
-    "career_page_url": "https://enaimco.com/careers/",
-    "status": "active"
-  },
-  {
-    "company_name": "Energy NL",
-    "website_url": "https://energynl.ca",
-    "career_page_url": "https://energynl.ca/petroleum-industry-human-resources-committee/",
-    "status": "active"
-  },
-  {
-    "company_name": "Energy Research & Innovation NL",
-    "website_url": "https://erinl.ca",
-    "career_page_url": "https://www.careerbeacon.com/en/employer/energy-research-innovation-newfoundland-labrador",
-    "status": "active"
-  },
-  {
-    "company_name": "Energy Research & Innovation Newfoundland & Labrador",
-    "website_url": "https://energyresearchinnovation.ca/",
-    "career_page_url": "https://www.careerbeacon.com/en/employer/energy-research-innovation-newfoundland-labrador",
-    "status": "active"
-  },
-  {
-    "company_name": "Ernst & Young",
-    "website_url": "https://ey.com",
-    "career_page_url": "https://www.ey.com/en_ca/careers",
-    "status": "active"
-  },
-  {
-    "company_name": "Ethree Online Inc.",
-    "website_url": "https://ethree.ca",
-    "career_page_url": "https://ethree.ca/employment-opportunities/",
-    "status": "active"
-  },
-  {
-    "company_name": "Evans Consulting and Recruitment",
-    "website_url": "https://evansconsulting.ca",
-    "career_page_url": "https://apply.workable.com/evans-consulting-1/",
-    "status": "active"
-  },
-  {
-    "company_name": "Export Development Canada",
-    "website_url": "https://edc.ca",
-    "career_page_url": "https://www.edc.ca/en/about-us/careers.html",
-    "status": "active"
-  },
-  {
-    "company_name": "Find My Way",
-    "website_url": "https://findmyway.ca",
-    "career_page_url": null,
-    "status": "failed"
-  },
-  {
-    "company_name": "Focus FS",
-    "website_url": "https://focusfs.com",
-    "career_page_url": "https://focusfs.com/careers/",
-    "status": "active"
-  },
-  {
-    "company_name": "Fonemed North America",
-    "website_url": "https://fonemed.com",
-    "career_page_url": "https://www.fonemed.com/careers/",
-    "status": "active"
-  },
-  {
-    "company_name": "Fortis Inc.",
-    "website_url": "https://fortisinc.com",
-    "career_page_url": "https://www.fortisinc.com/careers",
-    "status": "active"
-  },
-  {
-    "company_name": "Fugro GeoSurveys",
-    "website_url": "https://fugro.com",
-    "career_page_url": "https://www.fugro.com/careers/jobs",
-    "status": "active"
-  },
-  {
-    "company_name": "GRi Simulations Inc.",
-    "website_url": "https://grisim.com",
-    "career_page_url": "https://grisim.com/careers/",
-    "status": "active"
-  },
-  {
-    "company_name": "Genesis",
-    "website_url": "https://genesiscentre.ca",
-    "career_page_url": "https://www.genesiscentre.ca/careers",
-    "status": "active"
-  },
-  {
-    "company_name": "Genoa Design International Ltd.",
-    "website_url": "https://genoadesign.com",
-    "career_page_url": "https://genoadesign.com/careers/",
-    "status": "active"
-  },
-  {
-    "company_name": "Geotexera Inc.",
-    "website_url": "https://geotexera.com",
-    "career_page_url": null,
-    "status": "failed"
-  },
-  {
-    "company_name": "Get Building",
-    "website_url": "https://getbuilding.ca",
-    "career_page_url": null,
-    "status": "failed"
-  },
-  {
-    "company_name": "Global Affairs Canada",
-    "website_url": "https://international.gc.ca",
-    "career_page_url": "https://staffing-les.international.gc.ca/en/",
-    "status": "active"
-  },
-  {
-    "company_name": "Granville Biomedical Inc.",
-    "website_url": "https://granvillebiomedical.ca",
-    "career_page_url": "https://www.granvillebiomedical.ca/pages/careers",
-    "status": "active"
-  },
-  {
-    "company_name": "GroundControl",
-    "website_url": "https://groundcontrolhq.com",
-    "career_page_url": "https://uk.linkedin.com/showcase/ground-control-careers/",
-    "status": "active"
-  },
-  {
-    "company_name": "HVAC Specialties Inc.",
-    "website_url": "https://hvacspecialties.com",
-    "career_page_url": null,
-    "status": "failed"
-  },
-  {
-    "company_name": "Hampton Inn & Suites By Hilton",
-    "website_url": "https://hilton.com",
-    "career_page_url": "https://jobs.hilton.com/us/en",
-    "status": "active"
-  },
-  {
-    "company_name": "Hampton Inn and Suites By Hilton St. John's Airport",
-    "website_url": "http://www.hilton.com/en/hotels/yytaphx-hampton-suites-st-johns-airport",
-    "career_page_url": "https://jobs.hilton.com/us/en",
-    "status": "active"
-  },
-  {
-    "company_name": "Hariat Technologies Inc",
-    "website_url": "https://hariat.com",
-    "career_page_url": null,
-    "status": "failed"
-  },
-  {
-    "company_name": "Hatch Ltd.",
-    "website_url": "https://hatch.com",
-    "career_page_url": "https://www.hatch.com/careers",
-    "status": "active"
-  },
-  {
-    "company_name": "HiTech Communications",
-    "website_url": "https://hitechcom.ca",
-    "career_page_url": "https://ca.indeed.com/cmp/Hi--tech-Communications",
-    "status": "active"
-  },
-  {
-    "company_name": "Higher Talent Inc.",
-    "website_url": "https://highertalent.ca",
-    "career_page_url": "https://highertalent.ca/current-opportunities/",
-    "status": "active"
-  },
-  {
-    "company_name": "IMP Solutions",
-    "website_url": "https://impsolutions.com",
-    "career_page_url": "https://www.impsolutions.com/careers",
-    "status": "active"
-  },
-  {
-    "company_name": "Ignite Financial Solutions",
-    "website_url": "https://ignitefinancial.ca",
-    "career_page_url": "https://www.linkedin.com/company/ignite-financial-solutions",
-    "status": "active"
-  },
-  {
     "company_name": "Innovation, Science & Economic Dev",
     "website_url": "https://ised-isde.canada.ca",
     "career_page_url": "https://ised-isde.canada.ca/site/ised/en/job-opportunities",
-    "status": "active"
+    "status": "inactive"
   },
   {
+    "member_id": "1408161",
     "company_name": "Innovation, Science & Economic Development Canada",
     "website_url": "http://www.ic.gc.ca/Intro.html",
+    "location": null,
     "career_page_url": "https://ised-isde.canada.ca/site/ised/en/job-opportunities",
-    "status": "active"
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
   },
   {
+    "member_id": "1408160",
     "company_name": "Instrumar Limited",
-    "website_url": "https://instrumar.com",
+    "website_url": "http://www.instrumar.com/",
+    "location": null,
     "career_page_url": "https://www.instrumar.com/careers/",
-    "status": "active"
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
   },
   {
+    "member_id": "1408158",
     "company_name": "Intuitive Media",
-    "website_url": "https://intuitivemedia.ca",
+    "website_url": "https://www.intuitivemedia.ca/",
+    "location": null,
     "career_page_url": null,
-    "status": "failed"
+    "status": "failed",
+    "map_method": null,
+    "last_checked": "2026-05-25T04:46:01+00:00"
   },
   {
+    "member_id": "1408157",
     "company_name": "JAC Digital Marketing Agency",
-    "website_url": "https://jac.co",
+    "website_url": "https://www.jac.co/",
+    "location": null,
     "career_page_url": "https://jac.co/explore/latest/were-hiring/",
-    "status": "active"
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
   },
   {
+    "member_id": "4239899",
     "company_name": "Jennifer Stamp Business Consulting",
-    "website_url": "https://jenniferstamp.com",
+    "website_url": "https://stampconsulting.ca/",
+    "location": null,
     "career_page_url": null,
-    "status": "failed"
+    "status": "failed",
+    "map_method": null,
+    "last_checked": "2026-05-25T04:46:01+00:00"
+  },
+  {
+    "member_id": "3253479",
+    "company_name": "Justin Ladha",
+    "website_url": null,
+    "location": null,
+    "career_page_url": null,
+    "status": "pending",
+    "map_method": null,
+    "last_checked": null
   },
   {
     "company_name": "KBRS & Meridia Recruitment",
     "website_url": "https://kbrs.ca",
     "career_page_url": "https://www.kbrs.ca/career-opportunities/current-opportunities",
-    "status": "active"
+    "status": "inactive"
   },
   {
+    "member_id": "1598825",
     "company_name": "KBRS & Meridia Recruitment Solution",
     "website_url": "https://www.kbrs.ca/",
+    "location": null,
     "career_page_url": "https://www.kbrs.ca/career-opportunities/current-opportunities",
-    "status": "active"
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
   },
   {
-    "company_name": "KPMG LLP",
-    "website_url": "https://kpmg.ca",
-    "career_page_url": "https://careers.kpmg.ca/",
-    "status": "active"
-  },
-  {
+    "member_id": "1965982",
     "company_name": "Keen Payroll & Bookkeeping",
-    "website_url": "https://keenpayroll.ca",
+    "website_url": "http://keenpayroll.ca/",
+    "location": null,
     "career_page_url": "https://www.keenbusiness.ca/opportunities",
-    "status": "active"
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
   },
   {
+    "member_id": "2018949",
     "company_name": "Kerby-Reid Inc.",
-    "website_url": "https://kerbyreid.ca",
+    "website_url": "http://kerbyreid.com/",
+    "location": null,
     "career_page_url": null,
-    "status": "failed"
+    "status": "failed",
+    "map_method": null,
+    "last_checked": "2026-05-25T04:46:01+00:00"
   },
   {
+    "member_id": "1408152",
     "company_name": "Keyin College",
-    "website_url": "https://keyin.com",
+    "website_url": "https://keyin.com/",
+    "location": null,
     "career_page_url": null,
-    "status": "failed"
+    "status": "failed",
+    "map_method": null,
+    "last_checked": "2026-05-25T04:46:01+00:00"
   },
   {
+    "member_id": "1408151",
     "company_name": "Killick Capital",
-    "website_url": "https://killickcapital.com",
-    "career_page_url": null,
-    "status": "failed"
+    "website_url": "https://www.killickcapital.com/",
+    "location": null,
+    "career_page_url": "https://www.killickcapital.com/careers/jobs",
+    "status": "active",
+    "map_method": "heuristic",
+    "last_checked": "2026-05-25T04:46:01+00:00"
   },
   {
+    "member_id": "1408150",
+    "company_name": "KPMG LLP",
+    "website_url": "https://home.kpmg.com/ca/en/",
+    "location": null,
+    "career_page_url": "https://careers.kpmg.ca/",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "member_id": "1408149",
     "company_name": "Kraken Robotics",
-    "website_url": "https://krakenrobotics.com",
+    "website_url": "http://www.krakenrobotics.com/",
+    "location": null,
     "career_page_url": "https://www.krakenrobotics.com/careers/",
-    "status": "active"
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
   },
   {
     "company_name": "L\\|S Real Estate Group",
     "website_url": "https://lsreg.ca",
     "career_page_url": null,
-    "status": "failed"
+    "status": "inactive"
   },
   {
+    "member_id": "3042110",
     "company_name": "LadderSpike inc",
-    "website_url": "https://ladderspike.com",
+    "website_url": "http://www.ladderspike.com/",
+    "location": null,
     "career_page_url": null,
-    "status": "failed"
+    "status": "failed",
+    "map_method": null,
+    "last_checked": "2026-05-25T04:46:01+00:00"
   },
   {
     "company_name": "Landmark Surveys & Engineering",
     "website_url": "https://landmarksurveys.ca",
     "career_page_url": "https://www.indeed.com/q-Landmark-Surveying-&-Engineering-jobs.html",
-    "status": "active"
+    "status": "inactive"
   },
   {
+    "member_id": "2860694",
     "company_name": "Landmark Surveys & Engineering Limited",
     "website_url": "http://www.landmarksurveys.ca/",
+    "location": null,
     "career_page_url": "https://www.indeed.com/q-Landmark-Surveying-&-Engineering-jobs.html",
-    "status": "active"
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
   },
   {
+    "member_id": "2733242",
+    "company_name": "launch consulting",
+    "website_url": "http://www.launchconsulting.ca/",
+    "location": null,
+    "career_page_url": "https://www.launchconsulting.com/careers",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "member_id": "2337107",
     "company_name": "Luxsonic Technologies, Inc.",
-    "website_url": "https://luxsonic.ca",
+    "website_url": "https://luxsonic.ca/",
+    "location": null,
     "career_page_url": "https://ca.linkedin.com/company/luxsonic-technologies-inc-",
-    "status": "active"
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
   },
   {
+    "member_id": "4543015",
     "company_name": "L|S Real Estate Group",
     "website_url": "https://www.lsre.ca/",
+    "location": null,
     "career_page_url": null,
-    "status": "failed"
+    "status": "failed",
+    "map_method": null,
+    "last_checked": "2026-05-25T04:46:01+00:00"
   },
   {
-    "company_name": "MEDICURO Virtual Health Inc.",
-    "website_url": "https://medicuro.ca",
-    "career_page_url": "https://ca.linkedin.com/company/medicuro",
-    "status": "active"
+    "member_id": "1408146",
+    "company_name": "m5 Marketing Communications",
+    "website_url": "http://www.m5.ca/",
+    "location": null,
+    "career_page_url": "https://m5.ca/careers/",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
   },
   {
+    "member_id": "1850263",
     "company_name": "Marine Atlantic Inc",
-    "website_url": "https://marineatlantic.ca",
+    "website_url": "http://www.marine-atlantic.ca/",
+    "location": null,
     "career_page_url": "https://www.marineatlantic.ca/joinourteam",
-    "status": "active"
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
   },
   {
     "company_name": "Marine Critical Parts Supply (MCPS)",
     "website_url": "https://mcpsinc.ca",
     "career_page_url": null,
-    "status": "failed"
+    "status": "inactive"
   },
   {
+    "member_id": "4543093",
+    "company_name": "Marine Critical Parts Supply (MCPS) Inc.",
+    "website_url": null,
+    "location": null,
+    "career_page_url": null,
+    "status": "pending",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "member_id": "1408143",
     "company_name": "McInnes Cooper",
-    "website_url": "https://mcinnescooper.com",
+    "website_url": "https://www.mcinnescooper.com/",
+    "location": null,
     "career_page_url": "https://www.mcinnescooper.com/our-careers/",
-    "status": "active"
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
   },
   {
+    "member_id": "4066294",
     "company_name": "Median.co",
-    "website_url": "https://median.co",
+    "website_url": "http://median.co/",
+    "location": null,
     "career_page_url": "https://median.co/careers",
-    "status": "active"
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
   },
   {
+    "member_id": "2462096",
+    "company_name": "MEDICURO Virtual Health Inc.",
+    "website_url": "https://www.medicuro.ca/",
+    "location": null,
+    "career_page_url": "https://ca.linkedin.com/company/medicuro",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "member_id": "4529828",
     "company_name": "Memorial University of Newfoundland",
     "website_url": "https://mun.ca",
+    "location": null,
     "career_page_url": "https://www.mun.ca/hr/careers/",
-    "status": "active"
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
   },
   {
+    "member_id": "1408137",
     "company_name": "Milk Moovement",
-    "website_url": "https://milkmoovement.com",
+    "website_url": "https://www.milkmoovement.com/",
+    "location": null,
     "career_page_url": "https://milkmoovement.com/dump-pages/careers",
-    "status": "active"
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
   },
   {
+    "member_id": "4185978",
     "company_name": "Mitacs Inc.",
-    "website_url": "https://mitacs.ca",
+    "website_url": "http://www.mitacs.ca/",
+    "location": null,
     "career_page_url": "https://www.mitacs.ca/careers/",
-    "status": "active"
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
   },
   {
+    "member_id": "4527873",
     "company_name": "MoodBox Inc.",
     "website_url": "https://moodbox.ca",
+    "location": null,
     "career_page_url": "https://www.linkedin.com/company/moodbox-inc",
-    "status": "active"
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
   },
   {
+    "member_id": "3685242",
     "company_name": "Morning Strategy",
-    "website_url": "https://morningstrategy.com",
+    "website_url": "http://www.morningstrategy.ca/",
+    "location": null,
     "career_page_url": null,
-    "status": "failed"
+    "status": "failed",
+    "map_method": null,
+    "last_checked": "2026-05-25T04:46:01+00:00"
   },
   {
+    "member_id": "1408134",
     "company_name": "Munn Insurance",
-    "website_url": "https://munninsurance.com",
+    "website_url": "http://www.munninsurance.com/",
+    "location": null,
     "career_page_url": "https://www.munninsurance.com/careers/",
-    "status": "active"
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
   },
   {
+    "member_id": "1792159",
     "company_name": "Mysa Smart Thermostat",
-    "website_url": "https://getmysa.com",
+    "website_url": "https://getmysa.com/?country=CA",
+    "location": null,
     "career_page_url": "https://getmysa.com/pages/careers",
-    "status": "active"
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
   },
   {
-    "company_name": "NDITIVE",
-    "website_url": "https://nditive.com",
-    "career_page_url": "https://www.linkedin.com/company/moodbox-inc",
-    "status": "active"
-  },
-  {
-    "company_name": "NLOWE",
-    "website_url": "https://nlowe.org",
-    "career_page_url": "https://www.nlowe.org/view-announcements/#!board/announcements/listing/nlowe-is-hiring",
-    "status": "active"
-  },
-  {
-    "company_name": "NLOWE - Newfoundland & Labrador Organization of Women Entrepreneurs",
-    "website_url": "http://www.nlowe.org/",
-    "career_page_url": "https://www.nlowe.org/view-announcements/#!board/announcements/listing/nlowe-is-hiring",
-    "status": "active"
-  },
-  {
-    "company_name": "NLWIC-College of the North Atlantic",
-    "website_url": "https://nlwic.ca",
-    "career_page_url": "https://www.cna.nl.ca/careers/",
-    "status": "active"
-  },
-  {
+    "member_id": "1408078",
     "company_name": "Nasdaq Canada Inc.",
-    "website_url": "https://nasdaq.com",
+    "website_url": "https://www.verafin.com/",
+    "location": null,
     "career_page_url": "https://www.nasdaq.com/about/careers",
-    "status": "active"
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
   },
   {
     "company_name": "Natasha Canam Insurance",
     "website_url": "https://natashacanam.ca",
     "career_page_url": null,
-    "status": "failed"
+    "status": "inactive"
   },
   {
+    "member_id": "3604094",
+    "company_name": "Natasha Canam Insurance and Financial Solutions Inc.",
+    "website_url": null,
+    "location": null,
+    "career_page_url": null,
+    "status": "pending",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "member_id": "1408132",
     "company_name": "NavSim Technology Inc.",
-    "website_url": "https://navsim.com",
+    "website_url": "http://www.navsim.com/",
+    "location": null,
     "career_page_url": "https://www.navsim.com/about-navsim-technology/careers/",
-    "status": "active"
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
   },
   {
+    "member_id": "2548625",
+    "company_name": "NDITIVE",
+    "website_url": "https://www.nditive3d.com/",
+    "location": null,
+    "career_page_url": "https://www.linkedin.com/company/moodbox-inc",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "member_id": "1408101",
     "company_name": "NetBenefit Software Inc",
-    "website_url": "https://netbenefit.ca",
+    "website_url": "https://netbenefitsoftware.com/",
+    "location": null,
     "career_page_url": "https://www.netbenefitsoftware.com/careers",
-    "status": "active"
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
   },
   {
-    "company_name": "NewSight Technologies Inc.",
-    "website_url": "https://newsighttech.com",
-    "career_page_url": null,
-    "status": "failed"
-  },
-  {
+    "member_id": "1408129",
     "company_name": "Newfoundland Power",
-    "website_url": "https://newfoundlandpower.com",
+    "website_url": "https://www.newfoundlandpower.com/",
+    "location": null,
     "career_page_url": "https://www.newfoundlandpower.com/about/careers",
-    "status": "active"
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
   },
   {
+    "member_id": "3597834",
+    "company_name": "NewSight Technologies Inc.",
+    "website_url": "https://newsighttech.com/",
+    "location": null,
+    "career_page_url": null,
+    "status": "failed",
+    "map_method": null,
+    "last_checked": "2026-05-25T04:46:01+00:00"
+  },
+  {
+    "company_name": "NLOWE",
+    "website_url": "https://nlowe.org",
+    "career_page_url": "https://www.nlowe.org/view-announcements/#!board/announcements/listing/nlowe-is-hiring",
+    "status": "inactive"
+  },
+  {
+    "member_id": "1519739",
+    "company_name": "NLOWE - Newfoundland & Labrador Organization of Women Entrepreneurs",
+    "website_url": "http://www.nlowe.org/",
+    "location": null,
+    "career_page_url": "https://www.nlowe.org/view-announcements/#!board/announcements/listing/nlowe-is-hiring",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "member_id": "2170599",
+    "company_name": "NLWIC-College of the North Atlantic",
+    "website_url": "https://www.nlwic.ca/",
+    "location": null,
+    "career_page_url": "https://www.cna.nl.ca/careers/",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "member_id": "3858975",
+    "company_name": "NLWIC-College of the North Atlantic",
+    "website_url": "https://www.nlwic.ca/",
+    "location": null,
+    "career_page_url": "https://www.cna.nl.ca/careers/",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "member_id": "4483371",
     "company_name": "North Atlantic",
-    "website_url": "https://northatlantic.ca",
+    "website_url": "http://northatlantic.ca/",
+    "location": null,
     "career_page_url": "https://northatlantic.ca/careers/",
-    "status": "active"
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
   },
   {
+    "member_id": "2689548",
     "company_name": "Notch Embedded",
-    "website_url": "https://notchembedded.com",
+    "website_url": "http://notch-embedded.com/",
+    "location": null,
     "career_page_url": null,
-    "status": "failed"
+    "status": "failed",
+    "map_method": null,
+    "last_checked": "2026-05-25T04:46:01+00:00"
   },
   {
+    "member_id": "1519738",
     "company_name": "Notification API",
-    "website_url": "https://notificationapi.com",
+    "website_url": "https://www.notificationapi.com/",
+    "location": null,
     "career_page_url": "https://www.notificationapi.com/careers",
-    "status": "active"
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
   },
   {
+    "member_id": "1944661",
     "company_name": "Nucliq Biologics Inc",
-    "website_url": "https://nucliqbiologics.com",
+    "website_url": "http://www.nucliqbio.ca/",
+    "location": null,
     "career_page_url": null,
-    "status": "failed"
+    "status": "failed",
+    "map_method": null,
+    "last_checked": "2026-05-25T04:46:01+00:00"
   },
   {
+    "member_id": "4073955",
     "company_name": "NutraForge",
-    "website_url": "https://nutraforge.com",
+    "website_url": "https://nutraforge.ca/",
+    "location": null,
     "career_page_url": null,
-    "status": "failed"
+    "status": "failed",
+    "map_method": null,
+    "last_checked": "2026-05-25T04:46:01+00:00"
   },
   {
-    "company_name": "OPAS Mobile",
-    "website_url": "https://opasmobile.com",
-    "career_page_url": null,
-    "status": "failed"
-  },
-  {
+    "member_id": "4336119",
     "company_name": "Oceans Advance",
     "website_url": "https://oceansadvance.net",
+    "location": null,
     "career_page_url": "https://oceansadvance.net/article/we-are-hiring/",
-    "status": "active"
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
   },
   {
     "company_name": "Office of the Chief Information Officer",
     "website_url": "https://gov.nl.ca/ocio",
     "career_page_url": "https://www.hiring.gov.nl.ca/",
-    "status": "active"
+    "status": "inactive"
   },
   {
+    "member_id": "2035524",
     "company_name": "Office of the Chief Information Officer (OCIO)",
     "website_url": "https://www.gov.nl.ca/exec/ocio/",
+    "location": null,
     "career_page_url": "https://www.hiring.gov.nl.ca/",
-    "status": "active"
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
   },
   {
+    "member_id": "2370341",
     "company_name": "Omega 365 Canada Inc",
-    "website_url": "https://omega365.com",
+    "website_url": "http://omega365.com/",
+    "location": null,
     "career_page_url": "https://omega365.com/jobs",
-    "status": "active"
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
   },
   {
+    "member_id": "1866599",
+    "company_name": "OPAS Mobile",
+    "website_url": "http://www.opasmobile.com/",
+    "location": null,
+    "career_page_url": null,
+    "status": "failed",
+    "map_method": null,
+    "last_checked": "2026-05-25T04:46:01+00:00"
+  },
+  {
+    "member_id": "4457818",
     "company_name": "Osler, Hoskin & Harcourt, LLP",
     "website_url": "https://osler.com",
+    "location": null,
     "career_page_url": "https://www.osler.com/en/careers/",
-    "status": "active"
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
   },
   {
+    "member_id": "1820916",
     "company_name": "PAL Aerospace",
-    "website_url": "https://palaerospace.com",
+    "website_url": "http://www.palaerospace.com/",
+    "location": null,
     "career_page_url": "https://palaerospace.com/careers/",
-    "status": "active"
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
   },
   {
     "company_name": "PARDY'S Waste Management",
     "website_url": "https://pardys.com",
     "career_page_url": "https://ca.indeed.com/cmp/Pardy's-Waste-Management",
-    "status": "active"
+    "status": "inactive"
   },
   {
+    "member_id": "1595587",
     "company_name": "PARDY'S Waste Management and Industrial Services Limited",
     "website_url": "http://www.pardyswaste.com/",
+    "location": null,
     "career_page_url": "https://pardyswaste.com/careers/",
-    "status": "active"
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
   },
   {
-    "company_name": "PELMO International",
-    "website_url": "https://pelmo.ca",
-    "career_page_url": "https://www.linkedin.com/company/pelmo-international-inc/?originalSubdomain=ca",
-    "status": "active"
-  },
-  {
-    "company_name": "PS Defense",
-    "website_url": "https://psdefense.ca",
-    "career_page_url": null,
-    "status": "failed"
-  },
-  {
+    "member_id": "3042108",
     "company_name": "Pedal & Shift",
-    "website_url": "https://pedalshift.ca",
+    "website_url": "http://www.pedalandshift.com/",
+    "location": null,
     "career_page_url": null,
-    "status": "failed"
+    "status": "failed",
+    "map_method": null,
+    "last_checked": "2026-05-25T04:46:01+00:00"
   },
   {
+    "member_id": "2327396",
+    "company_name": "PELMO International",
+    "website_url": "http://www.pelmo-intl.com/",
+    "location": null,
+    "career_page_url": "https://www.linkedin.com/company/pelmo-international-inc/?originalSubdomain=ca",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "member_id": "1408120",
     "company_name": "Perfect Day",
-    "website_url": "https://perfectday.ca",
+    "website_url": "https://perfectdaycanada.com/",
+    "location": null,
     "career_page_url": "https://perfectday.com/careers/",
-    "status": "active"
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
   },
   {
+    "member_id": "1408118",
     "company_name": "Pinnacle Networks",
-    "website_url": "https://pinnaclenetworks.ca",
+    "website_url": "https://www.pinnacleoffice.ca/",
+    "location": null,
     "career_page_url": "https://ca.indeed.com/Pinnacle-Networks-jobs",
-    "status": "active"
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
   },
   {
-    "company_name": "PolyUnity Tech Inc.",
-    "website_url": "https://polyunity.com",
-    "career_page_url": "https://www.polyunity.com/work-with-us",
-    "status": "active"
-  },
-  {
+    "member_id": "1791911",
     "company_name": "Polyamyna Nanotech Inc",
-    "website_url": "https://polyamyna.ca",
+    "website_url": "http://www.polyamyna.com/",
+    "location": null,
     "career_page_url": "https://polyamyna.ca/careers/",
-    "status": "active"
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
   },
   {
+    "member_id": "1408116",
+    "company_name": "PolyUnity Tech Inc.",
+    "website_url": "http://www.polyunity.com/",
+    "location": null,
+    "career_page_url": "https://www.polyunity.com/work-with-us",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "member_id": "1408115",
     "company_name": "Port of Argentia",
-    "website_url": "https://portofargentia.ca",
+    "website_url": "http://www.portofargentia.ca/",
+    "location": null,
     "career_page_url": "https://portofargentia.ca/article/employment-opportunity/",
-    "status": "active"
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
   },
   {
+    "member_id": "1408114",
     "company_name": "Prima Information Solutions Inc",
-    "website_url": "https://primasolutions.com",
+    "website_url": "http://www.primaharmony.com/",
+    "location": null,
     "career_page_url": "https://www.primaharmony.com/",
-    "status": "active"
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
   },
   {
     "company_name": "Progressive Benefits Consulting",
     "website_url": "https://progressivebenefits.ca",
     "career_page_url": null,
-    "status": "failed"
+    "status": "inactive"
   },
   {
+    "member_id": "1579135",
     "company_name": "Progressive Benefits Consulting Group Ltd.",
     "website_url": "http://www.progressivebenefitsconsulting.com/",
+    "location": null,
     "career_page_url": null,
-    "status": "failed"
+    "status": "failed",
+    "map_method": null,
+    "last_checked": "2026-05-25T04:46:01+00:00"
   },
   {
+    "member_id": "3394803",
     "company_name": "Propel",
-    "website_url": "https://propelict.com",
+    "website_url": "http://www.propelict.com/",
+    "location": null,
     "career_page_url": "https://www.propel.app/careers/",
-    "status": "active"
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
   },
   {
-    "company_name": "RBCx",
-    "website_url": "https://rbcx.com",
-    "career_page_url": "https://www.rbcx.com/careers/",
-    "status": "active"
+    "member_id": "4543017",
+    "company_name": "PS Defense",
+    "website_url": "http://psdefense.com/",
+    "location": null,
+    "career_page_url": null,
+    "status": "failed",
+    "map_method": null,
+    "last_checked": "2026-05-25T04:46:01+00:00"
   },
   {
+    "member_id": "2117362",
+    "company_name": "qualiTEAS Inc.",
+    "website_url": "http://www.qualiteas.ca/",
+    "location": null,
+    "career_page_url": "https://pk.linkedin.com/company/qualiteas-inc",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "member_id": "1408110",
     "company_name": "Ray Creative Agency",
-    "website_url": "https://rayagency.ca",
+    "website_url": "https://www.rayagency.ca/",
+    "location": null,
     "career_page_url": "https://rayagency.ca/career-opportunities/",
-    "status": "active"
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
   },
   {
+    "member_id": "1408109",
+    "company_name": "RBCx",
+    "website_url": "http://www.rbcx.com/",
+    "location": null,
+    "career_page_url": "https://www.rbcx.com/careers/",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "member_id": "3091458",
     "company_name": "Refined Solutions Systems Inc.",
-    "website_url": "https://refinedsolutions.ca",
+    "website_url": "An AI powered cloud-based, cohort centric multi-school LMS Software Suite Study4As makes training, managing, tracking and follow-up learners individually or as a class super easy. Offering Institutions a dynamic data driven and efficient training workflow",
+    "location": null,
     "career_page_url": null,
-    "status": "failed"
+    "status": "failed",
+    "map_method": null,
+    "last_checked": "2026-05-25T04:46:01+00:00"
   },
   {
+    "member_id": "2144071",
     "company_name": "Repairify",
-    "website_url": "https://repairify.com",
+    "website_url": "http://repairify.com/",
+    "location": null,
     "career_page_url": "https://repairify.com/about-us/careers",
-    "status": "active"
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
   },
   {
+    "member_id": "3862962",
     "company_name": "Retellio",
-    "website_url": "https://retellio.com",
+    "website_url": "http://www.retellio.com/",
+    "location": null,
     "career_page_url": "https://www.retellio.com/career/support-engineer",
-    "status": "active"
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
   },
   {
+    "member_id": "3394648",
     "company_name": "Ridegell Consulting Inc.",
-    "website_url": "https://ridegell.com",
+    "website_url": "http://www.ridegellconsulting.com/",
+    "location": null,
     "career_page_url": null,
-    "status": "failed"
+    "status": "failed",
+    "map_method": null,
+    "last_checked": "2026-05-25T04:46:01+00:00"
   },
   {
+    "member_id": "3397618",
     "company_name": "Rivet",
     "website_url": "https://rivet.ca",
+    "location": null,
     "career_page_url": null,
-    "status": "failed"
+    "status": "failed",
+    "map_method": null,
+    "last_checked": "2026-05-25T04:46:01+00:00"
   },
   {
+    "member_id": "1408106",
     "company_name": "Robot Interactive Marketing",
-    "website_url": "https://robotinteractive.ca",
+    "website_url": "https://www.gorobot.ca/",
+    "location": null,
     "career_page_url": "https://ca.linkedin.com/company/robot-interactive-marketing",
-    "status": "active"
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
   },
   {
+    "member_id": "1408102",
     "company_name": "Rutter Inc.",
-    "website_url": "https://rutter.ca",
+    "website_url": "http://www.rutter.ca/",
+    "location": null,
     "career_page_url": "https://rutter.ca/careers/",
-    "status": "active"
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
   },
   {
-    "company_name": "SEM Ltd.",
-    "website_url": "https://semltd.ca",
-    "career_page_url": "https://www.semltd.ca/opportunities",
-    "status": "active"
-  },
-  {
+    "member_id": "1781987",
     "company_name": "Seafair",
-    "website_url": "https://seafaircapital.com",
+    "website_url": "http://www.seafaircapital.com/",
+    "location": null,
     "career_page_url": "https://www.seafaircapital.com/work-with-us",
-    "status": "active"
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
   },
   {
+    "member_id": "1408100",
     "company_name": "Security BSides St. John's",
-    "website_url": "https://bsidesstjohns.ca",
+    "website_url": "http://www.bsidesstjohns.com/",
+    "location": null,
     "career_page_url": null,
-    "status": "failed"
+    "status": "failed",
+    "map_method": null,
+    "last_checked": "2026-05-25T04:46:01+00:00"
   },
   {
+    "member_id": "1408099",
+    "company_name": "SEM Ltd.",
+    "website_url": "https://www.semltd.ca/",
+    "location": null,
+    "career_page_url": "https://www.semltd.ca/opportunities",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "member_id": "2455528",
     "company_name": "Sentinel Institute",
-    "website_url": "https://sentinel.ca",
+    "website_url": "http://sentinelinstitute.ca/",
+    "location": null,
     "career_page_url": "https://www.linkedin.com/company/sentinelinstitute",
-    "status": "active"
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
   },
   {
+    "member_id": "1408098",
     "company_name": "Sequence Bio Inc.",
-    "website_url": "https://sequencebio.com",
+    "website_url": "https://www.sequencebio.com/",
+    "location": null,
     "career_page_url": "https://www.sequencebio.com/careers/",
-    "status": "active"
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
   },
   {
+    "member_id": "1408097",
     "company_name": "Sevenview Studios",
-    "website_url": "https://sevenviewstudios.com",
+    "website_url": "https://www.sevenview.ca/",
+    "location": null,
     "career_page_url": null,
-    "status": "failed"
+    "status": "failed",
+    "map_method": null,
+    "last_checked": "2026-05-25T04:46:01+00:00"
   },
   {
+    "member_id": "1988755",
     "company_name": "SiftMed",
-    "website_url": "https://siftmed.ca",
+    "website_url": "http://siftmed.ca/",
+    "location": null,
     "career_page_url": "https://www.siftmed.ca/jobs",
-    "status": "active"
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
   },
   {
+    "member_id": "2734681",
     "company_name": "SmartBin",
-    "website_url": "https://smartbin.com",
+    "website_url": "https://www.thesmartbin.ca/",
+    "location": null,
     "career_page_url": "https://supplypro.com/home/jobs",
-    "status": "active"
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
   },
   {
     "company_name": "SmartICE Monitoring & Information",
     "website_url": "https://smartice.org",
     "career_page_url": "https://smartice.org/jobs/",
-    "status": "active"
+    "status": "inactive"
   },
   {
+    "member_id": "1408094",
     "company_name": "SmartICE Monitoring & Information Inc.",
     "website_url": "https://www.smartice.org/",
+    "location": null,
     "career_page_url": "https://smartice.org/jobs/",
-    "status": "active"
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
   },
   {
+    "member_id": "1408093",
     "company_name": "Solace Power Inc",
-    "website_url": "https://solace.ca",
+    "website_url": "https://www.solace.ca/",
+    "location": null,
     "career_page_url": "https://www.solace.ca/careers",
-    "status": "active"
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
   },
   {
+    "member_id": "3145506",
     "company_name": "Sparrow Acoustics Inc",
-    "website_url": "https://sparrowacoustics.com",
+    "website_url": "http://sparrowbioacoustics.com/#focus",
+    "location": null,
     "career_page_url": "https://ca.indeed.com/q-sparrow-acoustics-jobs.html",
-    "status": "active"
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
   },
   {
+    "member_id": "4587927",
     "company_name": "Speech Metrics",
     "website_url": "https://speechmetrics.com",
+    "location": null,
     "career_page_url": null,
-    "status": "failed"
+    "status": "failed",
+    "map_method": null,
+    "last_checked": "2026-05-25T04:46:01+00:00"
   },
   {
+    "member_id": "1781990",
     "company_name": "Spellbook",
-    "website_url": "https://spellbook.legal",
+    "website_url": "https://www.spellbook.legal/",
+    "location": null,
     "career_page_url": "https://www.spellbook.legal/careers",
-    "status": "active"
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
   },
   {
+    "member_id": "4753372",
     "company_name": "Springboard Atlantic",
-    "website_url": "https://springboardatlantic.ca",
+    "website_url": "http://www.springboardatlantic.ca/",
+    "location": null,
     "career_page_url": "https://springboardatlantic.ca/were-hiring/",
-    "status": "active"
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
   },
   {
+    "member_id": "2679278",
     "company_name": "St. John's Board of Trade",
-    "website_url": "https://stjohnsbot.ca",
+    "website_url": "https://www.stjohnsbot.ca/",
+    "location": null,
     "career_page_url": "https://members.stjohnsbot.ca/jobs/",
-    "status": "active"
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
   },
   {
+    "member_id": "4455589",
     "company_name": "Starluv",
-    "website_url": "https://starluv.ca",
+    "website_url": "http://starluv.ca/",
+    "location": null,
     "career_page_url": "https://ca.linkedin.com/company/starluv-inc",
-    "status": "active"
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
   },
   {
+    "member_id": "1408091",
     "company_name": "Stewart McKelvey",
-    "website_url": "https://stewartmckelvey.com",
+    "website_url": "https://www.stewartmckelvey.com/",
+    "location": null,
     "career_page_url": "https://stewartmckelvey.com/careers/",
-    "status": "active"
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
   },
   {
+    "member_id": "1408217",
     "company_name": "StrobelTEK",
-    "website_url": "https://strobeltek.com",
+    "website_url": "https://strobeltek.com/",
+    "location": null,
     "career_page_url": "https://strobeltek.com/careers/",
-    "status": "active"
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
   },
   {
+    "member_id": "1808959",
     "company_name": "Strong Data Inc",
-    "website_url": "https://strongdata.ca",
+    "website_url": "http://www.strongdata.ca/",
+    "location": null,
     "career_page_url": "https://www.strongdata.ca/careers/",
-    "status": "active"
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
   },
   {
+    "member_id": "1408089",
     "company_name": "SubC Imaging",
-    "website_url": "https://subcimaging.com",
+    "website_url": "https://www.subcimaging.com/",
+    "location": null,
     "career_page_url": "https://www.subcimaging.com/careers",
-    "status": "active"
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
   },
   {
+    "member_id": "4005170",
     "company_name": "Supreme Creations INC.",
-    "website_url": "https://supremecreations.ca",
+    "website_url": "http://supremecreations.ca/",
+    "location": null,
     "career_page_url": "https://www.linkedin.com/company/supremecreations/",
-    "status": "active"
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
   },
   {
+    "member_id": "1579231",
     "company_name": "TD Commercial Banking",
     "website_url": "https://td.com",
+    "location": null,
     "career_page_url": "https://careers.td.com/",
-    "status": "active"
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
   },
   {
+    "member_id": "2860686",
     "company_name": "Techleft Solutions Inc",
-    "website_url": "https://techleft.com",
+    "website_url": "http://www.techleft.com/",
+    "location": null,
     "career_page_url": "https://www.techleft.com/join",
-    "status": "active"
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
   },
   {
+    "member_id": "1408088",
     "company_name": "Telelink",
-    "website_url": "https://telelink.ca",
+    "website_url": "http://www.telelink.ca/",
+    "location": null,
     "career_page_url": "https://www.answering.telelink.ca/site/careers-at-telelink",
-    "status": "active"
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
   },
   {
+    "member_id": "1408087",
     "company_name": "The Idea Factory",
-    "website_url": "https://ideafactory.com",
+    "website_url": "https://www.ifactory.ca/",
+    "location": null,
     "career_page_url": "https://ifactory.ca/careers/",
-    "status": "active"
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "member_id": "1579236",
+    "company_name": "The Newfoundland and Labrador Construction Association",
+    "website_url": "https://nlca.ca/",
+    "location": null,
+    "career_page_url": "https://members.technl.ca/memberdirectory/Details/the-newfoundland-and-labrador-construction-association-1579236",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
   },
   {
     "company_name": "The NL Construction Association",
     "website_url": "https://nlca.ca",
     "career_page_url": "https://members.technl.ca/memberdirectory/Details/the-newfoundland-and-labrador-construction-association-1579236",
-    "status": "active"
+    "status": "inactive"
   },
   {
-    "company_name": "The Newfoundland and Labrador Construction Association",
-    "website_url": "https://nlca.ca/",
-    "career_page_url": "https://members.technl.ca/memberdirectory/Details/the-newfoundland-and-labrador-construction-association-1579236",
-    "status": "active"
-  },
-  {
+    "member_id": "1408086",
     "company_name": "Thinkwell Research + Strategy",
     "website_url": "https://thinkwellresearch.ca",
+    "location": null,
     "career_page_url": "https://www.linkedin.com/jobs/thinkwell-research-+-strategy-jobs-worldwide?f_C=2735878",
-    "status": "active"
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
   },
   {
+    "member_id": "4774025",
     "company_name": "Tiller Engineering Inc.",
-    "website_url": "https://tillerengineering.com",
+    "website_url": "http://tillerengineering.com/",
+    "location": null,
     "career_page_url": "https://tillerengineering.com/tiller/careers/",
-    "status": "active"
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
   },
   {
+    "member_id": "1911103",
     "company_name": "TownSuite Municipal Software",
-    "website_url": "https://townsuite.com",
+    "website_url": "http://townsuite.com/",
+    "location": null,
     "career_page_url": "https://townsuite.com/jobs",
-    "status": "active"
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
   },
   {
+    "member_id": "1408083",
     "company_name": "Training Works Inc.",
-    "website_url": "https://trainingworks.ca",
+    "website_url": "https://www.training-works.ca/",
+    "location": null,
     "career_page_url": "https://www.training-works.ca/careers",
-    "status": "active"
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
   },
   {
+    "member_id": "1408082",
     "company_name": "Triware Technologies Inc.",
-    "website_url": "https://triware.ca",
+    "website_url": "http://www.triware.ca/",
+    "location": null,
     "career_page_url": "https://triware.ca/careers/",
-    "status": "active"
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
   },
   {
+    "member_id": "1944322",
+    "company_name": "trophi.ai",
+    "website_url": "http://www.trophi.ai/",
+    "location": null,
+    "career_page_url": "https://www.trophi.ai/jobs/about-us",
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
+  },
+  {
+    "member_id": "4077436",
     "company_name": "Trudell Medical Limited",
     "website_url": "https://trudellmedical.com",
+    "location": null,
     "career_page_url": "https://www.trudellmed.com/global/careers",
-    "status": "active"
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
   },
   {
+    "member_id": "2603778",
     "company_name": "Tucker Solutions",
-    "website_url": "https://tuckersolutions.ca",
+    "website_url": "http://www.tuckersolutions.ca/",
+    "location": null,
     "career_page_url": null,
-    "status": "failed"
+    "status": "failed",
+    "map_method": null,
+    "last_checked": "2026-05-25T04:46:01+00:00"
   },
   {
+    "member_id": "1408081",
     "company_name": "TxtSquad",
-    "website_url": "https://txtsquad.com",
+    "website_url": "http://www.txtsquad.com/",
+    "location": null,
     "career_page_url": "https://ca.linkedin.com/company/txtsquad",
-    "status": "active"
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
   },
   {
     "company_name": "Upstream Marketing",
     "website_url": "https://upstreammarketing.ca",
     "career_page_url": "https://www.linkedin.com/jobs/upstream-marketing-jobs",
-    "status": "active"
+    "status": "inactive"
   },
   {
+    "member_id": "1408079",
     "company_name": "Venor",
-    "website_url": "https://venor.ca",
+    "website_url": "http://venor.ca/",
+    "location": null,
     "career_page_url": "https://venor.ca/opportunities/",
-    "status": "active"
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
   },
   {
+    "company_name": "Verafin",
+    "career_page_url": "https://verafin.com/careers/",
+    "status": "inactive"
+  },
+  {
+    "member_id": "2616677",
     "company_name": "Veristart",
-    "website_url": "https://veristart.com",
+    "website_url": "http://www.veristart.ca/",
+    "location": null,
     "career_page_url": "https://www.veristat.com/careers",
-    "status": "active"
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
   },
   {
+    "member_id": "4493465",
     "company_name": "Verisult",
-    "website_url": "https://verisult.com",
+    "website_url": "http://www.verisult.com/",
+    "location": null,
     "career_page_url": "https://verisult.com/service/career-center/",
-    "status": "active"
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
   },
   {
+    "member_id": "4073968",
     "company_name": "Vifta Technology Limited",
-    "website_url": "https://viftatech.com",
+    "website_url": "http://vifta.ca/",
+    "location": null,
     "career_page_url": "https://ca.linkedin.com/company/vifta",
-    "status": "active"
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
   },
   {
+    "member_id": "1408076",
     "company_name": "Virtual Marine Inc.",
-    "website_url": "https://virtualmarine.ca",
+    "website_url": "http://www.virtualmarine.ca/",
+    "location": null,
     "career_page_url": "https://www.virtualmarine.ca/careers",
-    "status": "active"
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
   },
   {
+    "member_id": "1408075",
     "company_name": "Vish Limited",
-    "website_url": "https://getvish.com",
+    "website_url": "https://getvish.com/",
+    "location": null,
     "career_page_url": "https://getvish.com/careers/",
-    "status": "active"
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
   },
   {
+    "member_id": "1408074",
     "company_name": "Vision33 Inc.",
-    "website_url": "https://vision33.com",
+    "website_url": "http://www.vision33.com/",
+    "location": null,
     "career_page_url": "https://www.vision33.com/careers",
-    "status": "active"
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
   },
   {
     "company_name": "Voronoi Health Analytics",
     "website_url": "https://voronoihealth.com",
     "career_page_url": "https://ca.linkedin.com/company/voronoi-health-analytics-incorporated",
-    "status": "active"
+    "status": "inactive"
   },
   {
+    "member_id": "4449305",
     "company_name": "Voronoi Health Analytics Incorporated",
     "website_url": "http://www.voronoihealthanalytics.com/",
+    "location": null,
     "career_page_url": "https://ca.linkedin.com/company/voronoi-health-analytics-incorporated",
-    "status": "active"
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
   },
   {
+    "member_id": "1408073",
     "company_name": "WaterWerks Agency",
-    "website_url": "https://waterwerks.agency",
+    "website_url": "https://waterwerks.agency/",
+    "location": null,
     "career_page_url": "https://waterwerks.agency/contact/",
-    "status": "active"
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
   },
   {
+    "member_id": "1820930",
     "company_name": "Wedgwood Insurance Limited",
-    "website_url": "https://wedgwoodinsurance.com",
+    "website_url": "http://wedgwoodinsurance.com/",
+    "location": null,
     "career_page_url": "https://wedgwoodinsurance.com/careers/",
-    "status": "active"
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
   },
   {
+    "member_id": "3539875",
     "company_name": "Weevva Systems Ltd.",
-    "website_url": "https://weevva.com",
+    "website_url": "http://www.weevva.com/",
+    "location": null,
     "career_page_url": null,
-    "status": "failed"
+    "status": "failed",
+    "map_method": null,
+    "last_checked": "2026-05-25T04:46:01+00:00"
   },
   {
+    "member_id": "1408071",
     "company_name": "Whitecap Scientific Corporation",
-    "website_url": "https://whitecaptech.com",
+    "website_url": "https://www.rov3d.com/",
+    "location": null,
     "career_page_url": "https://whitecaptech.com/employment/",
-    "status": "active"
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
   },
   {
     "company_name": "Women in Resource Dev. Corp.",
     "website_url": "https://wrdc.ca",
     "career_page_url": "https://wrdc.ca/recruitment/",
-    "status": "active"
+    "status": "inactive"
   },
   {
+    "member_id": "1408069",
     "company_name": "Women in Resource Development Corporation",
     "website_url": "https://www.wrdc.ca/",
+    "location": null,
     "career_page_url": "https://wrdc.ca/recruitment/",
-    "status": "active"
-  },
-  {
-    "company_name": "atlantiq AI",
-    "website_url": "https://atlantiq.ai",
-    "career_page_url": null,
-    "status": "failed"
-  },
-  {
-    "company_name": "eDNAtec Inc.",
-    "website_url": "https://ednatec.com",
-    "career_page_url": "https://ednatec.com/site/uploads/2024/05/HUR-002C1-R1-Project-Manager-Job-Ad.pdf",
-    "status": "active"
-  },
-  {
-    "company_name": "econext",
-    "website_url": "https://econext.ca",
-    "career_page_url": "https://econext.ca/jobs-and-skills/",
-    "status": "active"
-  },
-  {
-    "company_name": "launch consulting",
-    "website_url": "https://launchconsulting.ca",
-    "career_page_url": "https://www.launchconsulting.com/careers",
-    "status": "active"
-  },
-  {
-    "company_name": "m5 Marketing Communications",
-    "website_url": "https://m5.ca",
-    "career_page_url": "https://m5.ca/careers/",
-    "status": "active"
-  },
-  {
-    "company_name": "qualiTEAS Inc.",
-    "website_url": "https://qualiteas.ca",
-    "career_page_url": "https://pk.linkedin.com/company/qualiteas-inc",
-    "status": "active"
-  },
-  {
-    "company_name": "trophi.ai",
-    "website_url": "https://trophi.ai",
-    "career_page_url": "https://www.trophi.ai/jobs/about-us",
-    "status": "active"
-  },
-  {
-    "company_name": "Digital Nova Scotia",
-    "website_url": "https://digitalnovascotia.com",
-    "career_page_url": "https://digitalnovascotia.com/job-posts/",
-    "status": "active"
+    "status": "active",
+    "map_method": null,
+    "last_checked": null
   }
 ]
