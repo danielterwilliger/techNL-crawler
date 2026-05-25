@@ -118,12 +118,36 @@ def source_board(url: str) -> str:
     return "own-site"
 
 
+JUNK_TITLES = {"careers", "career", "jobs", "job", "open positions", "openings",
+               "work with us", "join us", "join our team", "home", "current openings"}
+
+
 def best_title(anchor_title: str, page_title: str) -> str:
     a = (anchor_title or "").strip()
     if a.lower() in GENERIC_TITLES or len(a) < 4 or not re.search(r"[A-Za-z]{3,}", a):
         cand = re.split(r"\s[|\-–—]\s", (page_title or "").strip())[0].strip()
         return cand or a
     return a
+
+
+def pick_title(anchor: str, h1: str, page_title: str) -> str:
+    """Prefer the posting page's <h1> (clean role name) over board link text
+    like 'Development VP of Software Engineering Canada, Remote'."""
+    h = re.sub(r"\s+", " ", (h1 or "")).strip()
+    if h and 3 <= len(h) <= 100 and h.lower() not in JUNK_TITLES:
+        return h
+    return best_title(anchor, page_title)
+
+
+# Member companies that are recruiters/aggregators (jobs listed are for OTHER
+# employers) — tag their listings via=<company> regardless of LLM flagging.
+KNOWN_RECRUITERS = {"venor", "kbrs", "meridia", "higgins", "people store",
+                    "axis career", "association for new canadians", "anc"}
+
+
+def is_recruiter(company_name: str) -> bool:
+    lo = company_name.lower()
+    return any(h in lo for h in KNOWN_RECRUITERS)
 
 
 # ---- rendering --------------------------------------------------------------
@@ -272,8 +296,7 @@ async def validate_and_describe(context, company: str, candidates: list[dict],
             text = (data.get("text") or "").strip()
             if len(text) < 120:                          # empty/non-posting
                 continue
-            title = best_title(c.get("title", ""),
-                               (data.get("h1") or data.get("title") or ""))
+            title = pick_title(c.get("title", ""), data.get("h1"), data.get("title"))
             rec = {
                 "company": company,
                 "title": re.sub(r"\s+", " ", title)[:140],
@@ -324,6 +347,13 @@ async def navigate_company(context, company: dict, llm_enabled: bool = True) -> 
         scraped_ok = True
         board_urls.add(canon_url(rendered["final_url"]))
 
+        # Anti-bot wall (CAPTCHA / challenge) — record a pointer, don't waste an LLM call.
+        flo = rendered["final_url"].lower()
+        if any(m in flo for m in ("captcha", "/challenge", "cloudflare")) or \
+                (len(rendered["links"]) <= 1 and len(rendered["text"]) < 200):
+            pointer = {"company": name, "kind": "blocked", "url": rendered["final_url"]}
+            continue
+
         route = heuristic_route(rendered)
         if route is None and llm_enabled:
             route = await llm_route(name, rendered)
@@ -334,7 +364,7 @@ async def navigate_company(context, company: dict, llm_enabled: bool = True) -> 
                        "url": rendered["final_url"]}
             continue
 
-        agg = bool(route.get("is_aggregator"))
+        agg = bool(route.get("is_aggregator")) or is_recruiter(name)
         for j in (route.get("jobs") or []):
             ju = j.get("url")
             if ju:
