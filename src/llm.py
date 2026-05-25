@@ -109,8 +109,12 @@ def _cli_engine(prompt: str, model: str, system: str | None, timeout: int, groun
     full = f"{system}\n\n{prompt}" if system else prompt
     # --skip-trust: required for headless/automated use (no interactive folder-trust prompt).
     cmd = [gemini, "--skip-trust", "-m", model, "-p", full, "--yolo"]
+    # Force the OAuth / Code Assist path: select GCA and drop any stray API key so
+    # the CLI authenticates with ~/.gemini/oauth_creds.json (refresh-token renewed).
+    env = {**os.environ, "GOOGLE_GENAI_USE_GCA": "true", "GEMINI_CLI_TRUST_WORKSPACE": "true"}
+    env.pop("GEMINI_API_KEY", None)
     try:
-        proc = subprocess.run(cmd, capture_output=True, text=True, timeout=timeout)
+        proc = subprocess.run(cmd, capture_output=True, text=True, timeout=timeout, env=env)
     except FileNotFoundError as e:
         raise LLMError(f"gemini CLI not found ({gemini}); is it installed + logged in?") from e
     except subprocess.TimeoutExpired as e:
