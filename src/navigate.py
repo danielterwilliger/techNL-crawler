@@ -131,8 +131,14 @@ async def render(context, url: str) -> dict | None:
     """Load a page in a real browser; return rendered links + text + final URL."""
     page = await context.new_page()
     try:
-        await page.goto(url, wait_until="domcontentloaded", timeout=30000)
-        await asyncio.sleep(2.5)  # let JS populate listings
+        await page.goto(url, wait_until="domcontentloaded", timeout=35000)
+        # Heavy ATS SPAs (Workday/Lever/Rippling) populate listings late — wait for
+        # the network to settle, then give it a beat, instead of a flat short sleep.
+        try:
+            await page.wait_for_load_state("networkidle", timeout=9000)
+        except Exception:
+            pass
+        await asyncio.sleep(3.0)
         final = str(page.url)
         anchors = await page.evaluate(
             "() => Array.from(document.querySelectorAll('a[href]'))"
