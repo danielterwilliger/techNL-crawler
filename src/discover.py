@@ -8,7 +8,7 @@ import httpx
 import re
 import os
 
-MD_FILE = "techNL_crawler/techNL_companies.md"
+MD_FILE = "data/techNL_companies.md"
 URL = "https://members.technl.ca/memberdirectory/FindStartsWith?term=%23%21"
 
 def main():
