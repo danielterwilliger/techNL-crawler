@@ -80,7 +80,9 @@ CTA_TEXT = ["view job", "view our", "open position", "current opportunit",
 
 GENERIC_TITLES = {"read more", "read more >", "apply", "apply now", "view", "view job",
                   "view details", "details", "learn more", "see more", "more", "→",
-                  "view position", "open", "see details", "view opening", "view role"}
+                  "view position", "open", "see details", "view opening", "view role",
+                  "job details", "job detail", "job posting", "job description",
+                  "position", "opportunity", "current opportunities"}
 
 
 def canon_url(url: str) -> str:
@@ -124,7 +126,11 @@ def source_board(url: str) -> str:
 
 
 JUNK_TITLES = {"careers", "career", "jobs", "job", "open positions", "openings",
-               "work with us", "join us", "join our team", "home", "current openings"}
+               "work with us", "join us", "join our team", "home", "current openings",
+               "job details", "job detail", "job posting", "job description",
+               "job opportunity", "details", "position", "opportunity",
+               "current opportunities", "search jobs", "all jobs", "apply",
+               "apply now", "view job", "view jobs"}
 
 
 def best_title(anchor_title: str, page_title: str) -> str:
@@ -409,7 +415,7 @@ async def navigate_company(context, company: dict, llm_enabled: bool = True) -> 
     for c in candidates:
         if c.get("on_page"):
             t = re.sub(r"\s+", " ", c["title"]).strip()
-            rk = (c["page_url"], t.lower())
+            rk = t.lower()  # role title is the identity; ignore which page-URL variant
             if t and rk not in seen_role:
                 seen_role.add(rk)
                 roles.append(c)
