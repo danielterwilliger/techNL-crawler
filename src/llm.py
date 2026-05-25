@@ -36,8 +36,13 @@ import time
 
 API_BASE = "https://generativelanguage.googleapis.com/v1beta/models"
 
-# Free-tier-friendly ladder of real AI Studio model IDs, fastest/cheapest last.
-DEFAULT_LADDER = ["gemini-2.5-flash", "gemini-2.0-flash", "gemini-2.5-flash-lite"]
+# Default model ladder, ordered cheapest-on-quota first so light models absorb most
+# calls and we only rotate up to heavier ones when limited. Override per-operator with
+# GEMINI_MODELS (their account's actual access may differ — probe it). NB: on the OAuth
+# Code Assist tier the daily quota is largely shared across models, so a longer ladder
+# adds resilience to transient/per-model limits, not more total daily capacity.
+# Deliberately excludes gemini-3.5-flash (heaviest quota consumer).
+DEFAULT_LADDER = ["gemini-3.1-flash-lite", "gemini-3-flash-preview", "gemini-2.5-flash"]
 
 # Substrings that mean "try a different model / back off" — rate limits, transient
 # server errors, AND model-availability errors (so the ladder degrades instead of
