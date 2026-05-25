@@ -37,6 +37,10 @@ if [ -n "$(git status --porcelain data/ docs/)" ]; then
   git add data/ docs/
   git -c user.name="technl-producer" -c user.email="producer@plex.local" \
       commit -m "chore: producer refresh $(date -u +%FT%TZ)"
+  # origin may have advanced during the (long) run — integrate before pushing so the
+  # push always fast-forwards (data-only commit rarely conflicts with code changes).
+  git -c user.name="technl-producer" -c user.email="producer@plex.local" \
+      pull --rebase --autostash origin main || echo "(rebase-before-push had trouble; pushing anyway)"
   git push && echo "pushed refreshed data" || echo "push failed (check deploy key)"
 else
   echo "no changes to commit"
