@@ -1,0 +1,41 @@
+name: Publish dashboard
+
+# Rebuilds the dashboard data and deploys GitHub Pages whenever the feed changes.
+# The producer box (or a keyless crawl) commits data/open_jobs.json; this publishes
+# it. No scraping here, so it never clobbers the producer's richer data.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "data/open_jobs.json"
+      - "docs/index.html"
+      - "src/publish.py"
+  workflow_dispatch:
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+      - name: Build dashboard data from the committed feed
+        run: uv run python src/publish.py
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+      - id: deploy
+        uses: actions/deploy-pages@v4
