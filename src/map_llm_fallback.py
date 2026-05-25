@@ -79,7 +79,7 @@ def main():
     for i, c in enumerate(targets, 1):
         name, web = c["company_name"], c["website_url"]
         try:
-            out = llm_call(prompt_for(name, web), system=SYSTEM)
+            out = llm_call(prompt_for(name, web), system=SYSTEM, ground=True)
             url = parse_url(out)
         except LLMError as e:
             print(f"  [{i}/{len(targets)}] ! {name}: LLM failed ({e})")
