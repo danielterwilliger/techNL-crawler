@@ -1,29 +1,29 @@
-name: Crawl & publish jobs
+name: Keyless crawl (manual / fork fallback)
 
-# Keyless public pipeline: discover -> heuristic-map -> scrape -> publish, then
-# commit the refreshed data and deploy the dashboard to GitHub Pages.
-# The LLM stages (map_llm_fallback, deep extraction) are NOT run here — they need
-# an operator credential and run on the producer box. This workflow needs no secrets.
+# Keyless pipeline: discover -> heuristic-map -> scrape -> publish -> commit + deploy.
+#
+# This instance's REAL crawler is the producer box (systemd, OAuth, the staged
+# navigator) — see deploy/. So this is DISPATCH-ONLY: no schedule, so it can never
+# auto-overwrite the producer's richer LLM-found data. It exists for (a) community
+# forks with no producer, and (b) manual keyless testing. It self-deploys Pages
+# because its GITHUB_TOKEN push wouldn't trigger pages.yml.
 
 on:
-  schedule:
-    - cron: "0 11 * * 1"        # Mondays 11:00 UTC ≈ 07:30 Newfoundland
   workflow_dispatch:
     inputs:
       limit:
-        description: "Scrape only the first N companies (leave blank for all; handy for a quick test run)"
+        description: "Scrape only the first N companies (blank = all; handy for a test)"
         required: false
         default: ""
 
-# Don't let two crawls overlap; let a newer run cancel an in-flight one.
 concurrency:
   group: crawl
   cancel-in-progress: false
 
 permissions:
-  contents: write        # commit refreshed data/ + docs/ back to main
-  pages: write           # deploy the dashboard
-  id-token: write        # required by deploy-pages
+  contents: write
+  pages: write
+  id-token: write
 
 jobs:
   crawl:
@@ -34,23 +34,16 @@ jobs:
       url: ${{ steps.deploy.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
-
-      - name: Install uv
-        uses: astral-sh/setup-uv@v5
-
+      - uses: astral-sh/setup-uv@v5
       - name: Set up Python + dependencies
         run: uv sync
-
       - name: Install Chromium (with system deps)
         run: uv run playwright install --with-deps chromium
-
       - name: Discover companies (keyless)
         run: uv run python src/discover.py
-
       - name: Map careers pages — heuristic (keyless)
         run: uv run python src/map_careers.py
-
-      - name: Scrape listings (keyless)
+      - name: Scrape listings (keyless, heuristic navigator)
         env:
           LIMIT: ${{ github.event.inputs.limit }}
         run: |
@@ -59,10 +52,8 @@ jobs:
           else
             uv run python src/scrape.py
           fi
-
       - name: Publish feed + dashboard data
         run: uv run python src/publish.py
-
       - name: Commit refreshed data
         run: |
           git config user.name  "github-actions[bot]"
@@ -71,15 +62,12 @@ jobs:
           if git diff --cached --quiet; then
             echo "No data changes to commit."
           else
-            git commit -m "chore: refresh job feed [skip ci]"
+            git commit -m "chore: keyless feed refresh [skip ci]"
             git push
           fi
-
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
         with:
           path: docs
-
-      - name: Deploy to GitHub Pages
-        id: deploy
+      - id: deploy
         uses: actions/deploy-pages@v4
