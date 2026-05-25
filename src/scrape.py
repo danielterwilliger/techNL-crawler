@@ -1,26 +1,53 @@
-"""Programmatic Career Board Scraper (Newfoundland & Labrador Tech Jobs Aggregator).
+# /// script
+# requires-python = ">=3.11"
+# dependencies = [
+#   "beautifulsoup4",
+#   "playwright",
+# ]
+# ///
+"""Stage 3 — Career-board scraper with rolling history (keyless baseline).
 
-This script programmatically crawls company career pages using Playwright,
-extracts all active job posting links (leveraging patterns for standard ATS platforms
-like Greenhouse, Lever, BambooHR, Ashby, Workday, etc.), fetches the full-text
-description of each job, and saves the aggregated results to open_jobs.json.
+Crawls each active company's careers page with Playwright, extracts direct job
+posting links (standard ATS URL patterns + own-site job paths), fetches each
+posting's text, and merges the results into a rolling feed at data/open_jobs.json.
 
-It runs completely offline and without LLM costs, making it ideal as a public community tool.
+History semantics (so the feed reflects what's actually open over time):
+  * first_seen / last_seen track a job's lifetime across runs.
+  * A job re-found this run -> last_seen bumped, status "open".
+  * A job NOT found this run, but whose company scraped successfully -> "closed"
+    (a successful board that no longer lists it is strong evidence it's gone).
+  * A job whose company FAILED to scrape this run is left untouched (transient).
+  * Backstop: any job not seen in STALE_DAYS is closed regardless.
+
+The LLM-powered deep-extraction path (for JS-only boards the baseline can't parse)
+is a seam wired in Phase 3/7; the keyless baseline here needs no credentials and
+runs in GitHub Actions.
+
+Usage:
+  python src/scrape.py                 # full run, merge into data/open_jobs.json
+  python src/scrape.py --limit 10       # first 10 active companies (dev)
+  python src/scrape.py --company "Verafin"
 """
 
+import argparse
 import asyncio
+import datetime as dt
 import json
 import os
 import re
-import argparse
-from urllib.parse import urljoin
+from urllib.parse import urljoin, urlparse
+
 from bs4 import BeautifulSoup
-from playwright.async_api import async_playwright
+# playwright is imported lazily inside the functions that drive the browser, so
+# the history/merge logic stays importable (and unit-testable) without a browser.
 
 STATE_FILE = "data/companies_state.json"
 DEFAULT_OUT_FILE = "data/open_jobs.json"
 
-# Common job/apply patterns in URLs to identify direct job posts
+MAX_JOBS_PER_COMPANY = 15
+DESCRIPTION_CAP = 1500       # chars kept in the feed; full posting is one click away
+STALE_DAYS = 14              # close a job not seen for this long (≈2 weekly runs)
+
 JOB_URL_PATTERNS = [
     r"boards\.greenhouse\.io/[^/]+/jobs/\d+",
     r"jobs\.lever\.co/[^/]+/[0-9a-fA-F-]+",
@@ -32,104 +59,115 @@ JOB_URL_PATTERNS = [
     r"/apply?/\d+",
     r"/job/[^/]+",
     r"/vacancy/[^/]+",
-    r"career[^/]+_id=\d+"
+    r"career[^/]+_id=\d+",
 ]
+
+# host fragment -> board label, for tagging where a posting lives
+BOARD_TAGS = {
+    "greenhouse.io": "greenhouse", "lever.co": "lever", "bamboohr.com": "bamboohr",
+    "ashbyhq.com": "ashby", "myworkdayjobs.com": "workday", "taleo.net": "taleo",
+    "recruitee.com": "recruitee", "workable.com": "workable", "jobvite.com": "jobvite",
+    "smartrecruiters.com": "smartrecruiters", "icims.com": "icims", "breezy.hr": "breezy",
+    "bullhorn": "bullhorn", "linkedin.com": "linkedin", "indeed.com": "indeed",
+}
+
 
 def load_json(path, default):
     if os.path.exists(path):
         try:
-            with open(path, "r", encoding="utf-8") as f:
+            with open(path, encoding="utf-8") as f:
                 return json.load(f)
         except Exception as e:
             print(f"Error reading JSON from {path}: {e}")
     return default
 
+
 def save_json(path, data):
-    os.makedirs(os.path.dirname(path) if os.path.dirname(path) else ".", exist_ok=True)
-    try:
-        with open(path, "w", encoding="utf-8") as f:
-            json.dump(data, f, indent=2)
-        print(f"Successfully saved to: {path}")
-    except Exception as e:
-        print(f"Error saving JSON to {path}: {e}")
+    os.makedirs(os.path.dirname(path) or ".", exist_ok=True)
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=2, ensure_ascii=False)
+    print(f"Saved {path}")
+
+
+def canon_url(url: str) -> str:
+    """Canonical form used as the stable per-job key (strip query/fragment/trailing slash)."""
+    p = urlparse(url)
+    return f"{p.scheme}://{p.netloc}{p.path}".rstrip("/").lower()
+
+
+def source_board(url: str) -> str:
+    lo = url.lower()
+    for frag, label in BOARD_TAGS.items():
+        if frag in lo:
+            return label
+    return "own-site"
+
 
 async def extract_links_from_page(page, base_url: str) -> list[dict]:
-    """Scans the page and all iframes to extract potential direct job posting URLs."""
+    """Scan the page (and relevant iframes) for direct job-posting URLs."""
     job_links = []
-    
-    # 1. Helper to test if a URL looks like a direct job post
+
     def is_job_link(url: str) -> bool:
         url_lower = url.lower()
-        # Avoid generic/landing pages
-        if any(k in url_lower for k in ["/careers", "/jobs", "/search", "/category", "/all-jobs", "?filter="]) and not any(re.search(pat, url) for pat in JOB_URL_PATTERNS[:5]):
-            if not re.search(r"\d{4,}", url): # If no ID is present
+        if any(k in url_lower for k in ["/careers", "/jobs", "/search", "/category", "/all-jobs", "?filter="]) \
+                and not any(re.search(pat, url) for pat in JOB_URL_PATTERNS[:5]):
+            if not re.search(r"\d{4,}", url):
                 return False
         return any(re.search(pat, url) or re.search(pat, url_lower) for pat in JOB_URL_PATTERNS)
 
-    # 2. Extract links from main frame
     try:
-        content = await page.content()
-        soup = BeautifulSoup(content, 'html.parser')
-        for link in soup.find_all('a', href=True):
-            href = link['href'].strip()
-            if not href or href.startswith("javascript:") or href.startswith("#") or href.startswith("mailto:"):
+        soup = BeautifulSoup(await page.content(), "html.parser")
+        for link in soup.find_all("a", href=True):
+            href = link["href"].strip()
+            if not href or href.startswith(("javascript:", "#", "mailto:")):
                 continue
             abs_url = urljoin(page.url, href)
-            title = link.text.strip().replace("\n", " ")
-            title = re.sub(r'\s+', ' ', title)
+            title = re.sub(r"\s+", " ", link.text.strip().replace("\n", " "))
             if is_job_link(abs_url) and len(title) > 2:
                 job_links.append({"title": title, "url": abs_url})
     except Exception as e:
-        print(f"   -> Main frame scan error: {e}")
+        print(f"   -> main frame scan error: {e}")
 
-    # 3. Extract links from all relevant child frames (Lever embeds, Lever widgets, etc.)
     try:
         for frame in page.frames:
             if frame == page.main_frame:
                 continue
-            frame_url = frame.url.lower()
-            if any(k in frame_url for k in ["job", "career", "embed", "apply", "board"]):
+            if any(k in frame.url.lower() for k in ["job", "career", "embed", "apply", "board"]):
                 try:
-                    frame_content = await frame.content()
-                    frame_soup = BeautifulSoup(frame_content, 'html.parser')
-                    for link in frame_soup.find_all('a', href=True):
-                        href = link['href'].strip()
-                        if not href or href.startswith("javascript:") or href.startswith("#"):
+                    fsoup = BeautifulSoup(await frame.content(), "html.parser")
+                    for link in fsoup.find_all("a", href=True):
+                        href = link["href"].strip()
+                        if not href or href.startswith(("javascript:", "#")):
                             continue
                         abs_url = urljoin(frame.url, href)
-                        title = link.text.strip().replace("\n", " ")
-                        title = re.sub(r'\s+', ' ', title)
+                        title = re.sub(r"\s+", " ", link.text.strip().replace("\n", " "))
                         if is_job_link(abs_url) and len(title) > 2:
                             job_links.append({"title": title, "url": abs_url})
                 except Exception:
                     pass
     except Exception:
         pass
-        
-    # Deduplicate by URL
-    seen_urls = set()
-    deduped = []
+
+    seen, deduped = set(), []
     for jl in job_links:
-        clean_url = jl["url"].split("?")[0].rstrip("/") # strip query params for deduplication
-        if clean_url not in seen_urls:
-            seen_urls.add(clean_url)
+        key = canon_url(jl["url"])
+        if key not in seen:
+            seen.add(key)
             deduped.append(jl)
-            
     return deduped
 
+
 async def scrape_job_description(context, url: str) -> str:
-    """Visits a direct job posting URL and extracts the raw description text."""
     page = None
     try:
         page = await context.new_page()
-        # Enable lightweight loading (omit images and stylesheets to save bandwidth and speed up)
-        await page.route("**/*.{png,jpg,jpeg,gif,webp,css,svg,woff2}", lambda route: route.abort())
+        await page.route("**/*.{png,jpg,jpeg,gif,webp,css,svg,woff2}", lambda r: r.abort())
         await page.goto(url, wait_until="domcontentloaded", timeout=20000)
         await asyncio.sleep(1.0)
         text = await page.evaluate("document.body.innerText")
-        return text.strip() if text else ""
+        return (text or "").strip()
     except Exception as e:
-        print(f"   -> Failed to scrape description for {url}: {e}")
+        print(f"   -> failed to scrape description for {url}: {e}")
         return ""
     finally:
         if page:
@@ -138,92 +176,117 @@ async def scrape_job_description(context, url: str) -> str:
             except Exception:
                 pass
 
-async def main():
-    parser = argparse.ArgumentParser(description="Programmatic Tech Jobs Aggregator (techNL-crawler)")
-    parser.add_argument("--limit", type=int, default=None, help="Limit to the first N active companies.")
-    parser.add_argument("--company", type=str, default=None, help="Crawl only a specific company by name.")
-    parser.add_argument("--out", type=str, default=DEFAULT_OUT_FILE, help="Path to save the output JSON feed.")
-    args = parser.parse_known_args()[0]
 
-    if not os.path.exists(STATE_FILE):
-        print(f"Error: Companies state file not found at '{STATE_FILE}'. Please run Pipeline 1 & 2 first.")
-        return
+async def scrape_company(context, comp: dict) -> tuple[bool, list[dict]]:
+    """Return (scrape_succeeded, [job dicts]) for one company."""
+    name, url = comp["company_name"], comp["career_page_url"]
+    page = await context.new_page()
+    try:
+        await page.goto(url, wait_until="domcontentloaded", timeout=30000)
+        await asyncio.sleep(2.5)
+        links = await extract_links_from_page(page, url)
+        print(f"  {name}: {len(links)} job link(s)")
+        jobs = []
+        for jl in links[:MAX_JOBS_PER_COMPANY]:
+            desc = await scrape_job_description(context, jl["url"])
+            jobs.append({
+                "company": name,
+                "title": jl["title"],
+                "url": jl["url"],
+                "location": comp.get("location"),
+                "source_board": source_board(jl["url"]),
+                "description": desc[:DESCRIPTION_CAP],
+            })
+            await asyncio.sleep(0.4)
+        return True, jobs
+    except Exception as e:
+        print(f"  {name}: board scrape FAILED ({e})")
+        return False, []
+    finally:
+        try:
+            await page.close()
+        except Exception:
+            pass
+
+
+def merge_history(existing: list[dict], found: list[dict],
+                  scraped_ok_companies: set[str], today: str) -> list[dict]:
+    """Merge this run's findings into the rolling feed."""
+    by_url = {canon_url(j["url"]): j for j in existing}
+
+    # Upsert everything found this run.
+    for j in found:
+        key = canon_url(j["url"])
+        if key in by_url:
+            rec = by_url[key]
+            rec.update({
+                "title": j["title"], "location": j["location"],
+                "source_board": j["source_board"], "description": j["description"],
+                "last_seen": today, "status": "open",
+            })
+        else:
+            by_url[key] = {**j, "first_seen": today, "last_seen": today, "status": "open"}
+
+    found_keys = {canon_url(j["url"]) for j in found}
+    for key, rec in by_url.items():
+        if key in found_keys:
+            continue
+        # Not found this run.
+        company_ok = rec["company"] in scraped_ok_companies
+        try:
+            age = (dt.date.fromisoformat(today) - dt.date.fromisoformat(rec["last_seen"])).days
+        except Exception:
+            age = 0
+        if company_ok or age >= STALE_DAYS:
+            rec["status"] = "closed"
+
+    # Sort: open first, newest first_seen first.
+    return sorted(by_url.values(),
+                  key=lambda r: (r["status"] != "open", r.get("first_seen", "")),
+                  reverse=False)
+
+
+async def main():
+    ap = argparse.ArgumentParser(description="techNL career-board scraper")
+    ap.add_argument("--limit", type=int, default=None)
+    ap.add_argument("--company", type=str, default=None)
+    ap.add_argument("--out", type=str, default=DEFAULT_OUT_FILE)
+    args = ap.parse_known_args()[0]
 
     state = load_json(STATE_FILE, [])
-    active_companies = [c for c in state if c.get("status") == "active" and c.get("career_page_url")]
-
+    companies = [c for c in state if c.get("status") == "active" and c.get("career_page_url")]
     if args.company:
-        active_companies = [c for c in active_companies if c["company_name"].lower() == args.company.lower()]
-        print(f"Filtering aggregator run to company: '{args.company}'")
+        companies = [c for c in companies if c["company_name"].lower() == args.company.lower()]
     elif args.limit:
-        active_companies = active_companies[:args.limit]
-        print(f"Limiting aggregator run to first {args.limit} active companies.")
+        companies = companies[: args.limit]
 
-    print(f"Starting crawl for {len(active_companies)} active career boards...")
-    all_discovered_jobs = []
+    from playwright.async_api import async_playwright
 
+    today = dt.date.today().isoformat()
+    print(f"Scraping {len(companies)} active boards on {today}...")
+
+    found, scraped_ok = [], set()
     async with async_playwright() as p:
-        # Launch headless browser
         browser = await p.chromium.launch(headless=True)
-        context = await browser.new_context(
-            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
-        )
-        
-        main_page = await context.new_page()
-
-        for comp in active_companies:
-            name = comp["company_name"]
-            url = comp["career_page_url"]
-            print(f"\nScanning {name} board ({url})...")
-
-            try:
-                await main_page.goto(url, wait_until="domcontentloaded", timeout=30000)
-                await asyncio.sleep(2.5) # allow JS to execute listings
-                
-                # Step 1: Scan for direct job links
-                job_links = await extract_links_from_page(main_page, url)
-                print(f" -> Found {len(job_links)} potential direct job links.")
-                
-                if not job_links:
-                    print(" -> No job links identified on landing page. (Check if board is empty or using dynamic shadow-DOM).")
-                    continue
-                
-                # Restrict to first 15 jobs per company to keep execution fast and prevent aggressive blocks
-                job_links = job_links[:15]
-                
-                # Step 2: Crawl direct job postings to fetch descriptions
-                company_jobs = []
-                for jl in job_links:
-                    title = jl["title"]
-                    job_url = jl["url"]
-                    print(f"   * Scraped Listing: '{title}'")
-                    print(f"     Fetching description: {job_url}...")
-                    
-                    description = await scrape_job_description(context, job_url)
-                    if description:
-                        print(f"     Done (Length: {len(description)} chars)")
-                    else:
-                        print("     Warning: Empty description retrieved.")
-                        
-                    company_jobs.append({
-                        "company": name,
-                        "title": title,
-                        "url": job_url,
-                        "description": description
-                    })
-                    await asyncio.sleep(0.5) # soft delay between fetches
-                
-                all_discovered_jobs.extend(company_jobs)
-                
-            except Exception as e:
-                print(f" -> Failed to scan career board for {name}: {e}")
-                continue
-
+        context = await browser.new_context(user_agent=(
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
+            "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"))
+        for comp in companies:
+            ok, jobs = await scrape_company(context, comp)
+            if ok:
+                scraped_ok.add(comp["company_name"])
+            found.extend(jobs)
         await browser.close()
 
-    # Save final aggregated feed
-    save_json(args.out, all_discovered_jobs)
-    print(f"\nCrawl complete! Aggregated {len(all_discovered_jobs)} active tech jobs in Newfoundland & Labrador.")
+    existing = load_json(args.out, [])
+    merged = merge_history(existing, found, scraped_ok, today)
+
+    n_open = sum(1 for j in merged if j["status"] == "open")
+    n_new = sum(1 for j in merged if j.get("first_seen") == today and j["status"] == "open")
+    save_json(args.out, merged)
+    print(f"\nFound {len(found)} listings across {len(scraped_ok)}/{len(companies)} boards. "
+          f"Feed: {n_open} open ({n_new} new today), {len(merged)} total tracked.")
+
 
 if __name__ == "__main__":
     asyncio.run(main())
