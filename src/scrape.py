@@ -34,6 +34,7 @@ import asyncio
 import datetime as dt
 import json
 import os
+import re
 
 from navigate import navigate_company, canon_url
 
@@ -62,10 +63,12 @@ def save_json(path, data):
 
 
 def feed_key(j: dict) -> str:
-    # On-page roles share the careers-page URL and are distinguished by a #slug
-    # fragment (which canon_url would strip) — keep the full URL for those.
+    # On-page roles have no real per-posting URL — the (company, title) pair IS the
+    # identity. Keying by that collapses the same role reached via different careers
+    # URL variants (e.g. /opportunities/public vs /publicservice).
     if j.get("on_page"):
-        return j["url"].rstrip("/").lower()
+        title = re.sub(r"\s+", " ", j.get("title", "")).strip().lower()
+        return f"onpage::{j['company'].lower()}::{title}"
     return canon_url(j["url"])
 
 
