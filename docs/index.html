@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NL Tech Jobs — techNL-crawler</title>
+<style>
+  :root{
+    --bg:#0f1115; --card:#1a1d24; --line:#2a2e38; --fg:#e6e8ec; --muted:#9aa3b2;
+    --accent:#4f9dff; --new:#2ec27e; --badge:#2a2e38;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font:15px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+       background:var(--bg);color:var(--fg)}
+  header{padding:20px 16px 8px;max-width:980px;margin:0 auto}
+  h1{margin:0 0 4px;font-size:22px}
+  .sub{color:var(--muted);font-size:13px}
+  .stats{display:flex;gap:18px;flex-wrap:wrap;margin:14px 0 0}
+  .stat b{font-size:20px;display:block}
+  .stat span{color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.04em}
+  .controls{position:sticky;top:0;background:var(--bg);padding:12px 16px;
+            border-bottom:1px solid var(--line);z-index:5}
+  .controls .row{display:flex;gap:8px;flex-wrap:wrap;max-width:980px;margin:0 auto}
+  input,select,button{background:var(--card);color:var(--fg);border:1px solid var(--line);
+       border-radius:8px;padding:9px 11px;font-size:14px}
+  #q{flex:1 1 240px;min-width:160px}
+  .toggle{display:flex;align-items:center;gap:6px;color:var(--muted);font-size:13px;
+          padding:0 4px;user-select:none;cursor:pointer}
+  main{max-width:980px;margin:0 auto;padding:8px 16px 60px}
+  .job{background:var(--card);border:1px solid var(--line);border-radius:12px;
+       padding:14px 16px;margin:10px 0}
+  .job h3{margin:0 0 4px;font-size:16px}
+  .job h3 a{color:var(--fg);text-decoration:none}
+  .job h3 a:hover{color:var(--accent);text-decoration:underline}
+  .meta{display:flex;gap:8px;flex-wrap:wrap;align-items:center;color:var(--muted);font-size:13px}
+  .company{color:var(--fg);font-weight:600}
+  .badge{background:var(--badge);border-radius:999px;padding:2px 9px;font-size:11px;
+         text-transform:lowercase;letter-spacing:.02em}
+  .badge.new{background:rgba(46,194,126,.18);color:var(--new);font-weight:700;text-transform:uppercase}
+  .desc{color:var(--muted);font-size:13px;margin-top:8px;max-height:0;overflow:hidden;
+        transition:max-height .2s ease}
+  .job.open-desc .desc{max-height:600px}
+  .more{color:var(--accent);font-size:12px;cursor:pointer;margin-top:6px;display:inline-block}
+  .empty{text-align:center;color:var(--muted);padding:60px 20px}
+  footer{max-width:980px;margin:0 auto;padding:0 16px 40px;color:var(--muted);font-size:12px}
+  a{color:var(--accent)}
+</style>
+</head>
+<body>
+<header>
+  <h1>Newfoundland &amp; Labrador Tech Jobs</h1>
+  <div class="sub">Open listings aggregated from the
+    <a href="https://members.technl.ca/memberdirectory" target="_blank" rel="noopener">techNL member roster</a>.
+    Updated weekly · <span id="generated">…</span></div>
+  <div class="stats">
+    <div class="stat"><b id="s-open">–</b><span>open jobs</span></div>
+    <div class="stat"><b id="s-new">–</b><span>new this week</span></div>
+    <div class="stat"><b id="s-co">–</b><span>companies hiring</span></div>
+  </div>
+</header>
+
+<div class="controls">
+  <div class="row">
+    <input id="q" type="search" placeholder="Search title, company, or description…" autocomplete="off">
+    <select id="company"><option value="">All companies</option></select>
+    <select id="board"><option value="">All sources</option></select>
+    <label class="toggle"><input type="checkbox" id="newonly"> new only</label>
+  </div>
+</div>
+
+<main id="list"><div class="empty">Loading…</div></main>
+<footer>
+  Raw feed: <a href="open_jobs.json">open_jobs.json</a> ·
+  Built by <a href="https://github.com/danielterwilliger/techNL-crawler" target="_blank" rel="noopener">techNL-crawler</a>.
+  Listings link to each company's own posting; apply there.
+</footer>
+
+<script>
+const $ = s => document.querySelector(s);
+let JOBS = [];
+
+function daysSince(d){ const t=Date.parse(d); return isFinite(t) ? (Date.now()-t)/864e5 : 1e9; }
+function esc(s){ return (s||"").replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
+
+function render(){
+  const q = $("#q").value.trim().toLowerCase();
+  const co = $("#company").value, bd = $("#board").value, newonly = $("#newonly").checked;
+  const out = JOBS.filter(j => {
+    if (co && j.company !== co) return false;
+    if (bd && (j.source_board||"own-site") !== bd) return false;
+    if (newonly && !j._new) return false;
+    if (q){
+      const hay = (j.title+" "+j.company+" "+(j.location||"")+" "+(j.description||"")).toLowerCase();
+      if (!hay.includes(q)) return false;
+    }
+    return true;
+  });
+  const list = $("#list");
+  if (!out.length){ list.innerHTML = '<div class="empty">No matching listings.</div>'; return; }
+  list.innerHTML = out.map((j,i) => {
+    const loc = j.location ? `<span>${esc(j.location)}</span>` : "";
+    const nb = j._new ? '<span class="badge new">new</span>' : "";
+    const desc = j.description ? `<div class="desc" id="d${i}">${esc(j.description)}</div>
+        <span class="more" data-d="${i}">show description ▾</span>` : "";
+    return `<div class="job" id="j${i}">
+      <h3><a href="${esc(j.url)}" target="_blank" rel="noopener">${esc(j.title)}</a></h3>
+      <div class="meta"><span class="company">${esc(j.company)}</span>${loc}
+        <span class="badge">${esc(j.source_board||"own-site")}</span>${nb}</div>
+      ${desc}</div>`;
+  }).join("");
+}
+
+function fillSelect(sel, vals){
+  for (const v of vals){ const o=document.createElement("option"); o.value=o.textContent=v; sel.appendChild(o); }
+}
+
+async function load(){
+  try{
+    const [jobs, sum] = await Promise.all([
+      fetch("open_jobs.json").then(r=>r.json()),
+      fetch("summary.json").then(r=>r.json()).catch(()=>null),
+    ]);
+    JOBS = jobs.map(j => ({...j, _new: daysSince(j.first_seen) <= 7}));
+    JOBS.sort((a,b)=> (b._new-a._new) || ((b.first_seen||"")<(a.first_seen||"")?-1:1));
+    if (sum){
+      $("#s-open").textContent = sum.open_count;
+      $("#s-new").textContent = sum.new_count;
+      $("#s-co").textContent = sum.company_count;
+      $("#generated").textContent = "generated " + (sum.generated||"").replace("T"," ").replace("+00:00"," UTC");
+      fillSelect($("#company"), sum.companies||[]);
+      fillSelect($("#board"), sum.boards||[]);
+    }
+    render();
+  }catch(e){
+    $("#list").innerHTML = '<div class="empty">No feed yet — the first crawl hasn\'t run.</div>';
+  }
+}
+
+["input","change"].forEach(ev => ["#q","#company","#board","#newonly"].forEach(s => $(s).addEventListener(ev, render)));
+document.addEventListener("click", e => {
+  const m = e.target.closest(".more"); if(!m) return;
+  $("#j"+m.dataset.d).classList.toggle("open-desc");
+  m.textContent = m.textContent.startsWith("show") ? "hide description ▴" : "show description ▾";
+});
+load();
+</script>
+</body>
+</html>
