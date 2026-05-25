@@ -93,6 +93,11 @@ def host_of(url: str) -> str:
     return h[4:] if h.startswith("www.") else h
 
 
+def slug(text: str, n: int = 60) -> str:
+    s = re.sub(r"[^a-z0-9]+", "-", (text or "").lower()).strip("-")
+    return s[:n] or "role"
+
+
 def is_job_post(url: str) -> bool:
     u = url.lower()
     return any(re.search(p, u) for p in JOB_POST_PATTERNS)
@@ -233,15 +238,20 @@ def _router_prompt(company: str, rendered: dict) -> str:
         f"Links on the page:\n{listing}\n\n"
         "Respond with JSON:\n"
         "{\n"
-        '  "jobs": [{"title": "<role>", "url": "<posting url from links>"}],   // individual postings identifiable now\n'
+        '  "jobs": [{"title": "<role>", "url": "<posting url, or the PAGE URL if the role has no own link>"}],\n'
         '  "follow": ["<url>"],        // board/ATS/subpage URLs to open for the actual listings\n'
         '  "next_page": "<url|null>",  // pagination link to more results\n'
         '  "is_aggregator": false,     // true if this is a recruiter/job-board listing roles for OTHER companies\n'
         '  "external": null            // "linkedin"|"indeed" if jobs live only there\n'
         "}\n"
-        "Rules: put a role in \"jobs\" only if you can map it to a real posting URL "
-        "from the links. If the page is just a button to an ATS, leave \"jobs\" empty "
-        "and put that ATS URL in \"follow\"."
+        "Rules:\n"
+        "- If a role has its own posting link, use it.\n"
+        "- If roles are LISTED ON THIS PAGE as text/cards with no individual link "
+        "(apply via a general form/email), STILL return each role in \"jobs\" with "
+        "url set to the page URL above — do not invent links.\n"
+        "- If the page is only a button to an ATS, leave \"jobs\" empty and put that "
+        "ATS URL in \"follow\".\n"
+        "- Only real, currently-open roles — not nav items, perks, or 'no openings' text."
     )
 
 
@@ -365,12 +375,18 @@ async def navigate_company(context, company: dict, llm_enabled: bool = True) -> 
             continue
 
         agg = bool(route.get("is_aggregator")) or is_recruiter(name)
+        page_url = rendered["final_url"]
         for j in (route.get("jobs") or []):
             ju = j.get("url")
-            if ju:
-                candidates.append({"title": j.get("title", ""),
-                                   "url": urljoin(rendered["final_url"], ju),
-                                   "via_recruiter": agg})
+            if not ju:
+                continue
+            abs_u = urljoin(page_url, ju)
+            # role with no own posting link -> listed on this page (apply generally)
+            on_page = canon_url(abs_u) == canon_url(page_url)
+            candidates.append({"title": j.get("title", ""), "url": abs_u,
+                               "via_recruiter": agg, "on_page": on_page,
+                               "page_url": page_url,
+                               "page_text": rendered["text"] if on_page else None})
 
         if hop < MAX_HOPS:
             for f in (route.get("follow") or [])[:MAX_FOLLOW]:
@@ -388,15 +404,39 @@ async def navigate_company(context, company: dict, llm_enabled: bool = True) -> 
         if len(candidates) >= MAX_JOBS * 2:
             break
 
-    # dedup candidates by canonical URL
-    seen, deduped = set(), []
+    # Split: linked postings (validate by fetching) vs on-page roles (no own URL).
+    linked, roles, seen_link, seen_role = [], [], set(), set()
     for c in candidates:
-        k = canon_url(c["url"])
-        if k not in seen:
-            seen.add(k)
-            deduped.append(c)
+        if c.get("on_page"):
+            t = re.sub(r"\s+", " ", c["title"]).strip()
+            rk = (c["page_url"], t.lower())
+            if t and rk not in seen_role:
+                seen_role.add(rk)
+                roles.append(c)
+        else:
+            k = canon_url(c["url"])
+            if k not in seen_link:
+                seen_link.add(k)
+                linked.append(c)
 
-    jobs = await validate_and_describe(context, name, deduped, board_urls)
+    jobs = await validate_and_describe(context, name, linked, board_urls)
+
+    # On-page roles: nothing to fetch/validate (the careers page already rendered);
+    # anchor each to the page with a #slug so they're distinct, deduped by title.
+    for c in roles[:MAX_JOBS]:
+        title = re.sub(r"\s+", " ", c["title"]).strip()[:140]
+        rec = {
+            "company": name, "title": title,
+            "url": c["page_url"] + "#" + slug(title),
+            "location": company.get("location"),
+            "source_board": "on-page",
+            "description": (c.get("page_text") or "")[:DESCRIPTION_CAP],
+            "on_page": True,
+        }
+        if c.get("via_recruiter"):
+            rec["via"] = name
+        jobs.append(rec)
+
     print(f"  {name}: {len(jobs)} validated job(s)"
           + (f" + {pointer['kind']} pointer" if pointer else ""))
     return {"jobs": jobs, "pointer": pointer, "scraped_ok": scraped_ok}
