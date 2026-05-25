@@ -1,27 +1,33 @@
 #!/usr/bin/env bash
-# techNL-crawler producer run (the LLM-enriched crawl).
+# techNL-crawler producer run (the LLM-navigator crawl).
 #
-# Runs on the operator's box (the Plex box), where the LLM credential lives. Does
-# the full pipeline INCLUDING the LLM stages the keyless GitHub Actions run can't:
-# heuristic map -> LLM map fallback -> LLM-assisted scrape -> publish, then pushes
-# the enriched data back to the repo.
+# Runs on the operator's box (the Plex box), where the OAuth credential lives. Does
+# the full pipeline including the LLM reasoning the keyless GitHub Actions run can't:
+# discover -> heuristic map -> navigator scrape (--llm) -> publish, then pushes the
+# enriched data back to the repo.
 #
-# Invoked by the systemd timer (deploy/technl-producer.timer). GEMINI_API_KEY is
-# supplied via the systemd EnvironmentFile (.env.producer), never committed.
+# Auth: OAuth via the gemini CLI (~/.gemini/oauth_creds.json). The env below selects
+# the Code Assist path; src/llm.py's CLI engine drops any stray API key.
 set -euo pipefail
 
 cd "$(dirname "$0")/.."
 export PATH="$HOME/.local/bin:$PATH"
+export TECHNL_LLM_ENGINE=cli
+export GOOGLE_GENAI_USE_GCA=true
+export GEMINI_CLI_TRUST_WORKSPACE=true
 
 echo "=== producer run $(date -u +%FT%TZ) ==="
 git pull --rebase --autostash || echo "(git pull skipped/failed; continuing with local code)"
 uv sync --quiet
 
-uv run python src/discover.py              # refresh roster (keyless)
-uv run python src/map_careers.py           # heuristic mapping first (free)
-uv run python src/map_llm_fallback.py      # LLM only for the hard tail
-uv run python src/scrape.py --llm-extract  # LLM extraction for JS-only boards
-uv run python src/publish.py               # build feed + dashboard data
+uv run python src/discover.py        # refresh roster (keyless)
+uv run python src/map_careers.py     # heuristic careers-page mapping (keyless)
+uv run python src/scrape.py --llm    # staged navigator: render+reason+follow+validate
+uv run python src/publish.py         # build feed + dashboard data
+
+# NB: src/map_llm_fallback.py (LLM careers-page *mapping*) is intentionally not run
+# here — that task needs web search, which hangs the agentic CLI. Mapping stays
+# heuristic; the LLM's value is in navigation/extraction (scrape --llm).
 
 if [ -n "$(git status --porcelain data/ docs/)" ]; then
   git add data/ docs/

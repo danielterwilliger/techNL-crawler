@@ -10,5 +10,7 @@ WorkingDirectory=/home/daniel/techNL-crawler
 # GEMINI_API_KEY (and any other secrets) live here, mode 600, NOT in git.
 EnvironmentFile=/home/daniel/techNL-crawler/.env.producer
 ExecStart=/home/daniel/techNL-crawler/scripts/run_producer.sh
-TimeoutStartSec=3600
+# Full navigator run over ~170 companies (rendering + OAuth LLM reasoning on the
+# ambiguous ones) can take a while — give it up to 2h.
+TimeoutStartSec=7200
 Nice=10
