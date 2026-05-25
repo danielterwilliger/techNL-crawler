@@ -40,6 +40,7 @@ from navigate import navigate_company, canon_url
 STATE_FILE = "data/companies_state.json"
 DEFAULT_OUT_FILE = "data/open_jobs.json"
 POINTERS_FILE = "data/pointers.json"
+SCRAPE_STATE_FILE = "data/scrape_state.json"   # company -> last-scraped date (rolling)
 STALE_DAYS = 14
 
 
@@ -102,12 +103,21 @@ async def main():
     ap.add_argument("--llm", "--llm-extract", dest="llm", action="store_true",
                     help="enable LLM reasoning for custom/JS/aggregator pages "
                          "(needs a credential; producer box only). Off = keyless.")
+    ap.add_argument("--batch", type=int, default=None,
+                    help="process the N least-recently-scraped companies (rolling "
+                         "coverage that respects time + LLM daily quota). Tracks "
+                         "data/scrape_state.json.")
     args = ap.parse_known_args()[0]
 
     state = load_json(STATE_FILE, [])
     companies = [c for c in state if c.get("status") == "active" and c.get("career_page_url")]
+    scrape_state = load_json(SCRAPE_STATE_FILE, {})
     if args.company:
         companies = [c for c in companies if c["company_name"].lower() == args.company.lower()]
+    elif args.batch:
+        # rolling: oldest last-scraped first (never-scraped sort first via "")
+        companies.sort(key=lambda c: scrape_state.get(c["company_name"], ""))
+        companies = companies[: args.batch]
     elif args.limit:
         companies = companies[: args.limit]
 
@@ -124,6 +134,7 @@ async def main():
             "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
             "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"))
         for comp in companies:
+            scrape_state[comp["company_name"]] = today  # mark attempted (rolling rotation)
             try:
                 res = await navigate_company(context, comp, llm_enabled=args.llm)
             except Exception as e:
@@ -136,6 +147,10 @@ async def main():
                 pointers.append(res["pointer"])
         await browser.close()
 
+    save_json(SCRAPE_STATE_FILE, scrape_state)
+
+    # In a rolling batch, "closing" jobs whose company wasn't in this batch would be
+    # wrong — only reconcile against companies actually scraped this run.
     existing = load_json(args.out, [])
     merged = merge_history(existing, found, scraped_ok, today)
 

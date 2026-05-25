@@ -20,10 +20,13 @@ echo "=== producer run $(date -u +%FT%TZ) ==="
 git pull --rebase --autostash || echo "(git pull skipped/failed; continuing with local code)"
 uv sync --quiet
 
-uv run python src/discover.py        # refresh roster (keyless)
-uv run python src/map_careers.py     # heuristic careers-page mapping (keyless)
-uv run python src/scrape.py --llm    # staged navigator: render+reason+follow+validate
-uv run python src/publish.py         # build feed + dashboard data
+uv run python src/discover.py            # refresh roster (keyless)
+uv run python src/map_careers.py         # heuristic careers-page mapping (keyless)
+uv run python src/scrape.py --llm --batch 40  # navigator over the 40 least-recently
+                                         # -scraped companies (rolling: covers all
+                                         # ~171 over ~4-5 daily runs, within OAuth
+                                         # daily quota + a sane runtime)
+uv run python src/publish.py             # build feed + dashboard data
 
 # NB: src/map_llm_fallback.py (LLM careers-page *mapping*) is intentionally not run
 # here — that task needs web search, which hangs the agentic CLI. Mapping stays
