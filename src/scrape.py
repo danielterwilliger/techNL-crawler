@@ -62,6 +62,11 @@ JOB_URL_PATTERNS = [
     r"career[^/]+_id=\d+",
 ]
 
+# Anchor text too generic to be a real job title — fall back to the posting page.
+GENERIC_TITLES = {"read more", "read more >", "apply", "apply now", "view", "view job",
+                  "view details", "details", "learn more", "see more", "more", "→",
+                  "view position", "open", "see details", "view opening"}
+
 # host fragment -> board label, for tagging where a posting lives
 BOARD_TAGS = {
     "greenhouse.io": "greenhouse", "lever.co": "lever", "bamboohr.com": "bamboohr",
@@ -157,18 +162,24 @@ async def extract_links_from_page(page, base_url: str) -> list[dict]:
     return deduped
 
 
-async def scrape_job_description(context, url: str) -> str:
+async def scrape_job_description(context, url: str) -> dict:
+    """Return {'text':..., 'title':...} for a posting page ('' on failure)."""
     page = None
     try:
         page = await context.new_page()
         await page.route("**/*.{png,jpg,jpeg,gif,webp,css,svg,woff2}", lambda r: r.abort())
         await page.goto(url, wait_until="domcontentloaded", timeout=20000)
         await asyncio.sleep(1.0)
-        text = await page.evaluate("document.body.innerText")
-        return (text or "").strip()
+        data = await page.evaluate(
+            "() => ({ text: document.body.innerText || '',"
+            " h1: (document.querySelector('h1') ? document.querySelector('h1').innerText : ''),"
+            " title: document.title || '' })")
+        h1 = re.sub(r"\s+", " ", (data.get("h1") or "")).strip()
+        ttl = re.sub(r"\s+", " ", (data.get("title") or "")).strip()
+        return {"text": (data.get("text") or "").strip(), "title": h1 or ttl}
     except Exception as e:
         print(f"   -> failed to scrape description for {url}: {e}")
-        return ""
+        return {"text": "", "title": ""}
     finally:
         if page:
             try:
@@ -177,7 +188,50 @@ async def scrape_job_description(context, url: str) -> str:
                 pass
 
 
-async def scrape_company(context, comp: dict) -> tuple[bool, list[dict]]:
+def best_title(anchor_title: str, page_title: str) -> str:
+    """Use the posting page's title when the anchor text is too generic."""
+    a = (anchor_title or "").strip()
+    if a.lower() in GENERIC_TITLES or len(a) < 4 or not re.search(r"[A-Za-z]{3,}", a):
+        cand = (page_title or "").strip()
+        # page <title> is often "Job Title - Company"; keep the leading segment
+        cand = re.split(r"\s[|\-–—]\s", cand)[0].strip()
+        return cand or a
+    return a
+
+
+def llm_extract_jobs(anchors: list[dict], base_url: str) -> list[dict]:
+    """LLM fallback: pick the real job postings out of a page's links.
+
+    `anchors` = [{"t": link text, "h": href}, ...]. Returns [{"title","url"}].
+    Used only when the keyless extractor finds nothing (JS-only / odd boards).
+    Needs an operator credential (see src/llm.py) — runs on the producer box.
+    """
+    from llm import llm_call, LLMError
+    pruned = [a for a in anchors if a.get("t") and a.get("h")][:120]
+    listing = "\n".join(f"- {a['t'][:80]} | {a['h']}" for a in pruned)
+    prompt = (
+        f"These are links scraped from the careers page {base_url}.\n"
+        "Return ONLY a JSON array of the ones that are INDIVIDUAL job postings "
+        "(not nav, social, or category links), each as "
+        '{"title": "<role>", "url": "<href>"}. Empty array if none.\n\n'
+        f"LINKS:\n{listing}")
+    try:
+        out = llm_call(prompt)
+    except LLMError as e:
+        print(f"   -> LLM extraction unavailable: {e}")
+        return []
+    m = re.search(r"\[.*\]", out, re.DOTALL)
+    if not m:
+        return []
+    try:
+        jobs = json.loads(m.group(0))
+        return [{"title": j["title"], "url": urljoin(base_url, j["url"])}
+                for j in jobs if j.get("title") and j.get("url")]
+    except Exception:
+        return []
+
+
+async def scrape_company(context, comp: dict, llm_extract: bool = False) -> tuple[bool, list[dict]]:
     """Return (scrape_succeeded, [job dicts]) for one company."""
     name, url = comp["company_name"], comp["career_page_url"]
     page = await context.new_page()
@@ -185,17 +239,27 @@ async def scrape_company(context, comp: dict) -> tuple[bool, list[dict]]:
         await page.goto(url, wait_until="domcontentloaded", timeout=30000)
         await asyncio.sleep(2.5)
         links = await extract_links_from_page(page, url)
-        print(f"  {name}: {len(links)} job link(s)")
+
+        # LLM fallback for boards the keyless extractor can't parse.
+        if not links and llm_extract:
+            anchors = await page.evaluate(
+                "() => Array.from(document.querySelectorAll('a[href]'))"
+                ".map(a => ({t: (a.innerText||'').trim(), h: a.href}))")
+            links = llm_extract_jobs(anchors, url)
+            print(f"  {name}: {len(links)} job link(s) (via LLM)")
+        else:
+            print(f"  {name}: {len(links)} job link(s)")
+
         jobs = []
         for jl in links[:MAX_JOBS_PER_COMPANY]:
-            desc = await scrape_job_description(context, jl["url"])
+            d = await scrape_job_description(context, jl["url"])
             jobs.append({
                 "company": name,
-                "title": jl["title"],
+                "title": best_title(jl["title"], d["title"]),
                 "url": jl["url"],
                 "location": comp.get("location"),
                 "source_board": source_board(jl["url"]),
-                "description": desc[:DESCRIPTION_CAP],
+                "description": d["text"][:DESCRIPTION_CAP],
             })
             await asyncio.sleep(0.4)
         return True, jobs
@@ -251,6 +315,9 @@ async def main():
     ap.add_argument("--limit", type=int, default=None)
     ap.add_argument("--company", type=str, default=None)
     ap.add_argument("--out", type=str, default=DEFAULT_OUT_FILE)
+    ap.add_argument("--llm-extract", action="store_true",
+                    help="use the LLM to extract jobs from boards the keyless "
+                         "parser can't read (needs a credential; producer box only)")
     args = ap.parse_known_args()[0]
 
     state = load_json(STATE_FILE, [])
@@ -272,7 +339,7 @@ async def main():
             "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
             "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"))
         for comp in companies:
-            ok, jobs = await scrape_company(context, comp)
+            ok, jobs = await scrape_company(context, comp, llm_extract=args.llm_extract)
             if ok:
                 scraped_ok.add(comp["company_name"])
             found.extend(jobs)

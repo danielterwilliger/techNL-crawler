@@ -1,5 +1,6 @@
 # Credentials & secrets — NEVER commit an LLM token. Per-operator only.
 .env
+.env.*
 .active_token
 .gemini/
 **/.active_token

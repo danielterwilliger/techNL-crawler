@@ -1,0 +1,13 @@
+[Unit]
+Description=Weekly techNL-crawler producer run
+
+[Timer]
+# Sunday 23:00 Newfoundland time — ahead of the Monday-morning GitHub Actions
+# publish, so the enriched data is already pushed when Actions runs.
+OnCalendar=Sun *-*-* 23:00:00 America/St_Johns
+# Catch up a missed run after downtime (the box is restart-tolerant by design).
+Persistent=true
+RandomizedDelaySec=300
+
+[Install]
+WantedBy=timers.target

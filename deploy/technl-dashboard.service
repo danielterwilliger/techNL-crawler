@@ -1,0 +1,16 @@
+[Unit]
+Description=techNL-crawler dashboard (static server for docs/, Tailscale-reachable)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+# Serves docs/ on :8088. While the repo is private (no GitHub Pages), this lets
+# the operator view the dashboard over Tailscale at http://<tailscale-ip>:8088.
+# Lock down with: ufw allow in on tailscale0 to any port 8088
+User=daniel
+WorkingDirectory=/home/daniel/techNL-crawler/docs
+ExecStart=/usr/bin/python3 -m http.server 8088 --bind 0.0.0.0
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
