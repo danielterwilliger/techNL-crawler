@@ -12,6 +12,7 @@ set -euo pipefail
 
 cd "$(dirname "$0")/.."
 export PATH="$HOME/.local/bin:$PATH"
+export PYTHONUNBUFFERED=1          # stream per-company progress to the journal live
 export TECHNL_LLM_ENGINE=cli
 export GOOGLE_GENAI_USE_GCA=true
 export GEMINI_CLI_TRUST_WORKSPACE=true
