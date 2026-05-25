@@ -61,13 +61,21 @@ def save_json(path, data):
     print(f"Saved {path}")
 
 
+def feed_key(j: dict) -> str:
+    # On-page roles share the careers-page URL and are distinguished by a #slug
+    # fragment (which canon_url would strip) — keep the full URL for those.
+    if j.get("on_page"):
+        return j["url"].rstrip("/").lower()
+    return canon_url(j["url"])
+
+
 def merge_history(existing: list[dict], found: list[dict],
                   scraped_ok_companies: set[str], today: str) -> list[dict]:
     """Merge this run's findings into the rolling feed."""
-    by_url = {canon_url(j["url"]): j for j in existing}
+    by_url = {feed_key(j): j for j in existing}
 
     for j in found:
-        key = canon_url(j["url"])
+        key = feed_key(j)
         if key in by_url:
             rec = by_url[key]
             rec.update({k: j[k] for k in
@@ -79,7 +87,7 @@ def merge_history(existing: list[dict], found: list[dict],
         else:
             by_url[key] = {**j, "first_seen": today, "last_seen": today, "status": "open"}
 
-    found_keys = {canon_url(j["url"]) for j in found}
+    found_keys = {feed_key(j) for j in found}
     for key, rec in by_url.items():
         if key in found_keys:
             continue
