@@ -1,13 +1,21 @@
 {
-  "generated": "2026-05-25T05:52:06+00:00",
-  "open_count": 4,
-  "new_count": 4,
-  "company_count": 1,
-  "total_tracked": 4,
+  "generated": "2026-05-25T12:52:39+00:00",
+  "open_count": 65,
+  "new_count": 65,
+  "company_count": 6,
+  "total_tracked": 69,
   "companies": [
-    "AltoMaxx Technologies Inc"
+    "CoLab Software",
+    "Genoa Design International Ltd.",
+    "KBRS & Meridia Recruitment Solution",
+    "Kraken Robotics",
+    "Propel",
+    "Trudell Medical Limited"
   ],
   "boards": [
-    "own-site"
+    "ashby",
+    "greenhouse",
+    "own-site",
+    "rippling"
   ]
 }
