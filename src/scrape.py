@@ -5,28 +5,28 @@
 #   "playwright",
 # ]
 # ///
-"""Stage 3 — Career-board scraper with rolling history (keyless baseline).
+"""Stage 3 — Job scraper: drives the staged navigator + rolling history.
 
-Crawls each active company's careers page with Playwright, extracts direct job
-posting links (standard ATS URL patterns + own-site job paths), fetches each
-posting's text, and merges the results into a rolling feed at data/open_jobs.json.
+The per-company intelligence (render → route → follow/paginate → extract →
+validate) lives in src/navigate.py. This module orchestrates it across all active
+companies and merges results into the rolling feed (data/open_jobs.json).
 
 History semantics (so the feed reflects what's actually open over time):
   * first_seen / last_seen track a job's lifetime across runs.
-  * A job re-found this run -> last_seen bumped, status "open".
-  * A job NOT found this run, but whose company scraped successfully -> "closed"
-    (a successful board that no longer lists it is strong evidence it's gone).
-  * A job whose company FAILED to scrape this run is left untouched (transient).
-  * Backstop: any job not seen in STALE_DAYS is closed regardless.
+  * Re-found this run -> last_seen bumped, status "open".
+  * Not found, but the company scraped successfully -> "closed" (the board no
+    longer lists it). Company scrape FAILED -> left untouched (transient).
+  * Backstop: not seen in STALE_DAYS -> "closed".
 
-The LLM-powered deep-extraction path (for JS-only boards the baseline can't parse)
-is a seam wired in Phase 3/7; the keyless baseline here needs no credentials and
-runs in GitHub Actions.
+LLM use is gated by --llm: without it the navigator is heuristic-only (direct
+postings + follow known ATS hosts), which is what GitHub Actions runs keyless.
+With --llm (producer box, OAuth) it also reasons over custom/JS/aggregator pages.
 
 Usage:
-  python src/scrape.py                 # full run, merge into data/open_jobs.json
-  python src/scrape.py --limit 10       # first 10 active companies (dev)
-  python src/scrape.py --company "Verafin"
+  python src/scrape.py                 # heuristic-only (keyless / Actions)
+  python src/scrape.py --llm            # full navigator (producer box, OAuth)
+  python src/scrape.py --company "Verafin" --llm
+  python src/scrape.py --limit 10
 """
 
 import argparse
@@ -34,47 +34,13 @@ import asyncio
 import datetime as dt
 import json
 import os
-import re
-from urllib.parse import urljoin, urlparse
 
-from bs4 import BeautifulSoup
-# playwright is imported lazily inside the functions that drive the browser, so
-# the history/merge logic stays importable (and unit-testable) without a browser.
+from navigate import navigate_company, canon_url
 
 STATE_FILE = "data/companies_state.json"
 DEFAULT_OUT_FILE = "data/open_jobs.json"
-
-MAX_JOBS_PER_COMPANY = 15
-DESCRIPTION_CAP = 1500       # chars kept in the feed; full posting is one click away
-STALE_DAYS = 14              # close a job not seen for this long (≈2 weekly runs)
-
-JOB_URL_PATTERNS = [
-    r"boards\.greenhouse\.io/[^/]+/jobs/\d+",
-    r"jobs\.lever\.co/[^/]+/[0-9a-fA-F-]+",
-    r"[^/]+\.bamboohr\.com/careers/\d+",
-    r"ashbyhq\.com/[^/]+/[^/]+",
-    r"myworkdayjobs\.com/[^/]+/job/[^/]+",
-    r"/jobs?/\d+",
-    r"/careers?/\d+",
-    r"/apply?/\d+",
-    r"/job/[^/]+",
-    r"/vacancy/[^/]+",
-    r"career[^/]+_id=\d+",
-]
-
-# Anchor text too generic to be a real job title — fall back to the posting page.
-GENERIC_TITLES = {"read more", "read more >", "apply", "apply now", "view", "view job",
-                  "view details", "details", "learn more", "see more", "more", "→",
-                  "view position", "open", "see details", "view opening"}
-
-# host fragment -> board label, for tagging where a posting lives
-BOARD_TAGS = {
-    "greenhouse.io": "greenhouse", "lever.co": "lever", "bamboohr.com": "bamboohr",
-    "ashbyhq.com": "ashby", "myworkdayjobs.com": "workday", "taleo.net": "taleo",
-    "recruitee.com": "recruitee", "workable.com": "workable", "jobvite.com": "jobvite",
-    "smartrecruiters.com": "smartrecruiters", "icims.com": "icims", "breezy.hr": "breezy",
-    "bullhorn": "bullhorn", "linkedin.com": "linkedin", "indeed.com": "indeed",
-}
+POINTERS_FILE = "data/pointers.json"
+STALE_DAYS = 14
 
 
 def load_json(path, default):
@@ -94,200 +60,21 @@ def save_json(path, data):
     print(f"Saved {path}")
 
 
-def canon_url(url: str) -> str:
-    """Canonical form used as the stable per-job key (strip query/fragment/trailing slash)."""
-    p = urlparse(url)
-    return f"{p.scheme}://{p.netloc}{p.path}".rstrip("/").lower()
-
-
-def source_board(url: str) -> str:
-    lo = url.lower()
-    for frag, label in BOARD_TAGS.items():
-        if frag in lo:
-            return label
-    return "own-site"
-
-
-async def extract_links_from_page(page, base_url: str) -> list[dict]:
-    """Scan the page (and relevant iframes) for direct job-posting URLs."""
-    job_links = []
-
-    def is_job_link(url: str) -> bool:
-        url_lower = url.lower()
-        if any(k in url_lower for k in ["/careers", "/jobs", "/search", "/category", "/all-jobs", "?filter="]) \
-                and not any(re.search(pat, url) for pat in JOB_URL_PATTERNS[:5]):
-            if not re.search(r"\d{4,}", url):
-                return False
-        return any(re.search(pat, url) or re.search(pat, url_lower) for pat in JOB_URL_PATTERNS)
-
-    try:
-        soup = BeautifulSoup(await page.content(), "html.parser")
-        for link in soup.find_all("a", href=True):
-            href = link["href"].strip()
-            if not href or href.startswith(("javascript:", "#", "mailto:")):
-                continue
-            abs_url = urljoin(page.url, href)
-            title = re.sub(r"\s+", " ", link.text.strip().replace("\n", " "))
-            if is_job_link(abs_url) and len(title) > 2:
-                job_links.append({"title": title, "url": abs_url})
-    except Exception as e:
-        print(f"   -> main frame scan error: {e}")
-
-    try:
-        for frame in page.frames:
-            if frame == page.main_frame:
-                continue
-            if any(k in frame.url.lower() for k in ["job", "career", "embed", "apply", "board"]):
-                try:
-                    fsoup = BeautifulSoup(await frame.content(), "html.parser")
-                    for link in fsoup.find_all("a", href=True):
-                        href = link["href"].strip()
-                        if not href or href.startswith(("javascript:", "#")):
-                            continue
-                        abs_url = urljoin(frame.url, href)
-                        title = re.sub(r"\s+", " ", link.text.strip().replace("\n", " "))
-                        if is_job_link(abs_url) and len(title) > 2:
-                            job_links.append({"title": title, "url": abs_url})
-                except Exception:
-                    pass
-    except Exception:
-        pass
-
-    seen, deduped = set(), []
-    for jl in job_links:
-        key = canon_url(jl["url"])
-        if key not in seen:
-            seen.add(key)
-            deduped.append(jl)
-    return deduped
-
-
-async def scrape_job_description(context, url: str) -> dict:
-    """Return {'text':..., 'title':...} for a posting page ('' on failure)."""
-    page = None
-    try:
-        page = await context.new_page()
-        await page.route("**/*.{png,jpg,jpeg,gif,webp,css,svg,woff2}", lambda r: r.abort())
-        await page.goto(url, wait_until="domcontentloaded", timeout=20000)
-        await asyncio.sleep(1.0)
-        data = await page.evaluate(
-            "() => ({ text: document.body.innerText || '',"
-            " h1: (document.querySelector('h1') ? document.querySelector('h1').innerText : ''),"
-            " title: document.title || '' })")
-        h1 = re.sub(r"\s+", " ", (data.get("h1") or "")).strip()
-        ttl = re.sub(r"\s+", " ", (data.get("title") or "")).strip()
-        return {"text": (data.get("text") or "").strip(), "title": h1 or ttl}
-    except Exception as e:
-        print(f"   -> failed to scrape description for {url}: {e}")
-        return {"text": "", "title": ""}
-    finally:
-        if page:
-            try:
-                await page.close()
-            except Exception:
-                pass
-
-
-def best_title(anchor_title: str, page_title: str) -> str:
-    """Use the posting page's title when the anchor text is too generic."""
-    a = (anchor_title or "").strip()
-    if a.lower() in GENERIC_TITLES or len(a) < 4 or not re.search(r"[A-Za-z]{3,}", a):
-        cand = (page_title or "").strip()
-        # page <title> is often "Job Title - Company"; keep the leading segment
-        cand = re.split(r"\s[|\-–—]\s", cand)[0].strip()
-        return cand or a
-    return a
-
-
-def llm_extract_jobs(anchors: list[dict], base_url: str) -> list[dict]:
-    """LLM fallback: pick the real job postings out of a page's links.
-
-    `anchors` = [{"t": link text, "h": href}, ...]. Returns [{"title","url"}].
-    Used only when the keyless extractor finds nothing (JS-only / odd boards).
-    Needs an operator credential (see src/llm.py) — runs on the producer box.
-    """
-    from llm import llm_call, LLMError
-    pruned = [a for a in anchors if a.get("t") and a.get("h")][:120]
-    listing = "\n".join(f"- {a['t'][:80]} | {a['h']}" for a in pruned)
-    prompt = (
-        f"These are links scraped from the careers page {base_url}.\n"
-        "Return ONLY a JSON array of the ones that are INDIVIDUAL job postings "
-        "(not nav, social, or category links), each as "
-        '{"title": "<role>", "url": "<href>"}. Empty array if none.\n\n'
-        f"LINKS:\n{listing}")
-    try:
-        out = llm_call(prompt)
-    except LLMError as e:
-        print(f"   -> LLM extraction unavailable: {e}")
-        return []
-    m = re.search(r"\[.*\]", out, re.DOTALL)
-    if not m:
-        return []
-    try:
-        jobs = json.loads(m.group(0))
-        return [{"title": j["title"], "url": urljoin(base_url, j["url"])}
-                for j in jobs if j.get("title") and j.get("url")]
-    except Exception:
-        return []
-
-
-async def scrape_company(context, comp: dict, llm_extract: bool = False) -> tuple[bool, list[dict]]:
-    """Return (scrape_succeeded, [job dicts]) for one company."""
-    name, url = comp["company_name"], comp["career_page_url"]
-    page = await context.new_page()
-    try:
-        await page.goto(url, wait_until="domcontentloaded", timeout=30000)
-        await asyncio.sleep(2.5)
-        links = await extract_links_from_page(page, url)
-
-        # LLM fallback for boards the keyless extractor can't parse.
-        if not links and llm_extract:
-            anchors = await page.evaluate(
-                "() => Array.from(document.querySelectorAll('a[href]'))"
-                ".map(a => ({t: (a.innerText||'').trim(), h: a.href}))")
-            links = llm_extract_jobs(anchors, url)
-            print(f"  {name}: {len(links)} job link(s) (via LLM)")
-        else:
-            print(f"  {name}: {len(links)} job link(s)")
-
-        jobs = []
-        for jl in links[:MAX_JOBS_PER_COMPANY]:
-            d = await scrape_job_description(context, jl["url"])
-            jobs.append({
-                "company": name,
-                "title": best_title(jl["title"], d["title"]),
-                "url": jl["url"],
-                "location": comp.get("location"),
-                "source_board": source_board(jl["url"]),
-                "description": d["text"][:DESCRIPTION_CAP],
-            })
-            await asyncio.sleep(0.4)
-        return True, jobs
-    except Exception as e:
-        print(f"  {name}: board scrape FAILED ({e})")
-        return False, []
-    finally:
-        try:
-            await page.close()
-        except Exception:
-            pass
-
-
 def merge_history(existing: list[dict], found: list[dict],
                   scraped_ok_companies: set[str], today: str) -> list[dict]:
     """Merge this run's findings into the rolling feed."""
     by_url = {canon_url(j["url"]): j for j in existing}
 
-    # Upsert everything found this run.
     for j in found:
         key = canon_url(j["url"])
         if key in by_url:
             rec = by_url[key]
-            rec.update({
-                "title": j["title"], "location": j["location"],
-                "source_board": j["source_board"], "description": j["description"],
-                "last_seen": today, "status": "open",
-            })
+            rec.update({k: j[k] for k in
+                        ("title", "location", "source_board", "description") if k in j})
+            if j.get("via"):
+                rec["via"] = j["via"]
+            rec["last_seen"] = today
+            rec["status"] = "open"
         else:
             by_url[key] = {**j, "first_seen": today, "last_seen": today, "status": "open"}
 
@@ -295,7 +82,6 @@ def merge_history(existing: list[dict], found: list[dict],
     for key, rec in by_url.items():
         if key in found_keys:
             continue
-        # Not found this run.
         company_ok = rec["company"] in scraped_ok_companies
         try:
             age = (dt.date.fromisoformat(today) - dt.date.fromisoformat(rec["last_seen"])).days
@@ -304,20 +90,18 @@ def merge_history(existing: list[dict], found: list[dict],
         if company_ok or age >= STALE_DAYS:
             rec["status"] = "closed"
 
-    # Sort: open first, newest first_seen first.
     return sorted(by_url.values(),
-                  key=lambda r: (r["status"] != "open", r.get("first_seen", "")),
-                  reverse=False)
+                  key=lambda r: (r["status"] != "open", r.get("first_seen", "")))
 
 
 async def main():
-    ap = argparse.ArgumentParser(description="techNL career-board scraper")
+    ap = argparse.ArgumentParser(description="techNL job scraper (staged navigator)")
     ap.add_argument("--limit", type=int, default=None)
     ap.add_argument("--company", type=str, default=None)
     ap.add_argument("--out", type=str, default=DEFAULT_OUT_FILE)
-    ap.add_argument("--llm-extract", action="store_true",
-                    help="use the LLM to extract jobs from boards the keyless "
-                         "parser can't read (needs a credential; producer box only)")
+    ap.add_argument("--llm", "--llm-extract", dest="llm", action="store_true",
+                    help="enable LLM reasoning for custom/JS/aggregator pages "
+                         "(needs a credential; producer box only). Off = keyless.")
     args = ap.parse_known_args()[0]
 
     state = load_json(STATE_FILE, [])
@@ -330,19 +114,26 @@ async def main():
     from playwright.async_api import async_playwright
 
     today = dt.date.today().isoformat()
-    print(f"Scraping {len(companies)} active boards on {today}...")
+    mode = "full navigator (LLM)" if args.llm else "heuristic-only (keyless)"
+    print(f"Scraping {len(companies)} boards on {today} — {mode}...")
 
-    found, scraped_ok = [], set()
+    found, pointers, scraped_ok = [], [], set()
     async with async_playwright() as p:
         browser = await p.chromium.launch(headless=True)
         context = await browser.new_context(user_agent=(
             "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
             "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"))
         for comp in companies:
-            ok, jobs = await scrape_company(context, comp, llm_extract=args.llm_extract)
-            if ok:
+            try:
+                res = await navigate_company(context, comp, llm_enabled=args.llm)
+            except Exception as e:
+                print(f"  {comp['company_name']}: navigate error ({e})")
+                continue
+            if res["scraped_ok"]:
                 scraped_ok.add(comp["company_name"])
-            found.extend(jobs)
+            found.extend(res["jobs"])
+            if res["pointer"]:
+                pointers.append(res["pointer"])
         await browser.close()
 
     existing = load_json(args.out, [])
@@ -351,7 +142,10 @@ async def main():
     n_open = sum(1 for j in merged if j["status"] == "open")
     n_new = sum(1 for j in merged if j.get("first_seen") == today and j["status"] == "open")
     save_json(args.out, merged)
-    print(f"\nFound {len(found)} listings across {len(scraped_ok)}/{len(companies)} boards. "
+    if pointers:
+        save_json(POINTERS_FILE, pointers)
+    print(f"\nFound {len(found)} listings across {len(scraped_ok)}/{len(companies)} boards "
+          f"({len(pointers)} external pointers). "
           f"Feed: {n_open} open ({n_new} new today), {len(merged)} total tracked.")
 
 
