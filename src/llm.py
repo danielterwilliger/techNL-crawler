@@ -31,9 +31,13 @@ import time
 DEFAULT_LADDER = ["gemini-3.5-flash", "gemini-3.1-flash-lite",
                   "gemini-2.5-flash", "gemini-2.0-flash"]
 
-# Substrings that mean "rate limited / try a different model / transient".
+# Substrings that mean "try a different model / back off" — rate limits AND
+# model-availability errors (so an invalid/unavailable model rotates down the
+# ladder instead of hard-failing the whole call, important on the free tier).
 RATE_LIMIT_SIGNS = ["429", "quota", "rate limit", "resource_exhausted",
-                    "exhausted", "overloaded", "unavailable", "try again"]
+                    "exhausted", "overloaded", "unavailable", "try again",
+                    "not found", "does not exist", "not supported", "unsupported",
+                    "no such model", "invalid model", "404"]
 
 # Test hook: callable(prompt, model) -> str; raise RateLimited to simulate limits.
 MOCK_RESPONDER = None
@@ -61,7 +65,8 @@ def _cli_engine(prompt: str, model: str, system: str | None, timeout: int) -> st
     """Invoke the gemini CLI non-interactively. Raise RateLimited / LLMError."""
     gemini = os.environ.get("GEMINI_BIN", "gemini")
     full = f"{system}\n\n{prompt}" if system else prompt
-    cmd = [gemini, "-m", model, "-p", full, "--yolo"]
+    # --skip-trust: required for headless/automated use (no interactive folder-trust prompt).
+    cmd = [gemini, "--skip-trust", "-m", model, "-p", full, "--yolo"]
     try:
         proc = subprocess.run(cmd, capture_output=True, text=True, timeout=timeout)
     except FileNotFoundError as e:
