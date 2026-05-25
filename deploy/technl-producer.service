@@ -1,0 +1,14 @@
+[Unit]
+Description=techNL-crawler producer (LLM-enriched crawl + push)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=daniel
+WorkingDirectory=/home/daniel/techNL-crawler
+# GEMINI_API_KEY (and any other secrets) live here, mode 600, NOT in git.
+EnvironmentFile=/home/daniel/techNL-crawler/.env.producer
+ExecStart=/home/daniel/techNL-crawler/scripts/run_producer.sh
+TimeoutStartSec=3600
+Nice=10
