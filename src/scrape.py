@@ -17,8 +17,8 @@ from urllib.parse import urljoin
 from bs4 import BeautifulSoup
 from playwright.async_api import async_playwright
 
-STATE_FILE = "techNL_crawler/companies_state.json"
-DEFAULT_OUT_FILE = "open_jobs.json"
+STATE_FILE = "data/companies_state.json"
+DEFAULT_OUT_FILE = "data/open_jobs.json"
 
 # Common job/apply patterns in URLs to identify direct job posts
 JOB_URL_PATTERNS = [

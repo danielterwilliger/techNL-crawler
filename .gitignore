@@ -1,8 +1,8 @@
-# Credentials & Secrets
+# Credentials & secrets — NEVER commit an LLM token. Per-operator only.
 .env
 .active_token
-techNL_crawler/.env
-techNL_crawler/.active_token
+.gemini/
+**/.active_token
 
 # Python
 __pycache__/
@@ -10,16 +10,13 @@ __pycache__/
 *.pyo
 *.pyd
 .pytest_cache/
+.venv/
 
-# Local state & logs
-techNL_crawler/logs/
-techNL_crawler/dumped_text/
-techNL_crawler/temp_*.txt
-techNL_crawler/temp_out.txt
-techNL_crawler/temp_prompt.txt
-techNL_crawler/temp_test_out.txt
-
-# Generated data
-open_jobs.json
+# Scratch / local
+temp_*.txt
 *.bak
-techNL_crawler/*.bak
+dumped_text/
+logs/
+
+# Note: data/*.json (companies_state.json, open_jobs.json, known_jobs.json) IS
+# committed on purpose — the JSON feed is the public output of this project.

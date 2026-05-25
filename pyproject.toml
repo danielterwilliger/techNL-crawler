@@ -1,0 +1,20 @@
+[project]
+name = "technl-crawler"
+version = "0.1.0"
+description = "Rolling aggregator of tech job listings from Newfoundland & Labrador companies (techNL member roster)."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "httpx>=0.27",
+    "beautifulsoup4>=4.12",
+    "playwright>=1.45",
+]
+
+# Stages are run as standalone scripts, e.g.:
+#   uv run python src/discover.py
+#   uv run python src/scrape.py
+# Each script also carries PEP 723 inline metadata so `uv run src/<stage>.py`
+# works on its own without installing the project.
+
+[tool.uv]
+package = false
