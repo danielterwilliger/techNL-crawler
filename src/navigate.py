@@ -295,7 +295,13 @@ async def validate_and_describe(context, company: str, candidates: list[dict],
             await page.route("**/*.{png,jpg,jpeg,gif,webp,css,svg,woff2,mp4}",
                              lambda r: r.abort())
             resp = await page.goto(url, wait_until="domcontentloaded", timeout=20000)
-            await asyncio.sleep(0.8)
+            # JS-heavy posting pages (Dayforce/Workday) render the real title late —
+            # wait for the network to settle so we don't grab a placeholder ("Job Details").
+            try:
+                await page.wait_for_load_state("networkidle", timeout=6000)
+            except Exception:
+                pass
+            await asyncio.sleep(1.0)
             final = str(page.url)
             status = resp.status if resp else 0
             # reject: bad status, bounced to a root/landing/board page
