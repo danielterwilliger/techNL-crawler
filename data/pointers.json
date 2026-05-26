@@ -1,7 +1,37 @@
 [
   {
-    "company": "College of the North Atlantic",
+    "company": "CSIpix",
+    "kind": "indeed",
+    "url": "https://ca.indeed.com/q-csipix-jobs.html"
+  },
+  {
+    "company": "Design By Analysis Engineering Inc.",
+    "kind": "linkedin",
+    "url": "https://ca.linkedin.com/company/design-by-analysis-engineering-inc-"
+  },
+  {
+    "company": "EPRA-NL",
+    "kind": "linkedin",
+    "url": "https://recyclemyelectronics.ca/nl/careers"
+  },
+  {
+    "company": "GroundControl",
+    "kind": "linkedin",
+    "url": "https://uk.linkedin.com/showcase/ground-control-careers/"
+  },
+  {
+    "company": "HiTech Communications",
+    "kind": "indeed",
+    "url": "https://ca.indeed.com/cmp/Hi--tech-Communications"
+  },
+  {
+    "company": "Ignite Financial Solutions",
+    "kind": "linkedin",
+    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQEtY2p48q5C6QAAAZ5h_f2AsxnMuV_qw9VClGteGQXEUxsCw1oPjMpE1H8n_f1LdVABPU8FPxTNfQbSgIxr5BPd-_MQpjwHf_7FnW5kDtiVt1MLHtRacxkebxMLndpeYNN0b-g=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fignite-financial-solutions"
+  },
+  {
+    "company": "Killick Capital",
     "kind": "blocked",
-    "url": "https://ps-hr-web.cna.nl.ca/psc/HRPROD/EMPLOYEE/HRMS/c/HRS_HRAM_EMP_FL.HRS_CG_SEARCH_FL.GBL?Page=HRS_APP_SCHJOB_FL&Action=U&FOCUS=Employee&SiteId=1&cmd=login&languageCd=ENG&"
+    "url": "https://www.killickcapital.com/.well-known/sgcaptcha/?r=%2Fcareers%2Fjobs&y=ipr:142.167.146.246:1779760698.097"
   }
 ]
