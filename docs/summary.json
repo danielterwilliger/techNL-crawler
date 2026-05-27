@@ -1,9 +1,9 @@
 {
-  "generated": "2026-05-26T02:01:31+00:00",
-  "open_count": 244,
-  "new_count": 244,
-  "company_count": 35,
-  "total_tracked": 248,
+  "generated": "2026-05-27T01:51:29+00:00",
+  "open_count": 340,
+  "new_count": 340,
+  "company_count": 47,
+  "total_tracked": 345,
   "companies": [
     "Academy Canada",
     "AltoMaxx Technologies Inc",
@@ -37,9 +37,21 @@
     "KBRS & Meridia Recruitment Solution",
     "KPMG LLP",
     "Kraken Robotics",
+    "Marine Atlantic Inc",
+    "McInnes Cooper",
+    "Mitacs Inc.",
+    "Munn Insurance",
+    "NLWIC-College of the North Atlantic",
+    "Oceans Advance",
+    "Office of the Chief Information Officer (OCIO)",
+    "Omega 365 Canada Inc",
+    "Osler, Hoskin & Harcourt, LLP",
+    "PolyUnity Tech Inc.",
+    "Port of Argentia",
     "Propel",
     "Trudell Medical Limited",
-    "econext"
+    "econext",
+    "launch consulting"
   ],
   "boards": [
     "ashby",
