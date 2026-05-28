@@ -1,9 +1,9 @@
 {
-  "generated": "2026-05-27T01:51:29+00:00",
-  "open_count": 340,
-  "new_count": 340,
-  "company_count": 47,
-  "total_tracked": 345,
+  "generated": "2026-05-28T01:52:50+00:00",
+  "open_count": 413,
+  "new_count": 413,
+  "company_count": 59,
+  "total_tracked": 418,
   "companies": [
     "Academy Canada",
     "AltoMaxx Technologies Inc",
@@ -49,9 +49,21 @@
     "PolyUnity Tech Inc.",
     "Port of Argentia",
     "Propel",
+    "RBCx",
+    "SEM Ltd.",
+    "Solace Power Inc",
+    "Springboard Atlantic",
+    "St. John's Board of Trade",
+    "StrobelTEK",
+    "Strong Data Inc",
+    "TD Commercial Banking",
+    "Telelink",
+    "Tiller Engineering Inc.",
     "Trudell Medical Limited",
+    "Venor",
     "econext",
-    "launch consulting"
+    "launch consulting",
+    "trophi.ai"
   ],
   "boards": [
     "ashby",
@@ -59,6 +71,7 @@
     "greenhouse",
     "on-page",
     "own-site",
-    "rippling"
+    "rippling",
+    "workday"
   ]
 }
