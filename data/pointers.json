@@ -1,62 +1,37 @@
 [
   {
-    "company": "Repairify",
+    "company": "Vifta Technology Limited",
+    "kind": "linkedin",
+    "url": "https://ca.linkedin.com/company/vifta"
+  },
+  {
+    "company": "Voronoi Health Analytics Incorporated",
+    "kind": "linkedin",
+    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQEXhiPvCBS8mQAAAZ5xYAJQwbDQZbtJ9h6L4wC-4UKQv0bRL-FLAG7u0r4ysy_fX2hi-DN3XD0zlB0Da3-NBQNd7Yckve8PMQAKGXgg3lNT5blXlA76szbecLuy0zWgjSvemZ8=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fvoronoi-health-analytics-incorporated"
+  },
+  {
+    "company": "AbbaTek Group Inc",
+    "kind": "linkedin",
+    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQFWNhG2lYS_swAAAZ5xYdcQwE1lAcJI4rfnguAOs730FEHm6fRvRCloEBxGqn9J2y6xlsqQbWH-wU_EXvvgJw2uhmUjnUeGuOgbudAYs-qyXb-i5QUpS6lLO1vjY_BJlNaY3zY=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fabbatek"
+  },
+  {
+    "company": "Angler Solutions Inc.",
+    "kind": "linkedin",
+    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQEkYf-HBcAHmwAAAZ5xaMSAFfOJDpQk_BI1XWi3z_YXlCDCQkzfFaTOxdOAEBczX8XUTvvqcum2gkpT65yQjfmQ5Np0w34cwxchbJ9ohY2kg4Wm_nIfG8j3IQLvI3_RjzHjiXQ=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fangler-solutions-inc"
+  },
+  {
+    "company": "Atlantic XL",
+    "kind": "linkedin",
+    "url": "https://uk.linkedin.com/company/atlantic-xl-inc."
+  },
+  {
+    "company": "Avalon Holographics",
     "kind": "blocked",
-    "url": "https://uscareers-repairify.icims.com/jobs/intro?hashed=-625944553&mobile=false&width=1264&height=500&bga=true&needsRedirect=false&jan1offset=-210&jun1offset=-150"
+    "url": "https://avalonholographics.com/careers/"
   },
   {
-    "company": "Robot Interactive Marketing",
-    "kind": "linkedin",
-    "url": "https://ca.linkedin.com/company/robot-interactive-marketing"
-  },
-  {
-    "company": "Sentinel Institute",
-    "kind": "linkedin",
-    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQFz56mfhrdZDAAAAZ5sOyzwFeJU9A3jhSuOQgK7Fb5UYVDxiV4qxJEPZxAKCbrNFgfVn0muR8knqnNzzg3GLsv7vXn_K0HWwUPABc093Dmx1N0LjGeDrk3k6kD7PiWDg4lkqUg=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fsentinelinstitute"
-  },
-  {
-    "company": "SmartICE Monitoring & Information Inc.",
+    "company": "Big Land Networks Ltd",
     "kind": "blocked",
-    "url": "https://smartice.org/.well-known/sgcaptcha/?r=%2Fjobs%2F&y=ipr:142.167.146.246:1779932343.302"
-  },
-  {
-    "company": "Sparrow Acoustics Inc",
-    "kind": "indeed",
-    "url": "https://ca.indeed.com/q-sparrow-acoustics-jobs.html"
-  },
-  {
-    "company": "Starluv",
-    "kind": "linkedin",
-    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQFMK3KKLRlvlAAAAZ5sPblIJFwl0b0zpwL60mPgs24aZ3ZVcZ5JJnvjbhMmGw0am5GjtNHEaX68mlFWp-qRTPANGcVpja4fCj3Haii0efNu7OUogiBAkHov6eLk1dldmI77qr4=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fstarluv-inc"
-  },
-  {
-    "company": "Supreme Creations INC.",
-    "kind": "linkedin",
-    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQGay1dBHSMClwAAAZ5sP2MQCkd3wUV-WzgQVfOkCE5QTrRY6UTzXGKadkU6kuPhQZDgcpox7dE0ZlItAVR9YwAf67nh0Pd0OLbeGjjaumLPoSeeU_QL76OeJ5MUHYOKAkrmAqs=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fsupremecreations%2F"
-  },
-  {
-    "company": "The Idea Factory",
-    "kind": "blocked",
-    "url": "https://ifactory.ca/careers/"
-  },
-  {
-    "company": "Thinkwell Research + Strategy",
-    "kind": "linkedin",
-    "url": "https://www.linkedin.com/jobs/thinkwell-research-+-strategy-jobs-worldwide?f_C=2735878"
-  },
-  {
-    "company": "Training Works Inc.",
-    "kind": "linkedin",
-    "url": "https://www.training-works.ca/careers"
-  },
-  {
-    "company": "TxtSquad",
-    "kind": "linkedin",
-    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQFrBqvKJ_dG0wAAAZ5sRsHIx-FingDBZ01MHU7Phu591FhX3d_0IAuJhMxtJgQ9mAOg6aTwrmK4xmm8SUWfoD_mGLIGuxtNEH7wkxil4FrjdxJava0lbNm-Wxt0Rgl7__PMy8U=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Ftxtsquad"
-  },
-  {
-    "company": "Verisult",
-    "kind": "blocked",
-    "url": "https://verisult.com/.well-known/sgcaptcha/?r=%2Fservice%2Fcareer-center%2F&y=ipr:142.167.146.246:1779933167.000"
+    "url": "https://blnx.ca/jobs/apply/"
   }
 ]
