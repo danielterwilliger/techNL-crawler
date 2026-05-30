@@ -1,37 +1,42 @@
 [
   {
-    "company": "Vifta Technology Limited",
+    "company": "Cloud North Bookkeeping & Tax",
     "kind": "linkedin",
-    "url": "https://ca.linkedin.com/company/vifta"
+    "url": "https://ca.linkedin.com/company/cloud-north-bookkeeping-tax"
   },
   {
-    "company": "Voronoi Health Analytics Incorporated",
-    "kind": "linkedin",
-    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQEXhiPvCBS8mQAAAZ5xYAJQwbDQZbtJ9h6L4wC-4UKQv0bRL-FLAG7u0r4ysy_fX2hi-DN3XD0zlB0Da3-NBQNd7Yckve8PMQAKGXgg3lNT5blXlA76szbecLuy0zWgjSvemZ8=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fvoronoi-health-analytics-incorporated"
-  },
-  {
-    "company": "AbbaTek Group Inc",
-    "kind": "linkedin",
-    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQFWNhG2lYS_swAAAZ5xYdcQwE1lAcJI4rfnguAOs730FEHm6fRvRCloEBxGqn9J2y6xlsqQbWH-wU_EXvvgJw2uhmUjnUeGuOgbudAYs-qyXb-i5QUpS6lLO1vjY_BJlNaY3zY=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fabbatek"
-  },
-  {
-    "company": "Angler Solutions Inc.",
-    "kind": "linkedin",
-    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQEkYf-HBcAHmwAAAZ5xaMSAFfOJDpQk_BI1XWi3z_YXlCDCQkzfFaTOxdOAEBczX8XUTvvqcum2gkpT65yQjfmQ5Np0w34cwxchbJ9ohY2kg4Wm_nIfG8j3IQLvI3_RjzHjiXQ=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fangler-solutions-inc"
-  },
-  {
-    "company": "Atlantic XL",
-    "kind": "linkedin",
-    "url": "https://uk.linkedin.com/company/atlantic-xl-inc."
-  },
-  {
-    "company": "Avalon Holographics",
+    "company": "College of the North Atlantic",
     "kind": "blocked",
-    "url": "https://avalonholographics.com/careers/"
+    "url": "https://ps-hr-web.cna.nl.ca/psc/HRPROD/EMPLOYEE/HRMS/c/HRS_HRAM_EMP_FL.HRS_CG_SEARCH_FL.GBL?Page=HRS_APP_SCHJOB_FL&Action=U&FOCUS=Employee&SiteId=1&cmd=login&languageCd=ENG&"
   },
   {
-    "company": "Big Land Networks Ltd",
+    "company": "Copsys Technologies",
+    "kind": "linkedin",
+    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQFTwXJDMAGQGQAAAZ52iZ5YpCZDM9ncsdSyXNflmuTKLXNyHzGnOmC6UcCbg0LxwVI2-DFLRWnyvrOWhccb9neZU9pCB5wMs4TURuMCGLu7rRN_wUdz8y7ErGLyvP8iH6PQpi8=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fcopsys-technologies-inc"
+  },
+  {
+    "company": "CSIpix",
+    "kind": "indeed",
+    "url": "https://ca.indeed.com/q-csipix-jobs.html"
+  },
+  {
+    "company": "Deloitte Management Services LP",
     "kind": "blocked",
-    "url": "https://blnx.ca/jobs/apply/"
+    "url": "https://careers.deloitte.ca/search/?locale=en_US"
+  },
+  {
+    "company": "Design By Analysis Engineering Inc.",
+    "kind": "linkedin",
+    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQH5TdwlACEl0QAAAZ52juXo1SuMRVXAp8B0hKZIAnC2_WB0RBsnViOyUTxrhS9ZYOeeHEhf_Dp5EU-jx7jTWjEY0YifsrgP0qy8tCZ3DuiJFMCXZZtXMbDNxwzklHZJdTNiN2Y=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fdesign-by-analysis-engineering-inc-"
+  },
+  {
+    "company": "EPRA-NL",
+    "kind": "linkedin",
+    "url": "https://recyclemyelectronics.ca/nl/careers"
+  },
+  {
+    "company": "GroundControl",
+    "kind": "linkedin",
+    "url": "https://uk.linkedin.com/showcase/ground-control-careers/"
   }
 ]
