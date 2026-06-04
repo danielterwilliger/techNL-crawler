@@ -1,42 +1,57 @@
 [
   {
-    "company": "Vifta Technology Limited",
+    "company": "GroundControl",
     "kind": "linkedin",
-    "url": "https://ca.linkedin.com/company/vifta"
+    "url": "https://uk.linkedin.com/showcase/ground-control-careers/"
   },
   {
-    "company": "Voronoi Health Analytics Incorporated",
-    "kind": "linkedin",
-    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQFY0K8GrEHMDgAAAZ6LIXwArDRhs8u5LKGv3ayAWwuQ3qe-EIYmkoSxYOG_Gn8bnIDfqVxMqbzqjbuASy48XSo2a0qCoNJ9WhBM6qsJRFXsbvH6fo-o7b9jw1yoDfywMBSF8aA=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fvoronoi-health-analytics-incorporated"
-  },
-  {
-    "company": "Cloud North Bookkeeping & Tax",
-    "kind": "linkedin",
-    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQGTjMYgakduDwAAAZ6LI5cQHR-97GXRKDL79J6Q9gxQVe-zuT9GS5bTvOTMEwMsaXzMVgr9ZQE2wTPa7FfLFF72fS5w5JwVup0cH9_Lw_W4wxU8kXLhMPlws5fy6m38a-lRWUE=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fcloud-north-bookkeeping-tax"
-  },
-  {
-    "company": "College of the North Atlantic",
-    "kind": "blocked",
-    "url": "https://ps-hr-web.cna.nl.ca/psc/HRPROD/EMPLOYEE/HRMS/c/HRS_HRAM_EMP_FL.HRS_CG_SEARCH_FL.GBL?Page=HRS_APP_SCHJOB_FL&Action=U&FOCUS=Employee&SiteId=1&cmd=login&languageCd=ENG&"
-  },
-  {
-    "company": "Copsys Technologies",
-    "kind": "linkedin",
-    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQHfgTwGSyJzkQAAAZ6LJhewIHTfsunnebQ2j-OL1JBpHCMZjmPSDuAuj0SQ_ccyWQZIGz7sw6J_ts7cuKqoOhvCNSRQb6vppnURGPHmSGskI1duPUrPXZQ3PpwiuhmWKkUtyHY=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fcopsys-technologies-inc"
-  },
-  {
-    "company": "CSIpix",
+    "company": "HiTech Communications",
     "kind": "indeed",
-    "url": "https://ca.indeed.com/q-csipix-jobs.html"
+    "url": "https://ca.indeed.com/cmp/Hi--tech-Communications"
   },
   {
-    "company": "Design By Analysis Engineering Inc.",
+    "company": "Ignite Financial Solutions",
     "kind": "linkedin",
-    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQFn5j7KR_yD0QAAAZ6LLrLQN_sFuQznPrQAcFGgEj2VJoVG9frH0hJl3xHv5RjAH4dvojFrI_iQxDobZ8vJqFW8j2ktZ7DLn18OOiPaW6ClpGYlwOhlCV3X8zPOBy3jJBH3ITA=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fdesign-by-analysis-engineering-inc-"
+    "url": "https://www.linkedin.com/company/ignite-financial-solutions"
   },
   {
-    "company": "EPRA-NL",
+    "company": "Killick Capital",
+    "kind": "blocked",
+    "url": "https://www.killickcapital.com/careers/jobs"
+  },
+  {
+    "company": "Landmark Surveys & Engineering Limited",
+    "kind": "indeed",
+    "url": "https://www.indeed.com/q-Landmark-Surveying-&-Engineering-jobs.html"
+  },
+  {
+    "company": "Luxsonic Technologies, Inc.",
     "kind": "linkedin",
-    "url": "https://recyclemyelectronics.ca/nl/careers"
+    "url": "https://ca.linkedin.com/company/luxsonic-technologies-inc-"
+  },
+  {
+    "company": "MEDICURO Virtual Health Inc.",
+    "kind": "linkedin",
+    "url": "https://ca.linkedin.com/company/medicuro"
+  },
+  {
+    "company": "Milk Moovement",
+    "kind": "blocked",
+    "url": "https://jobs.lever.co/milk-moovement"
+  },
+  {
+    "company": "MoodBox Inc.",
+    "kind": "linkedin",
+    "url": "https://www.linkedin.com/company/moodbox-inc"
+  },
+  {
+    "company": "Mysa Smart Thermostat",
+    "kind": "blocked",
+    "url": "https://jobs.lever.co/getmysa"
+  },
+  {
+    "company": "NDITIVE",
+    "kind": "linkedin",
+    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQF6HE9fAMH7_AAAAZ6QXEpgr9fAeZosO0cC6et7yehHDObJu6CUEYq5UZWo6QzzK1x6QzmMGa0kRXgTkLunk3I1tvSXxGLoX36ceHyRs3qOZaRYQpgVukM0l7m6-D-AOKWK1T0=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fmoodbox-inc"
   }
 ]
