@@ -1,72 +1,47 @@
 [
   {
-    "company": "NLOWE - Newfoundland & Labrador Organization of Women Entrepreneurs",
-    "kind": "blocked",
-    "url": "https://www.nlowe.org/view-announcements/#!board/announcements/listing/nlowe-is-hiring"
-  },
-  {
-    "company": "NLWIC-College of the North Atlantic",
-    "kind": "blocked",
-    "url": "https://ps-hr-web.cna.nl.ca/psc/HRPROD/EMPLOYEE/HRMS/c/HRS_HRAM_EMP_FL.HRS_CG_SEARCH_FL.GBL?Page=HRS_APP_SCHJOB_FL&Action=U&FOCUS=Employee&SiteId=1&cmd=login&languageCd=ENG&"
-  },
-  {
-    "company": "NLWIC-College of the North Atlantic",
-    "kind": "blocked",
-    "url": "https://ps-hr-web.cna.nl.ca/psc/HRPROD/EMPLOYEE/HRMS/c/HRS_HRAM_EMP_FL.HRS_CG_SEARCH_FL.GBL?Page=HRS_APP_SCHJOB_FL&Action=U&FOCUS=Employee&SiteId=1&cmd=login"
-  },
-  {
-    "company": "Notification API",
+    "company": "NewSight Technologies Inc.",
     "kind": "linkedin",
-    "url": "https://www.pingram.io/careers"
+    "url": "https://www.linkedin.com/talent/post-a-job?trk=homepage-basic_talent-finder-cta"
   },
   {
-    "company": "PARDY'S Waste Management and Industrial Services Limited",
+    "company": "Supreme Creations INC.",
+    "kind": "linkedin",
+    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQGla7GyB1k4DgAAAZ6ak3qoWkLAKl0oAyWSzlRRnMtwRSZuHZRlpIqA87-vibpYv_Xs0Z3Cf9y9fHoNU4Sjd1DG3dWd2DykF6Va65JjcbkFB7GdofMOPc9LVdntnOGufZ0WzWo=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fsupremecreations%2F"
+  },
+  {
+    "company": "The Idea Factory",
     "kind": "blocked",
-    "url": "https://pardyswaste.com/careers/"
+    "url": "https://ifactory.ca/careers/"
   },
   {
-    "company": "PELMO International",
+    "company": "AbbaTek Group Inc",
     "kind": "linkedin",
-    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQE1aPonD4IAaAAAAZ6VcgSQwpg6YdL5-libJRQI1o9ZBx7g5xd2_Xom2VgedNPzPn6-rvUFzhSNWM8bvEj_IW356cqluPE4j_gR0fQKYYmqEOa3_LpN3Yxjaxmf6Us3b-ZzHGo=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fpelmo-international-inc%2F%3ForiginalSubdomain%3Dca"
+    "url": "https://ca.linkedin.com/company/abbatek"
   },
   {
-    "company": "Pinnacle Networks",
-    "kind": "indeed",
-    "url": "https://ca.indeed.com/Pinnacle-Networks-jobs?vjk=ec475ca7c5504064"
-  },
-  {
-    "company": "qualiTEAS Inc.",
+    "company": "Angler Solutions Inc.",
     "kind": "linkedin",
-    "url": "https://pk.linkedin.com/company/qualiteas-inc"
+    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQEXtTd07J7kmgAAAZ6anbuoKWhT331XDsNcedMFAK25WD59szj8zELh6t4VQ_M4K-f8gVGOZxTgdBbkt71R3CTv9O90A_hY5MFdacHIs-_YOwHiO5835sbQHSLHl7NQdPpMJso=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fangler-solutions-inc"
   },
   {
-    "company": "Repairify",
+    "company": "Atlantic XL",
+    "kind": "linkedin",
+    "url": "https://uk.linkedin.com/company/atlantic-xl-inc."
+  },
+  {
+    "company": "Avalon Holographics",
     "kind": "blocked",
-    "url": "https://uscareers-repairify.icims.com/jobs/intro?hashed=-625944553&mobile=false&width=1264&height=500&bga=true&needsRedirect=false&jan1offset=-210&jun1offset=-150"
+    "url": "https://avalonholographics.com/careers/"
   },
   {
-    "company": "Robot Interactive Marketing",
-    "kind": "linkedin",
-    "url": "https://ca.linkedin.com/company/robot-interactive-marketing"
-  },
-  {
-    "company": "Sentinel Institute",
-    "kind": "linkedin",
-    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQF6WVyy7GeuNAAAAZ6VdxGI5jCxVrmEDfRRzKamghM3g_ZGcKSX54xMpnEKdJeQK3TKRm2dAeE_j8DSLjKYBbm1YsJgKvixwYyNnSpMRd2YxVllq9KmMkaZNGS6gAj_EfxLa1Y=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fsentinelinstitute"
-  },
-  {
-    "company": "SmartICE Monitoring & Information Inc.",
+    "company": "Big Land Networks Ltd",
     "kind": "blocked",
-    "url": "https://smartice.org/jobs/"
+    "url": "https://blnx.ca/jobs/apply/"
   },
   {
-    "company": "Sparrow Acoustics Inc",
-    "kind": "indeed",
-    "url": "https://ca.indeed.com/q-sparrow-acoustics-jobs.html"
-  },
-  {
-    "company": "Starluv",
+    "company": "Thinkwell Research + Strategy",
     "kind": "linkedin",
-    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQGDn5cf9ltumwAAAZ6VeYKIGK-Hun6HOUWLQRdRTqGZ94Q6tfm42fHvBIkjirTvMw73Mt-Eet--o52FhMXCfqgx6yMA10xuu0DYqqSXXunCLR29K9RpvhEbTKns7lbQqky6T8o=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fstarluv-inc"
+    "url": "https://www.linkedin.com/jobs/thinkwell-research-+-strategy-jobs-worldwide?f_C=2735878"
   }
 ]
