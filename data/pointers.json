@@ -1,47 +1,42 @@
 [
   {
-    "company": "NewSight Technologies Inc.",
+    "company": "Training Works Inc.",
     "kind": "linkedin",
-    "url": "https://www.linkedin.com/talent/post-a-job?trk=homepage-basic_talent-finder-cta"
+    "url": "https://www.training-works.ca/careers"
   },
   {
-    "company": "Supreme Creations INC.",
+    "company": "TxtSquad",
     "kind": "linkedin",
-    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQGla7GyB1k4DgAAAZ6ak3qoWkLAKl0oAyWSzlRRnMtwRSZuHZRlpIqA87-vibpYv_Xs0Z3Cf9y9fHoNU4Sjd1DG3dWd2DykF6Va65JjcbkFB7GdofMOPc9LVdntnOGufZ0WzWo=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fsupremecreations%2F"
+    "url": "https://ca.linkedin.com/company/txtsquad"
   },
   {
-    "company": "The Idea Factory",
+    "company": "Verisult",
     "kind": "blocked",
-    "url": "https://ifactory.ca/careers/"
+    "url": "https://verisult.com/service/career-center/"
   },
   {
-    "company": "AbbaTek Group Inc",
+    "company": "Cloud North Bookkeeping & Tax",
     "kind": "linkedin",
-    "url": "https://ca.linkedin.com/company/abbatek"
+    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQGwWGcp0QhZrgAAAZ6fvc5IIhU7R2aXkJ3-ItlSTveJubI0lHaUBviST6rx0qdOoFDmWDH2lA3VVClFiOBVTjhhyjjUvvWq_Eeal-hEER6qvAMAqH3Q3MvjPiuJJTJrnWzHYDE=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fcloud-north-bookkeeping-tax"
   },
   {
-    "company": "Angler Solutions Inc.",
+    "company": "Copsys Technologies",
     "kind": "linkedin",
-    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQEXtTd07J7kmgAAAZ6anbuoKWhT331XDsNcedMFAK25WD59szj8zELh6t4VQ_M4K-f8gVGOZxTgdBbkt71R3CTv9O90A_hY5MFdacHIs-_YOwHiO5835sbQHSLHl7NQdPpMJso=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fangler-solutions-inc"
+    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQGaZp5Rxh8U9wAAAZ6fv9m4mzAL-wlBbDWoby_qW6LIetXWWslQh3sMebMJ4btS6BDlf2aN359BUS3lv5mwjrwlnUiUzT7_W2NiA_aVN4QBrCJjsZ09Dg42WhzeWqBzUTAXMBs=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fcopsys-technologies-inc"
   },
   {
-    "company": "Atlantic XL",
+    "company": "CSIpix",
+    "kind": "indeed",
+    "url": "https://ca.indeed.com/q-csipix-jobs.html"
+  },
+  {
+    "company": "Design By Analysis Engineering Inc.",
     "kind": "linkedin",
-    "url": "https://uk.linkedin.com/company/atlantic-xl-inc."
+    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQEEVykbq0nKXgAAAZ6fxpwwiF37wAyNDNDW8JspgbDm9TBjwfYJlVlfVLXaqkMTlPj3CswkGi2QFxILL6Abc7EiRb4ZUUkObxt6g1ckTAZhccNjnauB6ivWUojdQwzV53qNT54=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fdesign-by-analysis-engineering-inc-"
   },
   {
-    "company": "Avalon Holographics",
-    "kind": "blocked",
-    "url": "https://avalonholographics.com/careers/"
-  },
-  {
-    "company": "Big Land Networks Ltd",
-    "kind": "blocked",
-    "url": "https://blnx.ca/jobs/apply/"
-  },
-  {
-    "company": "Thinkwell Research + Strategy",
+    "company": "EPRA-NL",
     "kind": "linkedin",
-    "url": "https://www.linkedin.com/jobs/thinkwell-research-+-strategy-jobs-worldwide?f_C=2735878"
+    "url": "https://recyclemyelectronics.ca/nl/careers"
   }
 ]
