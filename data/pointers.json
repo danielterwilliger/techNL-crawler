@@ -1,47 +1,72 @@
 [
   {
-    "company": "Vifta Technology Limited",
-    "kind": "linkedin",
-    "url": "https://ca.linkedin.com/company/vifta"
-  },
-  {
-    "company": "Voronoi Health Analytics Incorporated",
-    "kind": "linkedin",
-    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQFCj7cI2-70LAAAAZ6k4e_4H3Al8XtPyZUb73x-Q91GoKf4hy3bNf3bbhxHAU0OTucg3l3YgYAYhSC0h8NYa9wisgf8gnf3bDyPt2_2Ht9V4KvTTNYXjuBQ2P-dWUve8_DIyeY=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fvoronoi-health-analytics-incorporated"
-  },
-  {
-    "company": "GroundControl",
-    "kind": "linkedin",
-    "url": "https://uk.linkedin.com/showcase/ground-control-careers/"
-  },
-  {
-    "company": "HiTech Communications",
-    "kind": "indeed",
-    "url": "https://ca.indeed.com/cmp/Hi--tech-Communications"
-  },
-  {
-    "company": "Ignite Financial Solutions",
-    "kind": "linkedin",
-    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQEebdqWP1amMQAAAZ6k7drAJBoQ4IrUW0bIziUFPnTt5u2JE-4CxEAo2NFvIowTloLyr9CoPqZsH_J2aS4z_XxdmwdAeZuGZP5fchF9VWi6rJcFv_gnB2IRkXfC_leW7jtrRlQ=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fignite-financial-solutions"
-  },
-  {
-    "company": "Killick Capital",
+    "company": "Milk Moovement",
     "kind": "blocked",
-    "url": "https://www.killickcapital.com/careers/jobs"
+    "url": "https://jobs.lever.co/milk-moovement"
   },
   {
-    "company": "Landmark Surveys & Engineering Limited",
+    "company": "MoodBox Inc.",
+    "kind": "linkedin",
+    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQFpJVQ6gG1eXAAAAZ6qBdMoHVZrNZzRuXUgcY0RwPDqIud1Ys-PuO9sDJooMLWCGMkJRnd9vwONSruiSlwMUkRCMSBgoHDFt3ZyL6hayGI-BuLJZXA05iX5MRpfNZVn0I_VQLk=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fmoodbox-inc"
+  },
+  {
+    "company": "Mysa Smart Thermostat",
+    "kind": "blocked",
+    "url": "https://jobs.lever.co/getmysa"
+  },
+  {
+    "company": "NDITIVE",
+    "kind": "linkedin",
+    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQF4Dm55raRz2wAAAZ6qBtT4xUPfgniJQrBf-iGtDJ2dgDeSd9-hP-4iEN3YUMYXQ24Pnk-p5_NIvmlIw0Y8adn56YHD_ffJG5dSFs0M27CPpJtbepuqpUort7JsWpDSQcMZk0M=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fmoodbox-inc"
+  },
+  {
+    "company": "NLOWE - Newfoundland & Labrador Organization of Women Entrepreneurs",
+    "kind": "blocked",
+    "url": "https://www.nlowe.org/view-announcements/#!board/announcements/listing/nlowe-is-hiring"
+  },
+  {
+    "company": "NLWIC-College of the North Atlantic",
+    "kind": "blocked",
+    "url": "https://ps-hr-web.cna.nl.ca/psc/HRPROD/EMPLOYEE/HRMS/c/HRS_HRAM_EMP_FL.HRS_CG_SEARCH_FL.GBL?Page=HRS_APP_SCHJOB_FL&Action=U&FOCUS=Employee&SiteId=1&cmd=login&languageCd=ENG&"
+  },
+  {
+    "company": "Notification API",
+    "kind": "linkedin",
+    "url": "https://ca.linkedin.com/company/pingram"
+  },
+  {
+    "company": "PARDY'S Waste Management and Industrial Services Limited",
+    "kind": "blocked",
+    "url": "https://pardyswaste.com/careers/"
+  },
+  {
+    "company": "PELMO International",
+    "kind": "linkedin",
+    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQG8dVsGt9UCLAAAAZ6qErQIXfLzI3mB8PbD5vn1_Kl0n1tjoxiETQD55qHdhysdcsSxECp6ASjGWGglJF8Dzy6DZWJ82GJoeA99sb_r8-EABw1ergmp-3zlB4uWuuQdlZhfi_E=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fpelmo-international-inc%2F%3ForiginalSubdomain%3Dca"
+  },
+  {
+    "company": "Pinnacle Networks",
     "kind": "indeed",
-    "url": "https://www.indeed.com/q-Landmark-Surveying-&-Engineering-jobs.html"
+    "url": "https://ca.indeed.com/Pinnacle-Networks-jobs?vjk=ec475ca7c5504064"
   },
   {
-    "company": "Luxsonic Technologies, Inc.",
+    "company": "qualiTEAS Inc.",
     "kind": "linkedin",
-    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQH7siBB-3jDZgAAAZ6k9kroD_FAHHg0sJPcSqDt8P6f7L-RC-R9ONrBT_qj7szeGecmmX1NsawIpGxSPlf_Nk5YqQxfIrNx0e66xf3bQsrmyFYrR_jX42_J1U9LWyFt9wvBI6o=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fluxsonic-technologies-inc-"
+    "url": "https://pk.linkedin.com/company/qualiteas-inc"
   },
   {
-    "company": "MEDICURO Virtual Health Inc.",
+    "company": "Repairify",
+    "kind": "blocked",
+    "url": "https://uscareers-repairify.icims.com/jobs/intro?hashed=-625944553&mobile=false&width=1264&height=500&bga=true&needsRedirect=false&jan1offset=-210&jun1offset=-150"
+  },
+  {
+    "company": "Robot Interactive Marketing",
     "kind": "linkedin",
-    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQEPJRVF76pPWQAAAZ6k-HmAUTBcPc3PY9rqwORJGlWwPNCImee5Ydjf5YFpn03gwWKKHXSd2Vassu0IwBc_RNx_OkXbcHt3YuTzS98UC4IQsWCt1K8tSUD5ttmQMxh1mtgE_zM=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fmedicuro"
+    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQFxdzkQzZfK0wAAAZ6qGC5geS_2R5--qlI0dqVjt7-JyrmNbArmdfbRDRudJ5NTFQM_VnVJJL6wQUhnh06LMB8oEh1PPQoSTWiHg_bKKSkGrtOMA11g8qcraarqGiBV_cN3zZY=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Frobot-interactive-marketing"
+  },
+  {
+    "company": "Sentinel Institute",
+    "kind": "linkedin",
+    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQFQ-Y0lkftgCAAAAZ6qGQFQiTEAccF_kMedCp4IC90tJgP4jYafu8RfHvxoZBJvuKTOja8DWMWZUC5gWc8w4hjiINrNDOiI-7HyQOviVj16lgUSxvXIrQVsYYlelavMLF82lSo=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fsentinelinstitute"
   }
 ]
