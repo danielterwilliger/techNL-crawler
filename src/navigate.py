@@ -82,7 +82,9 @@ GENERIC_TITLES = {"read more", "read more >", "apply", "apply now", "view", "vie
                   "view details", "details", "learn more", "see more", "more", "→",
                   "view position", "open", "see details", "view opening", "view role",
                   "job details", "job detail", "job posting", "job description",
-                  "position", "opportunity", "current opportunities"}
+                  "position", "opportunity", "current opportunities",
+                  "explore careers @ launch", "explore careers", "careers @ launch",
+                  "careers - launch consulting"}
 
 
 def canon_url(url: str) -> str:
@@ -130,7 +132,8 @@ JUNK_TITLES = {"careers", "career", "jobs", "job", "open positions", "openings",
                "job details", "job detail", "job posting", "job description",
                "job opportunity", "details", "position", "opportunity",
                "current opportunities", "search jobs", "all jobs", "apply",
-               "apply now", "view job", "view jobs"}
+               "apply now", "view job", "view jobs", "td careers", "explore careers @ launch",
+               "explore careers", "careers @ launch", "careers - launch consulting"}
 
 
 def best_title(anchor_title: str, page_title: str) -> str:
@@ -141,9 +144,13 @@ def best_title(anchor_title: str, page_title: str) -> str:
     return a
 
 
-def pick_title(anchor: str, h1: str, page_title: str) -> str:
-    """Prefer the posting page's <h1> (clean role name) over board link text
-    like 'Development VP of Software Engineering Canada, Remote'."""
+def pick_title(anchor: str, h1: str, page_title: str, json_ld_title: str | None = None) -> str:
+    """Prefer the structured JSON-LD title, then page's <h1>, then fallback to best_title."""
+    if json_ld_title:
+        j_title = re.sub(r"\s+", " ", json_ld_title).strip()
+        if j_title and 3 <= len(j_title) <= 120 and j_title.lower() not in JUNK_TITLES:
+            return j_title
+
     h = re.sub(r"\s+", " ", (h1 or "")).strip()
     if h and 3 <= len(h) <= 100 and h.lower() not in JUNK_TITLES:
         return h
@@ -313,19 +320,73 @@ async def validate_and_describe(context, company: str, candidates: list[dict],
             if canon_url(final) in board_urls:           # just the board, not a posting
                 continue
             data = await page.evaluate(
-                "() => ({h1:(document.querySelector('h1')?document.querySelector('h1').innerText:''),"
-                " title:document.title||'', text:document.body.innerText||''})")
+                "() => ({"
+                "h1:(document.querySelector('h1')?document.querySelector('h1').innerText:''),"
+                "title:document.title||'',"
+                "text:document.body.innerText||'',"
+                "jsonLd:Array.from(document.querySelectorAll('script[type=\"application/ld+json\"]')).map(s => s.innerText)"
+                "})")
             text = (data.get("text") or "").strip()
             if len(text) < 120:                          # empty/non-posting
                 continue
-            title = pick_title(c.get("title", ""), data.get("h1"), data.get("title"))
+
+            # Parse JSON-LD metadata for structured JobPosting data
+            json_ld_title = None
+            json_ld_desc = None
+            json_ld_loc = None
+            for raw_json in (data.get("jsonLd") or []):
+                try:
+                    obj = json.loads(raw_json)
+                    items = []
+                    if isinstance(obj, list):
+                        items = obj
+                    elif isinstance(obj, dict):
+                        if "@graph" in obj:
+                            items = obj["@graph"]
+                        else:
+                            items = [obj]
+                    
+                    for item in items:
+                        if isinstance(item, dict) and item.get("@type") == "JobPosting":
+                            title_val = item.get("title")
+                            if title_val and isinstance(title_val, str):
+                                json_ld_title = title_val.strip()
+                            
+                            desc_val = item.get("description")
+                            if desc_val and isinstance(desc_val, str):
+                                json_ld_desc = BeautifulSoup(desc_val, "html.parser").get_text()
+                            
+                            # Extract location if possible
+                            loc_val = item.get("jobLocation")
+                            if isinstance(loc_val, dict):
+                                addr = loc_val.get("address")
+                                if isinstance(addr, dict):
+                                    city = addr.get("addressLocality")
+                                    prov = addr.get("addressRegion")
+                                    country = addr.get("addressCountry")
+                                    parts = [p for p in (city, prov, country) if p and isinstance(p, str)]
+                                    if parts:
+                                        json_ld_loc = ", ".join(parts)
+                                elif isinstance(addr, str):
+                                    json_ld_loc = addr
+                            break
+                    if json_ld_title:
+                        break
+                except Exception:
+                    continue
+
+            title = pick_title(c.get("title", ""), data.get("h1"), data.get("title"), json_ld_title)
+            
+            # Fallback description to JSON-LD if page text is mostly boilerplate or empty
+            desc = json_ld_desc.strip() if json_ld_desc else text
+            
             rec = {
                 "company": company,
                 "title": re.sub(r"\s+", " ", title)[:140],
                 "url": url,
-                "location": c.get("location"),
+                "location": json_ld_loc or c.get("location"),
                 "source_board": source_board(url),
-                "description": text[:DESCRIPTION_CAP],
+                "description": desc[:DESCRIPTION_CAP],
             }
             if c.get("via_recruiter"):
                 rec["via"] = company  # listed via this member acting as recruiter
