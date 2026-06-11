@@ -1,52 +1,47 @@
 [
   {
-    "company": "SmartICE Monitoring & Information Inc.",
-    "kind": "blocked",
-    "url": "https://smartice.org/jobs/"
+    "company": "Supreme Creations INC.",
+    "kind": "linkedin",
+    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQG6ME6N3ish7gAAAZ60Udd4CsU-HQ7vUzfacNVtwpVHlAR7ZGu9tQL3b6QZl29gRdU5rZS_XumWeuRxwWEOYebUd7uoG0Dj61cNZLwn25FJwfWC42Yo25PDdnRo5clk96mURVw=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fsupremecreations%2F"
   },
   {
-    "company": "Sparrow Acoustics Inc",
+    "company": "The Idea Factory",
+    "kind": "blocked",
+    "url": "https://ifactory.ca/careers/"
+  },
+  {
+    "company": "Thinkwell Research + Strategy",
+    "kind": "linkedin",
+    "url": "https://www.linkedin.com/jobs/thinkwell-research-+-strategy-jobs-worldwide?f_C=2735878"
+  },
+  {
+    "company": "Cloud North Bookkeeping & Tax",
+    "kind": "linkedin",
+    "url": "https://ca.linkedin.com/company/cloud-north-bookkeeping-tax?original_referer="
+  },
+  {
+    "company": "College of the North Atlantic",
+    "kind": "blocked",
+    "url": "https://ps-hr-web.cna.nl.ca/psc/HRPROD/EMPLOYEE/HRMS/c/HRS_HRAM_EMP_FL.HRS_CG_SEARCH_FL.GBL?Page=HRS_APP_SCHJOB_FL&Action=U&FOCUS=Employee&SiteId=1&cmd=login&languageCd=ENG&"
+  },
+  {
+    "company": "Copsys Technologies",
+    "kind": "linkedin",
+    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQFRIeyNu6n5OAAAAZ60WiR44sG-eRs2KkCQURKyhnSpH5KdQ93q1Aw9fxTUVQhDZlXHdqjtHWIhzywCNX3JCPxSuHE4oFIcrI6rM19L2A3uzI0ORWF62sM9ASQJUAtgyYQwIAM=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fcopsys-technologies-inc"
+  },
+  {
+    "company": "CSIpix",
     "kind": "indeed",
-    "url": "https://ca.indeed.com/q-sparrow-acoustics-jobs.html"
+    "url": "https://ca.indeed.com/q-csipix-jobs.html"
   },
   {
-    "company": "Starluv",
+    "company": "Design By Analysis Engineering Inc.",
     "kind": "linkedin",
-    "url": "https://ca.linkedin.com/company/starluv-inc"
+    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQEj1-uTrRpdHQAAAZ60X4N4vG7Vg29xyMvuQqzMIX8zweLXBZMouZ_0M6VuuuJEmEqEN4MYSoF2pE9b4_xICcBiwAVfe5RUooRvUOjk-cTSHPNmsrxGty3Zm35meA3ljG5Jx44=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fdesign-by-analysis-engineering-inc-"
   },
   {
-    "company": "AbbaTek Group Inc",
+    "company": "EPRA-NL",
     "kind": "linkedin",
-    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQFGuAP65lhVnQAAAZ6vKuMgUqj-c7jdUSGTdRKNQ-Kxx0igQ5TQlkTGrGqqvxRoYoulkXCNDNNzn-naDldRYfI9L_B3SdyixPnPD_Od94ZFjmA9hHBkG54K0kn0tIbHMvsWvOs=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fabbatek"
-  },
-  {
-    "company": "Angler Solutions Inc.",
-    "kind": "linkedin",
-    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQE4uzYAJqJHgQAAAZ6vNsoAo_6JVLdq9YK_ot-BBRCDrhH-X3KfzPJmvKYfOo6c1zSbL1YY9tngakvThLaZUUpuj3pTv3--x4K1Ue4F6pJRTc7eTD58yblXG3MM0mLldcSQ91w=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fangler-solutions-inc"
-  },
-  {
-    "company": "Atlantic XL",
-    "kind": "linkedin",
-    "url": "https://uk.linkedin.com/company/atlantic-xl-inc."
-  },
-  {
-    "company": "Avalon Holographics",
-    "kind": "blocked",
-    "url": "https://avalonholographics.com/careers/"
-  },
-  {
-    "company": "Big Land Networks Ltd",
-    "kind": "blocked",
-    "url": "https://blnx.ca/jobs/apply/"
-  },
-  {
-    "company": "Canadian Global Maritime",
-    "kind": "blocked",
-    "url": "https://globalmaritime.com/careers/"
-  },
-  {
-    "company": "NewSight Technologies Inc.",
-    "kind": "linkedin",
-    "url": "https://www.linkedin.com/talent/post-a-job?trk=homepage-basic_talent-finder-cta"
+    "url": "https://recyclemyelectronics.ca/nl/careers"
   }
 ]
