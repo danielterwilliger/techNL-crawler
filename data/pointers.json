@@ -1,52 +1,47 @@
 [
   {
-    "company": "Repairify",
+    "company": "SmartICE Monitoring & Information Inc.",
     "kind": "blocked",
-    "url": "https://uscareers-repairify.icims.com/jobs/intro?hashed=-625944553&mobile=false&width=1264&height=500&bga=true&needsRedirect=false&jan1offset=-210&jun1offset=-150"
+    "url": "https://smartice.org/jobs/"
   },
   {
-    "company": "Robot Interactive Marketing",
+    "company": "Sparrow Acoustics Inc",
+    "kind": "indeed",
+    "url": "https://ca.indeed.com/q-sparrow-acoustics-jobs.html"
+  },
+  {
+    "company": "Starluv",
     "kind": "linkedin",
-    "url": "https://ca.linkedin.com/company/robot-interactive-marketing"
+    "url": "https://ca.linkedin.com/company/starluv-inc"
   },
   {
-    "company": "Sentinel Institute",
+    "company": "Cloud North Bookkeeping & Tax",
     "kind": "linkedin",
-    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQH0YuaeBHRAgAAAAZ7DyBAoXnSs1FLCyhN16mqjS4pK3gvxddm677go5toS0lsSfTQmP-idFL_Z4j6Y36RS8p6TTDTTLeJhOTSMd6x5uWQmBt1GLOv0EjdutELzPnDP3hiTvgk=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fsentinelresearchsociety"
+    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQFnAJ3fBNfMNgAAAZ7I7pM4JktXWnudRUsNHZ6pPSz5QqD2EuZXhevnLzNfsH_rfvrvGvcLvskPbuIkyvYnYQXVjG6bZSz3Dgg01fC4kb8_2MSKHJDDblDaDSvy1TEC5rgAeKM=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fcloud-north-bookkeeping-tax"
   },
   {
-    "company": "AbbaTek Group Inc",
-    "kind": "linkedin",
-    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQF9v9jEg6MunAAAAZ7DyKxo3InMuDHxQbrRstW2WY6DHcEGuHsc5gLeL4AMgETI4Fy5b-CPlDig3aaqjMmoiJv85WSHDcLV5rlvZqvqWV9m2Bee1os8udvvj_aldmaOzxry1I0=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fabbatek"
-  },
-  {
-    "company": "Angler Solutions Inc.",
-    "kind": "linkedin",
-    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQHotDrcx4QeIgAAAZ7D1HQIRDvlmxZY9OImtIXGmtcMwfWGUhbgz7MikybVQjH9C82ZfVlfXU8EKcCq8BtWn44LpgxnldN-JJNKs9Yn_pSL5dnwQoFwZDGcaYlgOvnfm3gE8P0=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fangler-solutions-inc"
-  },
-  {
-    "company": "Atlantic XL",
-    "kind": "linkedin",
-    "url": "https://uk.linkedin.com/company/atlantic-xl-inc."
-  },
-  {
-    "company": "Avalon Holographics",
+    "company": "College of the North Atlantic",
     "kind": "blocked",
-    "url": "https://avalonholographics.com/careers/"
+    "url": "https://ps-hr-web.cna.nl.ca/psc/HRPROD/EMPLOYEE/HRMS/c/HRS_HRAM_EMP_FL.HRS_CG_SEARCH_FL.GBL?Page=HRS_APP_SCHJOB_FL&Action=U&FOCUS=Employee&SiteId=1&cmd=login&languageCd=ENG&"
   },
   {
-    "company": "Big Land Networks Ltd",
-    "kind": "blocked",
-    "url": "https://blnx.ca/jobs/apply/"
-  },
-  {
-    "company": "Canadian Global Maritime",
-    "kind": "blocked",
-    "url": "https://globalmaritime.com/careers/"
-  },
-  {
-    "company": "NewSight Technologies Inc.",
+    "company": "Copsys Technologies",
     "kind": "linkedin",
-    "url": "https://www.linkedin.com/talent/post-a-job?trk=homepage-basic_talent-finder-cta"
+    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQGHhQQBB8JkWwAAAZ7I8M2IWwFoGfe2dxvvqBQEPQ5CMBfabLmd4MEMkXwW5yQe1e82_cZqOe4-abnn1wvtRHjWXUrWhOWwuA5w7YwPdVr585lQKHvYfBWf1gnUh051WzeRlZ0=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fcopsys-technologies-inc"
+  },
+  {
+    "company": "CSIpix",
+    "kind": "indeed",
+    "url": "https://ca.indeed.com/q-csipix-jobs.html"
+  },
+  {
+    "company": "Design By Analysis Engineering Inc.",
+    "kind": "linkedin",
+    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQFfdfLECmggEQAAAZ7I9Sq4oo2CNvamRToI5c6khGI7kUVHmVqRLxD4IeyDnRgkEC3D4b3apva8bAW2hZ0HahPSwWyb-h2NULRfY8wFbCg5I0WM2lJmGkAu_YqbC1DmqnNrzDk=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fdesign-by-analysis-engineering-inc-"
+  },
+  {
+    "company": "EPRA-NL",
+    "kind": "linkedin",
+    "url": "https://recyclemyelectronics.ca/nl/careers"
   }
 ]
