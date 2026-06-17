@@ -1,52 +1,67 @@
 [
   {
-    "company": "Supreme Creations INC.",
+    "company": "Training Works Inc.",
     "kind": "linkedin",
-    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQHEaCNNyA3IrQAAAZ7OECDAumXvB6vRPYKraWWTgFD_jtkbE6FfNqJVvz5UrnNqSdCDzpSSCcviAsR3Y4UF-Tn-mN0s4ipoBn5tIagBj_CgWeHWbsfylJp8uQYZNqCZzWG2Nv0=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fsupremecreations%2F"
+    "url": "https://www.training-works.ca/careers"
   },
   {
-    "company": "The Idea Factory",
+    "company": "TxtSquad",
+    "kind": "linkedin",
+    "url": "https://ca.linkedin.com/company/txtsquad"
+  },
+  {
+    "company": "Verisult",
     "kind": "blocked",
-    "url": "https://ifactory.ca/careers/"
+    "url": "https://verisult.com/service/career-center/"
   },
   {
-    "company": "Thinkwell Research + Strategy",
-    "kind": "linkedin",
-    "url": "https://www.linkedin.com/jobs/thinkwell-research-+-strategy-jobs-worldwide?f_C=2735878"
-  },
-  {
-    "company": "GroundControl",
-    "kind": "linkedin",
-    "url": "https://uk.linkedin.com/showcase/ground-control-careers/"
-  },
-  {
-    "company": "HiTech Communications",
-    "kind": "indeed",
-    "url": "https://ca.indeed.com/cmp/Hi--tech-Communications"
-  },
-  {
-    "company": "Ignite Financial Solutions",
-    "kind": "linkedin",
-    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQGh0RhAOOOYZAAAAZ7OHmkAIKpOOrMsEXjO9y7cHAK3NzcTb-nBQgfDkpmOK8IIjluLfznpWI32px07VI5msOZpqzK50PtjCI0TBLGz4wLQvt24d5_1swPLGwJswF0ul-ydcG4=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fignite-financial-solutions"
-  },
-  {
-    "company": "Killick Capital",
+    "company": "Milk Moovement",
     "kind": "blocked",
-    "url": "https://www.killickcapital.com/careers/jobs"
+    "url": "https://jobs.lever.co/milk-moovement"
   },
   {
-    "company": "Landmark Surveys & Engineering Limited",
+    "company": "MoodBox Inc.",
+    "kind": "linkedin",
+    "url": "https://www.linkedin.com/company/moodbox-inc"
+  },
+  {
+    "company": "NDITIVE",
+    "kind": "linkedin",
+    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQEw_hxdgFzWGwAAAZ7TQTbYuaVWO7esTvNKUz6jOy7RI5m80LgPj9JG1Ncg-GkLiBG8xdHBPVrEWuVNPcgBXNJalnZ87Ov7DgmweAfIjGKWfxR4hotr-A_ETDnh-j4FbVtD-Kw=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fmoodbox-inc"
+  },
+  {
+    "company": "NLOWE - Newfoundland & Labrador Organization of Women Entrepreneurs",
+    "kind": "blocked",
+    "url": "https://www.nlowe.org/view-announcements/#!board/announcements/listing/nlowe-is-hiring"
+  },
+  {
+    "company": "NLWIC-College of the North Atlantic",
+    "kind": "blocked",
+    "url": "https://ps-hr-web.cna.nl.ca/psc/HRPROD/EMPLOYEE/HRMS/c/HRS_HRAM_EMP_FL.HRS_CG_SEARCH_FL.GBL?Page=HRS_APP_SCHJOB_FL&Action=U&FOCUS=Employee&SiteId=1&cmd=login&languageCd=ENG&"
+  },
+  {
+    "company": "Notification API",
+    "kind": "linkedin",
+    "url": "https://www.pingram.io/careers"
+  },
+  {
+    "company": "PARDY'S Waste Management and Industrial Services Limited",
+    "kind": "blocked",
+    "url": "https://pardyswaste.com/careers/"
+  },
+  {
+    "company": "PELMO International",
+    "kind": "linkedin",
+    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQF4iN1UB6QuLwAAAZ7TTu6QiGNolX3ug4gNBz_o7S3AVH7DxbWmdPF6f3ac4Wj01vUkMVPHR8pGSbKN3fevTB27eNWiizdSbPrWOOTETE2zdeCbAd2Pooc8I7ovfGBrbk1q9YU=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fpelmo-international-inc%2F%3ForiginalSubdomain%3Dca"
+  },
+  {
+    "company": "Pinnacle Networks",
     "kind": "indeed",
-    "url": "https://www.indeed.com/q-Landmark-Surveying-&-Engineering-jobs.html"
+    "url": "https://ca.indeed.com/Pinnacle-Networks-jobs?vjk=623b488a117b9ca6"
   },
   {
-    "company": "Luxsonic Technologies, Inc.",
+    "company": "qualiTEAS Inc.",
     "kind": "linkedin",
-    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQEO2SdCyqDjPgAAAZ7OJXHIh8J92hVnoulk1W-fEgjfEEibqOYI6--WckLeB3T3JZLUl3_g23dDlTAO1V1qus2WC1vgSHtWR_TL6yFneGPzhiAFOyhYsVNwiGI0gWfrjzvB-kI=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fluxsonic-healthcare"
-  },
-  {
-    "company": "MEDICURO Virtual Health Inc.",
-    "kind": "linkedin",
-    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQHudK5NPeK37AAAAZ7OKAIIZu3QdryYVLMAUawm7xOBL8l8uzCBYWwzj5ItgS6fAp_fQ6uo1fmlV0i17cbvGRISd4khABM1x_RA-Xwzf6vS13tVsQdHRIZ3EZIebLxYxEYWf0o=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fmedicuro"
+    "url": "https://pk.linkedin.com/company/qualiteas-inc"
   }
 ]
