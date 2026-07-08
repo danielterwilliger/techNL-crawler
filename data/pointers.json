@@ -1,42 +1,52 @@
 [
   {
-    "company": "Vifta Technology Limited",
-    "kind": "linkedin",
-    "url": "https://ca.linkedin.com/company/vifta"
-  },
-  {
-    "company": "Voronoi Health Analytics Incorporated",
-    "kind": "linkedin",
-    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQGnlNuapd0pRgAAAZ7YYNgwYoV4BPcKGw7X4HVE9T4eGaEj6AVVSiR8d18tuXNa2MKtI-bWWNDiJTyI5EmhEemPT_PJWtAVoXTdLWIP_95Ov8TcjfCwIcE90JCB6oEgZPcrCDQ=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fvoronoi-health-analytics-incorporated"
-  },
-  {
-    "company": "AbbaTek Group Inc",
-    "kind": "linkedin",
-    "url": "https://ca.linkedin.com/company/abbatek"
-  },
-  {
-    "company": "Angler Solutions Inc.",
-    "kind": "linkedin",
-    "url": "https://ca.linkedin.com/company/angler-solutions-inc"
-  },
-  {
-    "company": "Atlantic XL",
-    "kind": "linkedin",
-    "url": "https://uk.linkedin.com/company/atlantic-xl-inc."
-  },
-  {
-    "company": "Avalon Holographics",
+    "company": "Repairify",
     "kind": "blocked",
-    "url": "https://avalonholographics.com/careers/"
+    "url": "https://uscareers-repairify.icims.com/jobs/intro?hashed=-625944553&mobile=false&width=1264&height=500&bga=true&needsRedirect=false&jan1offset=-210&jun1offset=-150"
   },
   {
-    "company": "Big Land Networks Ltd",
-    "kind": "blocked",
-    "url": "https://blnx.ca/jobs/apply/"
+    "company": "Robot Interactive Marketing",
+    "kind": "linkedin",
+    "url": "https://ca.linkedin.com/company/robot-interactive-marketing"
   },
   {
-    "company": "Canadian Global Maritime",
+    "company": "Sentinel Institute",
+    "kind": "linkedin",
+    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQET0Vh3MzLmywAAAZ9Ct7bgRGHw3yHqkGmhv8oTsgcbsSzB1vmhn5c_68hBP1SCCOZqjcXzfapDGMzC1R-_l1-O6DMkDiVpKHlWh5mgti4TV9GfMy4MSCheF8UAxpVL1DoWFvA=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fsentinelinstitute"
+  },
+  {
+    "company": "Cloud North Bookkeeping & Tax",
+    "kind": "linkedin",
+    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQH3_veFqC943wAAAZ9CuOOowYzqFsM_uBZk0SuBoj4ARk0ojkSYxMsb4XV9Qj1FCT1lZ_zfw1kVoWqbdRDpInLczSHc2C1oPwMqh2S2U4-4Kaeosjbgt66FtIidYsadIJvXhNs=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fcloud-north-bookkeeping-tax"
+  },
+  {
+    "company": "College of the North Atlantic",
     "kind": "blocked",
-    "url": "https://globalmaritime.com/careers/"
+    "url": "https://ps-hr-web.cna.nl.ca/psc/HRPROD/EMPLOYEE/HRMS/c/HRS_HRAM_EMP_FL.HRS_CG_SEARCH_FL.GBL?Page=HRS_APP_SCHJOB_FL&Action=U&FOCUS=Employee&SiteId=1&cmd=login&languageCd=ENG&"
+  },
+  {
+    "company": "Copsys Technologies",
+    "kind": "linkedin",
+    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQFGgKmPlW0eEAAAAZ9CuxoQllQNcO3KqUtItgueo0_6OCv6Y7iJnk5QNZY62aMnvt1p7HrSRIdiJO5XfhdsNFzWsby3UE1DyU-NH4-L5ujQzEHbhPTt6c1V1ZgryWofwSbSawI=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fcopsys-technologies-inc"
+  },
+  {
+    "company": "Crosbie Salamis Limited",
+    "kind": "indeed",
+    "url": "https://crosbiegroup.com/careers/"
+  },
+  {
+    "company": "CSIpix",
+    "kind": "indeed",
+    "url": "https://ca.indeed.com/q-csipix-jobs.html"
+  },
+  {
+    "company": "Design By Analysis Engineering Inc.",
+    "kind": "linkedin",
+    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQG_BH5bcvaMhQAAAZ9Cv6oIrruHTWbMAvhmaXM1-Uu3O9NXrNwu7A7Bkqg4RwohRvJne_JrcOPi352G3FHE31nHI10E-mP7hVgBOQ8-7vnWz8PxnYKU0drOPPDrYaNenwGc2so=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fdesign-by-analysis-engineering-inc-"
+  },
+  {
+    "company": "EPRA-NL",
+    "kind": "linkedin",
+    "url": "https://recyclemyelectronics.ca/nl/careers"
   }
 ]
