@@ -12,7 +12,8 @@ Target here: the Plex box (`ssh plex`, Ubuntu 24.04, x86_64).
 sudo apt-get update && sudo apt-get install -y git
 curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash - && sudo apt-get install -y nodejs
 curl -LsSf https://astral.sh/uv/install.sh | sh          # uv -> ~/.local/bin
-sudo npm install -g @google/gemini-cli                   # gemini CLI
+# nodejs + gemini CLI are only needed for the optional legacy OAuth "cli" engine;
+# the default "api" engine (below) needs neither.
 ```
 
 ## 2. Repo access via SSH deploy key (no interactive login)
@@ -30,10 +31,15 @@ git config core.sshCommand "ssh -i ~/.ssh/technl_deploy -o IdentitiesOnly=yes"
 Get a free Gemini API key at <https://aistudio.google.com/apikey>, then:
 ```bash
 umask 077
-printf 'GEMINI_API_KEY=%s\n' "<YOUR_KEY>" > ~/techNL-crawler/.env.producer
+cat > ~/techNL-crawler/.env.producer <<'EOF'
+GEMINI_API_KEY=<YOUR_KEY>
+TECHNL_LLM_ENGINE=api
+EOF
 ```
-`.env.producer` is gitignored. The gemini CLI reads `GEMINI_API_KEY` automatically;
-`src/llm.py`'s quota solver rotates models to survive free-tier limits.
+`.env.producer` is gitignored. The `api` engine in `src/llm.py` reads `GEMINI_API_KEY`
+directly (a REST call — no CLI); its quota solver rotates models to survive free-tier
+limits. (The legacy `cli` engine — `TECHNL_LLM_ENGINE=cli`, OAuth via the gemini CLI —
+is still supported but not the production path.)
 
 ## 4. Python + browser deps
 ```bash
@@ -42,17 +48,17 @@ cd ~/techNL-crawler
 ~/.local/bin/uv run playwright install --with-deps chromium
 ```
 
-## 5. systemd units (weekly producer + local dashboard)
+## 5. systemd units (daily producer + local dashboard)
 ```bash
 sudo cp deploy/technl-producer.service deploy/technl-producer.timer \
         deploy/technl-dashboard.service /etc/systemd/system/
 sudo systemctl daemon-reload
-sudo systemctl enable --now technl-producer.timer      # weekly crawl
+sudo systemctl enable --now technl-producer.timer      # daily crawl
 sudo systemctl enable --now technl-dashboard.service   # view dashboard locally
 sudo ufw allow in on tailscale0 to any port 8088       # dashboard over Tailscale only
 ```
-View the dashboard while the repo is private: `http://<tailscale-ip>:8088`
-(currently `http://100.93.218.6:8088`).
+The public dashboard is live on GitHub Pages (see the README). The Tailscale-only
+local view remains handy for previewing before a push: `http://<tailscale-ip>:8088`.
 
 ## Ops
 ```bash

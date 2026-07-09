@@ -20,11 +20,11 @@ LinkedIn/Indeed pointer, …), and publishes one validated feed.
 ```
 src/        discover.py  → find member companies
             map_careers.py → heuristic careers-page mapping (ATS detection)
-            map_llm_fallback.py → LLM mapping fallback (OAuth; minimize calls)
+            map_llm_fallback.py → LLM mapping fallback (not in the nightly run; see #36)
             navigate.py  → render → route → follow-to-ATS → paginate → extract → validate
             scrape.py    → thin driver over navigate.py (--llm gates LLM extraction)
             publish.py   → write open_jobs.json + dashboard feeds
-            llm.py       → LLM engine (gemini CLI via OAuth, or API key)
+            llm.py       → LLM engine (Gemini API key by default; gemini CLI/OAuth optional)
 data/       companies_state.json, known_jobs.json, techNL_companies.md, open_jobs.json
 docs/       index.html dashboard + published JSON feeds (served by GitHub Pages)
 deploy/     systemd units (technl-producer.{service,timer}, technl-dashboard.service)
@@ -38,7 +38,7 @@ scripts/    run_producer.sh (the nightly producer entrypoint)
 - **Public layer:** keyless crawl in GitHub Actions; publishes to Pages. Forks run
   with zero secrets.
 - **Private layer:** a nightly **systemd producer** on the maintainer's deploy box
-  does the LLM-enriched crawl (OAuth via the `gemini` CLI) and pushes the feed, which
+  does the LLM-enriched crawl (Gemini API key via the `api` engine) and pushes the feed, which
   triggers `pages.yml` to deploy. See `deploy/PROVISIONING.md`.
 
 ## If you have deploy-box access (maintainer's agent only)
@@ -53,7 +53,7 @@ producer is deliberately a good tenant (`Nice=10`, off-peak, bounded batch, port
 
 - **GitHub flow always:** file an issue → branch → PR. Don't commit straight to `main`.
 - Roadmap and state are in **Issues #1–#7** and the merged PR history.
-- LLM has a **daily OAuth quota** → heuristic-first; reserve LLM for extraction and
+- LLM has a **daily free-tier quota** → heuristic-first; reserve LLM for extraction and
   follow-to-ATS navigation, not bulk mapping.
 - Each published listing must link to a posting that **validates** (no dead/landing
   links).

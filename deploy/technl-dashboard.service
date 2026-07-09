@@ -4,8 +4,8 @@ After=network-online.target
 Wants=network-online.target
 
 [Service]
-# Serves docs/ on :8088. While the repo is private (no GitHub Pages), this lets
-# the operator view the dashboard over Tailscale at http://<tailscale-ip>:8088.
+# Serves docs/ on :8088. The public dashboard is on GitHub Pages; this local view
+# over Tailscale (http://<tailscale-ip>:8088) is handy for previewing before a push.
 # Lock down with: ufw allow in on tailscale0 to any port 8088
 User=daniel
 WorkingDirectory=/home/daniel/techNL-crawler/docs
