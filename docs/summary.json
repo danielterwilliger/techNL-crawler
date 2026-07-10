@@ -1,9 +1,9 @@
 {
-  "generated": "2026-07-09T01:52:33+00:00",
-  "open_count": 233,
-  "new_count": 165,
-  "company_count": 33,
-  "total_tracked": 1246,
+  "generated": "2026-07-10T00:24:07+00:00",
+  "open_count": 345,
+  "new_count": 227,
+  "company_count": 50,
+  "total_tracked": 1308,
   "companies": [
     "City of St. John's - Economic Development",
     "CoLab Software",
@@ -30,6 +30,18 @@
     "Marine Atlantic Inc",
     "McInnes Cooper",
     "Memorial University of Newfoundland",
+    "Mitacs Inc.",
+    "Munn Insurance",
+    "NLWIC-College of the North Atlantic",
+    "NavSim Technology Inc.",
+    "Notification API",
+    "Oceans Advance",
+    "Office of the Chief Information Officer (OCIO)",
+    "Omega 365 Canada Inc",
+    "Osler, Hoskin & Harcourt, LLP",
+    "PolyUnity Tech Inc.",
+    "Port of Argentia",
+    "Propel",
     "RBCx",
     "Retellio",
     "SEM Ltd.",
@@ -37,13 +49,20 @@
     "Solace Power Inc",
     "Springboard Atlantic",
     "Stewart McKelvey",
+    "StrobelTEK",
+    "Strong Data Inc",
+    "TD Commercial Banking",
+    "Telelink",
+    "The Newfoundland and Labrador Construction Association",
     "econext"
   ],
   "boards": [
+    "ashby",
     "bamboohr",
     "greenhouse",
     "on-page",
     "own-site",
-    "rippling"
+    "rippling",
+    "workday"
   ]
 }
