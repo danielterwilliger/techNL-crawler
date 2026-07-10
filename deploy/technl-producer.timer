@@ -4,7 +4,7 @@ Description=Daily techNL-crawler producer run (rolling batch)
 [Timer]
 # Daily at 23:00 Newfoundland time. Each run navigates the 40 least-recently-scraped
 # companies (scrape --batch 40), so the full ~171-company roster is covered every
-# ~4-5 days on a rolling basis — within OAuth's daily quota and a sane runtime.
+# ~4-5 days on a rolling basis — within the free-tier daily quota and a sane runtime.
 OnCalendar=*-*-* 23:00:00 America/St_Johns
 # Catch up a missed run after downtime (the box is restart-tolerant by design).
 Persistent=true

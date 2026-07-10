@@ -67,7 +67,7 @@ keyless stages produce.
 Two layers:
 
 - **Producer** (`deploy/`, a homelab box): runs the full LLM-powered navigator nightly
-  on rolling batches (OAuth via the `gemini` CLI), and pushes the enriched feed.
+  on rolling batches (a Gemini API key; see `src/llm.py`), and pushes the enriched feed.
 - **GitHub** (`.github/workflows/`): `pages.yml` rebuilds + deploys the dashboard
   whenever the feed changes; `crawl.yml` is a **dispatch-only keyless** crawl for forks
   / manual use (never auto-overwrites the producer's data).
