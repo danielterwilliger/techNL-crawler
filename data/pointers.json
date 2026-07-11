@@ -1,52 +1,42 @@
 [
   {
-    "company": "Training Works Inc.",
+    "company": "Vifta Technology Limited",
     "kind": "linkedin",
-    "url": "https://www.training-works.ca/careers"
+    "url": "https://ca.linkedin.com/company/vifta"
   },
   {
-    "company": "trophi.ai",
-    "kind": "blocked",
-    "url": "https://trophiai.bamboohr.com/careers"
-  },
-  {
-    "company": "TxtSquad",
+    "company": "Voronoi Health Analytics Incorporated",
     "kind": "linkedin",
-    "url": "https://ca.linkedin.com/company/txtsquad"
+    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQHuRu_uc-I4qwAAAZ9O0NJAUzmsebsPN8mr-_50zuR_mPFD286J2DUkLhx4Eg0Ie39QOEuC4Ygf9HjeXM_DMMJzh8K7wUsBcKA6w-Byb_umLNt0a0iQP5DNw3hCcGaoiy25lOY=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fvoronoi-health-analytics-incorporated"
   },
   {
-    "company": "Verisult",
-    "kind": "blocked",
-    "url": "https://verisult.com/service/career-center/"
-  },
-  {
-    "company": "AbbaTek Group Inc",
+    "company": "Cloud North Bookkeeping & Tax",
     "kind": "linkedin",
-    "url": "https://ca.linkedin.com/company/abbatek?original_referer="
+    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQH96XPk8I1-dQAAAZ9O033YpHfxrS2-RuZLQzxTo-s3EApXEcvOoZvGxr-ra5_IvEv8E3C1q_4h2V8c3EnwTRdK4wRAkZfjN6a5nR3DId1a0PU_M1YrFiTO4-WCs4mN7dZOsS8=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fcloud-north-bookkeeping-tax"
   },
   {
-    "company": "Angler Solutions Inc.",
+    "company": "College of the North Atlantic",
+    "kind": "blocked",
+    "url": "https://ps-hr-web.cna.nl.ca/psc/HRPROD/EMPLOYEE/HRMS/c/HRS_HRAM_EMP_FL.HRS_CG_SEARCH_FL.GBL?Page=HRS_APP_SCHJOB_FL&Action=U&FOCUS=Employee&SiteId=1&cmd=login&languageCd=ENG&"
+  },
+  {
+    "company": "Copsys Technologies",
     "kind": "linkedin",
-    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQHAcujaInFPaQAAAZ9Jr0DQvnDwlZ7LC-cRhmRHwDf4G2dwfdcRNoZ9aHPUQlHU9aSJbHpk65zQP2xeVLVrqL1XMGnl6W42xLGollKJ_AeHnlCntxFZsuI4vgTQ-cGLUZpVSdQ=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fangler-solutions-inc"
+    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQHMx-4ZGTY-cQAAAZ9O1Y0wOzFzHXXeY5DGpinhrgmg-7paQRmWi1B6FDi4Hx1v_kfaMVp4QLCHk_a7mDt27QvVpKTFijJfteo-DuVQqXmJr2KONxgC13jIQL06XFXyo8tdLY8=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fcopsys-technologies-inc"
   },
   {
-    "company": "Atlantic XL",
+    "company": "Crosbie Salamis Limited",
+    "kind": "indeed",
+    "url": "https://crosbiegroup.com/careers/"
+  },
+  {
+    "company": "CSIpix",
+    "kind": "indeed",
+    "url": "https://ca.indeed.com/q-csipix-jobs.html"
+  },
+  {
+    "company": "Design By Analysis Engineering Inc.",
     "kind": "linkedin",
-    "url": "https://uk.linkedin.com/company/atlantic-xl-inc.?original_referer="
-  },
-  {
-    "company": "Avalon Holographics",
-    "kind": "blocked",
-    "url": "https://avalonholographics.com/careers/"
-  },
-  {
-    "company": "Big Land Networks Ltd",
-    "kind": "blocked",
-    "url": "https://blnx.ca/jobs/apply/"
-  },
-  {
-    "company": "BreatheSuite",
-    "kind": "blocked",
-    "url": "https://breathesuite.bamboohr.com/careers"
+    "url": "https://ca.linkedin.com/company/design-by-analysis-engineering-inc-"
   }
 ]
