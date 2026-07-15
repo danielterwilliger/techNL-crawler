@@ -1,9 +1,9 @@
 {
-  "generated": "2026-07-14T01:46:47+00:00",
-  "open_count": 496,
-  "new_count": 314,
-  "company_count": 77,
-  "total_tracked": 1497,
+  "generated": "2026-07-15T01:54:06+00:00",
+  "open_count": 508,
+  "new_count": 317,
+  "company_count": 78,
+  "total_tracked": 1538,
   "companies": [
     "ACENET",
     "AXIS Career Services-Association for New Canadians",
@@ -81,7 +81,8 @@
     "Whitecap Scientific Corporation",
     "Women in Resource Development Corporation",
     "econext",
-    "launch consulting"
+    "launch consulting",
+    "trophi.ai"
   ],
   "boards": [
     "ashby",
