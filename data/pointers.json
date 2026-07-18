@@ -1,47 +1,62 @@
 [
   {
-    "company": "Robot Interactive Marketing",
-    "kind": "linkedin",
-    "url": "https://ca.linkedin.com/company/robot-interactive-marketing"
-  },
-  {
-    "company": "Sentinel Institute",
-    "kind": "linkedin",
-    "url": "https://www.linkedin.com/company/sentinelresearchsociety"
-  },
-  {
-    "company": "AbbaTek Group Inc",
-    "kind": "linkedin",
-    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQFhFOE82l9OUQAAAZ9tti8g4vquS7fkyZKB4lmPg3fHa1-Wi3lL2_IO06nG1bejrlsOQ9sV6fmTds4m32QdJnOBx6QTMsLohsSHaBnqb3P1pgfJWxHewnKcCFl2Ay6shSoTYvs=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fabbatek"
-  },
-  {
-    "company": "Angler Solutions Inc.",
-    "kind": "linkedin",
-    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQGIgti_G1Sr4QAAAZ9tuFnQoYMazdmw7CdIrtVbrM-suf6axsloIDfTHKOB4VVFPGrTUPATU964bmQZNxUuYAs8Jwy1JNxCaKiUBN35tkNpxz_HVy_7dPDD4upbEwFM6KR_DbE=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fangler-solutions-inc"
-  },
-  {
-    "company": "Atlantic XL",
-    "kind": "linkedin",
-    "url": "https://uk.linkedin.com/company/atlantic-xl-inc."
-  },
-  {
-    "company": "Avalon Holographics",
+    "company": "SmartICE Monitoring & Information Inc.",
     "kind": "blocked",
-    "url": "https://avalonholographics.com/careers/"
+    "url": "https://smartice.org/jobs/"
   },
   {
-    "company": "Big Land Networks Ltd",
-    "kind": "blocked",
-    "url": "https://blnx.ca/jobs/apply/"
+    "company": "Sparrow Acoustics Inc",
+    "kind": "indeed",
+    "url": "https://ca.indeed.com/q-sparrow-acoustics-jobs.html"
   },
   {
-    "company": "Milk Moovement",
-    "kind": "blocked",
-    "url": "https://jobs.lever.co/milk-moovement"
-  },
-  {
-    "company": "MoodBox Inc.",
+    "company": "Starluv",
     "kind": "linkedin",
-    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQFkVcCVRDxhvwAAAZ9tw7QQ9Eu1DM8FmCUuLy0y-AQExwELYGrRBFPpVqZ_pQTcqJAn7KCOyqdd0Lbz3XIibl5TYGAR13h3KJjff-wGH5bKZnYsaKieD1fMw6N4J_3KOW9gAQ8=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fmoodbox-inc"
+    "url": "https://ca.linkedin.com/company/starluv-inc"
+  },
+  {
+    "company": "NDITIVE",
+    "kind": "linkedin",
+    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQGt_yojigMWmAAAAZ9y38NYlaXmJCAAEo3nTwM52Gy6hS9GvQfbgdw9YAttQUmhStSjfmaP0JVyCO74QRXl2ZC8CZfahrS3HUh5_mSXoyWsfmO4AhQA-tRYECBovXFBEEJGoM8=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fmoodbox-inc"
+  },
+  {
+    "company": "NewSight Technologies Inc.",
+    "kind": "linkedin",
+    "url": "https://www.linkedin.com/talent/post-a-job?trk=homepage-basic_talent-finder-cta"
+  },
+  {
+    "company": "NLOWE - Newfoundland & Labrador Organization of Women Entrepreneurs",
+    "kind": "blocked",
+    "url": "https://www.nlowe.org/view-announcements/#!board/announcements/listing/nlowe-is-hiring"
+  },
+  {
+    "company": "NLWIC-College of the North Atlantic",
+    "kind": "blocked",
+    "url": "https://ps-hr-web.cna.nl.ca/psc/HRPROD/EMPLOYEE/HRMS/c/HRS_HRAM_EMP_FL.HRS_CG_SEARCH_FL.GBL?Page=HRS_APP_SCHJOB_FL&Action=U&FOCUS=Employee&SiteId=1&cmd=login&languageCd=ENG&"
+  },
+  {
+    "company": "NLWIC-College of the North Atlantic",
+    "kind": "blocked",
+    "url": "https://ps-hr-web.cna.nl.ca/psc/HRPROD/EMPLOYEE/HRMS/c/HRS_HRAM_EMP_FL.HRS_CG_SEARCH_FL.GBL?Page=HRS_APP_SCHJOB_FL&Action=U&FOCUS=Employee&SiteId=1&cmd=login"
+  },
+  {
+    "company": "PARDY'S Waste Management and Industrial Services Limited",
+    "kind": "blocked",
+    "url": "https://pardyswaste.com/careers/"
+  },
+  {
+    "company": "PELMO International",
+    "kind": "linkedin",
+    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQH1zFM59CQNXgAAAZ9y5GbYO0lF0yCV5eoaVzW1LMk9o2xpL4dJuw_INM9GeRmEvKgOMB2jEidhVSP9Uzr0TXCJyMwYAQ0k5YvosPCXfwBu2RC5x2GhpKF6aYuOTxWPVLwG_2E=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fpelmo-international-inc%2F%3ForiginalSubdomain%3Dca"
+  },
+  {
+    "company": "Pinnacle Networks",
+    "kind": "indeed",
+    "url": "https://ca.indeed.com/Pinnacle-Networks-jobs?vjk=ccb17e65fbf5fd64"
+  },
+  {
+    "company": "qualiTEAS Inc.",
+    "kind": "linkedin",
+    "url": "https://pk.linkedin.com/company/qualiteas-inc"
   }
 ]
