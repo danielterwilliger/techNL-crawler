@@ -1,47 +1,57 @@
 [
   {
-    "company": "The Idea Factory",
+    "company": "TxtSquad",
+    "kind": "linkedin",
+    "url": "https://ca.linkedin.com/company/txtsquad"
+  },
+  {
+    "company": "Verisult",
     "kind": "blocked",
-    "url": "https://ifactory.ca/careers/"
+    "url": "https://verisult.com/service/career-center/"
   },
   {
-    "company": "Thinkwell Research + Strategy",
+    "company": "Vifta Technology Limited",
     "kind": "linkedin",
-    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQF5C5sx9-2VzAAAAZ94BELILgo0kCqR2Ce4TJwiU2wRTT-_YPM6RhkBzUjiwr45NCAwcfCdoGDWPJGI2xQiQc-tmg6xLmy8fLf-q0XkRoUMmchIhtUoGdedao1fh-DWqEYj2Xs=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fjobs%2Fthinkwell-research-%2B-strategy-jobs-worldwide%3Ff_C%3D2735878"
+    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQGaj9RUjrY2igAAAZ99LdroeW7xey38059FyV0QhQqIqpu3S_b1N9TJtJIOMQe2NU2zhNUGy331wS9K8DV8E0_M-Kg3hd5DP_G7xK61A4bqWNevt9Jd896amywa21MxbXUATE8=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fvifta"
   },
   {
-    "company": "Cloud North Bookkeeping & Tax",
+    "company": "GroundControl",
     "kind": "linkedin",
-    "url": "https://ca.linkedin.com/company/cloud-north-bookkeeping-tax"
+    "url": "https://uk.linkedin.com/showcase/ground-control-careers/"
   },
   {
-    "company": "College of the North Atlantic",
+    "company": "HiTech Communications",
+    "kind": "indeed",
+    "url": "https://ca.indeed.com/cmp/Hi--tech-Communications"
+  },
+  {
+    "company": "Ignite Financial Solutions",
+    "kind": "linkedin",
+    "url": "https://www.linkedin.com/company/ignite-financial-solutions"
+  },
+  {
+    "company": "Killick Capital",
     "kind": "blocked",
-    "url": "https://ps-hr-web.cna.nl.ca/psc/HRPROD/EMPLOYEE/HRMS/c/HRS_HRAM_EMP_FL.HRS_CG_SEARCH_FL.GBL?Page=HRS_APP_SCHJOB_FL&Action=U&FOCUS=Employee&SiteId=1&cmd=login&languageCd=ENG&"
+    "url": "https://www.killickcapital.com/careers/jobs"
   },
   {
-    "company": "Copsys Technologies",
-    "kind": "linkedin",
-    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQFoX5YpsSzgoQAAAZ94B6X40Xe3st5YbKAMyGE3eihZvAocwue1bBUezDVKWbnq70KQFgboTwpBng7O_EXotSsy_0EJv9PrSuaoJYp8xYwCvnGbGMAFYLBkTY3bmb8tU5Owx_U=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fcopsys-technologies-inc"
-  },
-  {
-    "company": "Crosbie Salamis Limited",
+    "company": "Landmark Surveys & Engineering Limited",
     "kind": "indeed",
-    "url": "https://crosbiegroup.com/careers/"
+    "url": "https://www.indeed.com/q-Landmark-Surveying-&-Engineering-jobs.html"
   },
   {
-    "company": "CSIpix",
-    "kind": "indeed",
-    "url": "https://ca.indeed.com/q-csipix-jobs.html"
-  },
-  {
-    "company": "Design By Analysis Engineering Inc.",
+    "company": "Luxsonic Technologies, Inc.",
     "kind": "linkedin",
-    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQH8pumzl7muiQAAAZ94Cu3Qbn_c6KhT6vxElo-5f0MdCducMGbmO3_W-jwuiGWvxsOoZM6OM4j_M1spI7G9521gnhWvprGmCltCBc7SQLoRd6dE3LTJXxOixol9reBxRdqzQ6o=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fdesign-by-analysis-engineering-inc-"
+    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQEVUTCghLsCHAAAAZ99OMfIG4oR-SPxdbPrp4zZ-ucZufkdXYTIvrAS0Ccukcj_lNjt5jCiwpdV5e-Hyf7WvJDxcnGQlt0Zl7Z00Dr5UyJFy8R3a-Z66Mse-Ah8EKmbJ4i0M9E=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fluxsonic-technologies-inc-"
   },
   {
-    "company": "Training Works Inc.",
+    "company": "MEDICURO Virtual Health Inc.",
     "kind": "linkedin",
-    "url": "https://www.training-works.ca/careers"
+    "url": "https://ca.linkedin.com/company/medicuro"
+  },
+  {
+    "company": "Repairify",
+    "kind": "blocked",
+    "url": "https://uscareers-repairify.icims.com/jobs/intro?hashed=-625944553&mobile=false&width=1264&height=500&bga=true&needsRedirect=false&jan1offset=-210&jun1offset=-150"
   }
 ]
