@@ -1,9 +1,9 @@
 {
-  "generated": "2026-07-23T01:54:40+00:00",
-  "open_count": 469,
-  "new_count": 131,
-  "company_count": 74,
-  "total_tracked": 1724,
+  "generated": "2026-07-24T01:48:43+00:00",
+  "open_count": 454,
+  "new_count": 152,
+  "company_count": 73,
+  "total_tracked": 1759,
   "companies": [
     "ACENET",
     "AXIS Career Services-Association for New Canadians",
@@ -40,7 +40,6 @@
     "JAC Digital Marketing Agency",
     "KBRS & Meridia Recruitment Solution",
     "KPMG LLP",
-    "Kraken Robotics",
     "Marine Atlantic Inc",
     "McInnes Cooper",
     "Memorial University of Newfoundland",
@@ -86,7 +85,6 @@
     "greenhouse",
     "on-page",
     "own-site",
-    "rippling",
     "workday"
   ]
 }

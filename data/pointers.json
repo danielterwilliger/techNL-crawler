@@ -1,37 +1,57 @@
 [
   {
-    "company": "Starluv",
-    "kind": "linkedin",
-    "url": "https://ca.linkedin.com/company/starluv-inc"
-  },
-  {
-    "company": "Cloud North Bookkeeping & Tax",
-    "kind": "linkedin",
-    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQGGzbu4w6CiywAAAZ-Mn4OgNLlaAqZLjz7_U6eoaAovAyQyY1PrDOxMD5FwVFNNLNz6k1r0575W5msdGKxDIfAY_NUzpKU-SstprYhaWSh4Gt4KZs5iktpBUOzums4x3fHSdC0=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fcloud-north-bookkeeping-tax"
-  },
-  {
-    "company": "College of the North Atlantic",
+    "company": "The Idea Factory",
     "kind": "blocked",
-    "url": "https://ps-hr-web.cna.nl.ca/psc/HRPROD/EMPLOYEE/HRMS/c/HRS_HRAM_EMP_FL.HRS_CG_SEARCH_FL.GBL?Page=HRS_APP_SCHJOB_FL&Action=U&FOCUS=Employee&SiteId=1&cmd=login&languageCd=ENG&"
+    "url": "https://ifactory.ca/careers/"
   },
   {
-    "company": "Copsys Technologies",
+    "company": "Thinkwell Research + Strategy",
     "kind": "linkedin",
-    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQGlTh1HDPZR7QAAAZ-Mon1YApBco1llboMaIkl74m1I3EJ4JTWHTgnkmZ8SpKpxWd0OL_jvAm9ByXSencFzSGnzr1XRO12r85EgH0k2ZhC-DKim-ekfzn8B1GXs1NqBPGA7K78=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fcopsys-technologies-inc"
+    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQEoC9fOwRt1BwAAAZ-RwIxYQYov7wwSnoueRZJJRg0uK2UP_i-WatRO8_upqrVcAt4PFUqVS3Px4qjFFTvbpr-nSWCaVzeHWLAPnMPFUMqOpRi2u-8sReHjMhaFAlC2i8rA_M8=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fjobs%2Fthinkwell-research-%2B-strategy-jobs-worldwide%3Ff_C%3D2735878"
   },
   {
-    "company": "Crosbie Salamis Limited",
-    "kind": "indeed",
-    "url": "https://crosbiegroup.com/careers/"
-  },
-  {
-    "company": "CSIpix",
-    "kind": "indeed",
-    "url": "https://ca.indeed.com/q-csipix-jobs.html"
-  },
-  {
-    "company": "Design By Analysis Engineering Inc.",
+    "company": "Training Works Inc.",
     "kind": "linkedin",
-    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQG9B_eIKYOWMwAAAZ-MpYawMkUdiXkKJ01ZXzqPSzHPdmyPJa30mwXM1GVnfHhtxIXzpL6MFJ-RgdG8XzdI5ekYhFgNeqkpj6PkuSQLNljfj7dJ5_a246iT0EeYL4ZK4_wV4wE=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fdesign-by-analysis-engineering-inc-"
+    "url": "https://www.training-works.ca/careers"
+  },
+  {
+    "company": "GroundControl",
+    "kind": "linkedin",
+    "url": "https://uk.linkedin.com/showcase/ground-control-careers/"
+  },
+  {
+    "company": "HiTech Communications",
+    "kind": "indeed",
+    "url": "https://ca.indeed.com/cmp/Hi--tech-Communications"
+  },
+  {
+    "company": "Ignite Financial Solutions",
+    "kind": "linkedin",
+    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQE7bxDU5pUO1gAAAZ-RxiXwJPW8OXejcbKCbBlCP1nlmK1Qwwbwsl3tiRLU7Q5rkYseJEF9FnCFHORk9llA_eEb3unLkheeb7dMoDQrc1yRHxnIYQctODoFt0jLz6XWNjsb8-g=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fignite-financial-solutions"
+  },
+  {
+    "company": "Killick Capital",
+    "kind": "blocked",
+    "url": "https://www.killickcapital.com/careers/jobs"
+  },
+  {
+    "company": "Landmark Surveys & Engineering Limited",
+    "kind": "indeed",
+    "url": "https://www.indeed.com/q-Landmark-Surveying-&-Engineering-jobs.html"
+  },
+  {
+    "company": "Luxsonic Technologies, Inc.",
+    "kind": "linkedin",
+    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQHlCb0odEpSNAAAAZ-Ryzq4UQGh55gleu1022rgi3yT9Z5dRCSYiznB4rZ_3v7Kq8vEst9iT2P2LZZzslURDSwh-RiW7QoA5OUMYWzF_vvZcwl0adLmIWVU5YEF11TayisF2Og=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fluxsonic-healthcare"
+  },
+  {
+    "company": "MEDICURO Virtual Health Inc.",
+    "kind": "linkedin",
+    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQFuz3tp-xiHkwAAAZ-RzWGAJVMjKuaTzwzrg2YMlMYkQS5XMsGykAamoQ63ahdLbkInwfLV5KLThkvpJsUWM1Z4W5HRpLNr2b0DT9pep-0sppU5rmuI4FrTWrZt4Vrubvfniv4=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fmedicuro"
+  },
+  {
+    "company": "Repairify",
+    "kind": "blocked",
+    "url": "https://uscareers-repairify.icims.com/jobs/intro?hashed=-625944553&mobile=false&width=1264&height=500&bga=true&needsRedirect=false&jan1offset=-210&jun1offset=-150"
   }
 ]
