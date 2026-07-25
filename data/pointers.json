@@ -1,57 +1,52 @@
 [
   {
-    "company": "The Idea Factory",
+    "company": "TxtSquad",
+    "kind": "linkedin",
+    "url": "https://ca.linkedin.com/company/txtsquad"
+  },
+  {
+    "company": "Verisult",
     "kind": "blocked",
-    "url": "https://ifactory.ca/careers/"
+    "url": "https://verisult.com/service/career-center/"
   },
   {
-    "company": "Thinkwell Research + Strategy",
+    "company": "Vifta Technology Limited",
     "kind": "linkedin",
-    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQEoC9fOwRt1BwAAAZ-RwIxYQYov7wwSnoueRZJJRg0uK2UP_i-WatRO8_upqrVcAt4PFUqVS3Px4qjFFTvbpr-nSWCaVzeHWLAPnMPFUMqOpRi2u-8sReHjMhaFAlC2i8rA_M8=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fjobs%2Fthinkwell-research-%2B-strategy-jobs-worldwide%3Ff_C%3D2735878"
+    "url": "https://ca.linkedin.com/company/vifta"
   },
   {
-    "company": "Training Works Inc.",
+    "company": "AbbaTek Group Inc",
     "kind": "linkedin",
-    "url": "https://www.training-works.ca/careers"
+    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQGPdWpKry5JDgAAAZ-W7X_YKg5H_ikNASWkkHT4Hb6vfGBzxNUA3sE25gcponO8Ei7kCmM0GjaDuWYSX0_to-dQzzcNJY-TEEZM8llOIP5lqfTt8vF72J8FUazRu89VFWpYIKs=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fabbatek"
   },
   {
-    "company": "GroundControl",
+    "company": "Angler Solutions Inc.",
     "kind": "linkedin",
-    "url": "https://uk.linkedin.com/showcase/ground-control-careers/"
+    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQF-lKSXFcsV4gAAAZ-W765wIzRmi0FcdIWKFee26HIKlSifsw0p5wyJQlHSNLBKOk9I5DnMQoukEuch2Jk8vqVeAhQz9p37Qw5SkjoiafKXlwGmwaTk7shzA8kpM72-GAfZJ0o=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fangler-solutions-inc"
   },
   {
-    "company": "HiTech Communications",
-    "kind": "indeed",
-    "url": "https://ca.indeed.com/cmp/Hi--tech-Communications"
-  },
-  {
-    "company": "Ignite Financial Solutions",
+    "company": "Atlantic XL",
     "kind": "linkedin",
-    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQE7bxDU5pUO1gAAAZ-RxiXwJPW8OXejcbKCbBlCP1nlmK1Qwwbwsl3tiRLU7Q5rkYseJEF9FnCFHORk9llA_eEb3unLkheeb7dMoDQrc1yRHxnIYQctODoFt0jLz6XWNjsb8-g=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fignite-financial-solutions"
+    "url": "https://uk.linkedin.com/company/atlantic-xl-inc."
   },
   {
-    "company": "Killick Capital",
+    "company": "Avalon Holographics",
     "kind": "blocked",
-    "url": "https://www.killickcapital.com/careers/jobs"
+    "url": "https://avalonholographics.com/careers/"
   },
   {
-    "company": "Landmark Surveys & Engineering Limited",
-    "kind": "indeed",
-    "url": "https://www.indeed.com/q-Landmark-Surveying-&-Engineering-jobs.html"
-  },
-  {
-    "company": "Luxsonic Technologies, Inc.",
-    "kind": "linkedin",
-    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQHlCb0odEpSNAAAAZ-Ryzq4UQGh55gleu1022rgi3yT9Z5dRCSYiznB4rZ_3v7Kq8vEst9iT2P2LZZzslURDSwh-RiW7QoA5OUMYWzF_vvZcwl0adLmIWVU5YEF11TayisF2Og=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fluxsonic-healthcare"
-  },
-  {
-    "company": "MEDICURO Virtual Health Inc.",
-    "kind": "linkedin",
-    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQFuz3tp-xiHkwAAAZ-RzWGAJVMjKuaTzwzrg2YMlMYkQS5XMsGykAamoQ63ahdLbkInwfLV5KLThkvpJsUWM1Z4W5HRpLNr2b0DT9pep-0sppU5rmuI4FrTWrZt4Vrubvfniv4=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fmedicuro"
-  },
-  {
-    "company": "Repairify",
+    "company": "Big Land Networks Ltd",
     "kind": "blocked",
-    "url": "https://uscareers-repairify.icims.com/jobs/intro?hashed=-625944553&mobile=false&width=1264&height=500&bga=true&needsRedirect=false&jan1offset=-210&jun1offset=-150"
+    "url": "https://blnx.ca/jobs/apply/"
+  },
+  {
+    "company": "Milk Moovement",
+    "kind": "blocked",
+    "url": "https://jobs.lever.co/milk-moovement"
+  },
+  {
+    "company": "MoodBox Inc.",
+    "kind": "linkedin",
+    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQEVSD28SenbMgAAAZ-W-eO43EqRGy3bFwIb0HvuSnFoSZL0JcKZarhFh9PPPCKc87hZ_yezfqR2WBxfRRrSOEvkBzf7AJndUxILiZmtHqELKpc_RyLaYmL2q23qbRjPEQHAAPs=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fmoodbox-inc"
   }
 ]
