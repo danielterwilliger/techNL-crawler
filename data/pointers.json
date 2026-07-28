@@ -1,47 +1,52 @@
 [
   {
-    "company": "Sentinel Institute",
+    "company": "Keyin College",
     "kind": "linkedin",
-    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQEuptjnuN7YNQAAAZ-hM1oIJfLC1tQaNw7Ie2BIoIGrp3ZoY3Xihl4xMLvZQZ21ho1jh9cMvC0kEdGp0Q0uMBZAaIIrc0uUF9UXpZO7PnrR-gCKTAdPstm3UbqKFNBT77z-HlM=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fsentinelresearchsociety"
+    "url": "https://www.linkedin.com/login/?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fschool%2Fkeyin-college%2Fposts%2F%3FfeedView%3Dall"
   },
   {
-    "company": "SmartICE Monitoring & Information Inc.",
+    "company": "Starluv",
+    "kind": "linkedin",
+    "url": "https://ca.linkedin.com/company/starluv-inc"
+  },
+  {
+    "company": "GroundControl",
+    "kind": "linkedin",
+    "url": "https://uk.linkedin.com/showcase/ground-control-careers/"
+  },
+  {
+    "company": "HiTech Communications",
+    "kind": "indeed",
+    "url": "https://ca.indeed.com/cmp/Hi--tech-Communications"
+  },
+  {
+    "company": "Ignite Financial Solutions",
+    "kind": "linkedin",
+    "url": "https://www.linkedin.com/company/ignite-financial-solutions"
+  },
+  {
+    "company": "Killick Capital",
     "kind": "blocked",
-    "url": "https://smartice.org/jobs/"
+    "url": "https://www.killickcapital.com/careers/jobs"
   },
   {
-    "company": "Sparrow Acoustics Inc",
+    "company": "Landmark Surveys & Engineering Limited",
     "kind": "indeed",
-    "url": "https://ca.indeed.com/q-sparrow-acoustics-jobs.html"
+    "url": "https://www.indeed.com/q-Landmark-Surveying-&-Engineering-jobs.html"
   },
   {
-    "company": "Cloud North Bookkeeping & Tax",
+    "company": "Luxsonic Technologies, Inc.",
     "kind": "linkedin",
-    "url": "https://ca.linkedin.com/company/cloud-north-bookkeeping-tax"
+    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQHryXTEdH8XjwAAAZ-mbbcgpnJsmLNy6608XeSpqAQRHZzrmWHh_5PKnNY06ZG9ZCptdvOjuh6KNdk3JIvj2WeJ62MHHzhQJKZvBqC4m9xUwc8Ijse9aZBAnP0hEs1s4wGCVCM=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fluxsonic-technologies-inc-"
   },
   {
-    "company": "College of the North Atlantic",
+    "company": "MEDICURO Virtual Health Inc.",
+    "kind": "linkedin",
+    "url": "https://ca.linkedin.com/company/medicuro"
+  },
+  {
+    "company": "Repairify",
     "kind": "blocked",
-    "url": "https://ps-hr-web.cna.nl.ca/psc/HRPROD/EMPLOYEE/HRMS/c/HRS_HRAM_EMP_FL.HRS_CG_SEARCH_FL.GBL?Page=HRS_APP_SCHJOB_FL&Action=U&FOCUS=Employee&SiteId=1&cmd=login&languageCd=ENG&"
-  },
-  {
-    "company": "Copsys Technologies",
-    "kind": "linkedin",
-    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQFvGzSs4kvxDQAAAZ-hN2kYkQ8Am6-fzZCfncygnAwrQj_S9GX4Gg8H0mR8hC3aMeKh_eH8ZlCxFMWSxcLgd-6gJgndIINS0P6AIiRFDkHY1Vlv1rxHbpC5brc5noSH1ynkXIw=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fcopsys-technologies-inc"
-  },
-  {
-    "company": "Crosbie Salamis Limited",
-    "kind": "indeed",
-    "url": "https://crosbiegroup.com/careers/"
-  },
-  {
-    "company": "CSIpix",
-    "kind": "indeed",
-    "url": "https://ca.indeed.com/q-csipix-jobs.html"
-  },
-  {
-    "company": "Design By Analysis Engineering Inc.",
-    "kind": "linkedin",
-    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQEa6hjINOObNAAAAZ-hO584J5go2_lsefxR3fXdcnLylI7jb322Gs1slFEGxdt8G_hXDLxV4KWJ8gz9Bs-ePgH3mogUZx0MKvnHKQgKfUkE8-L2COiykqjOT8TDnl0hgw-F39o=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fdesign-by-analysis-engineering-inc-"
+    "url": "https://uscareers-repairify.icims.com/jobs/intro?hashed=-625944553&mobile=false&width=1264&height=500&bga=true&needsRedirect=false&jan1offset=-210&jun1offset=-150"
   }
 ]
