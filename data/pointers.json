@@ -1,37 +1,57 @@
 [
   {
-    "company": "Voronoi Health Analytics Incorporated",
+    "company": "Sentinel Institute",
     "kind": "linkedin",
-    "url": "https://ca.linkedin.com/company/voronoi-health-analytics-incorporated"
+    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQG4TIQGIjQLdQAAAZ-681y4H5VYIa41cCPJEHI5aA4KTpzxHrdWqbcOFI-C73svXzPAuvrQgJN7xHQwwtvRNrOz4a02l7s3aiIrxPNTtlWU328JGRytU9UM_COb9sVf1UjA1dM=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fsentinelresearchsociety"
   },
   {
-    "company": "Cloud North Bookkeeping & Tax",
-    "kind": "linkedin",
-    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQF6RN0LzpH9EgAAAZ-10CVojpPg1ch9UVOZWJ2T-xc1HtvKRxfUUl7WssYN7UyyaaUgiKViqYmaj_S8kI2ywa9EIJ6u_yVLunv9aetNKwZLiDaYHEpNBuUR7oMX5joEP8SjeUQ=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fcloud-north-bookkeeping-tax"
-  },
-  {
-    "company": "College of the North Atlantic",
+    "company": "SmartICE Monitoring & Information Inc.",
     "kind": "blocked",
-    "url": "https://ps-hr-web.cna.nl.ca/psc/HRPROD/EMPLOYEE/HRMS/c/HRS_HRAM_EMP_FL.HRS_CG_SEARCH_FL.GBL?Page=HRS_APP_SCHJOB_FL&Action=U&FOCUS=Employee&SiteId=1&cmd=login&languageCd=ENG&"
+    "url": "https://smartice.org/.well-known/sgcaptcha/?r=%2Fjobs%2F&y=ipr:142.177.86.56:1785547990.859"
   },
   {
-    "company": "Copsys Technologies",
-    "kind": "linkedin",
-    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQGE_o642VipqAAAAZ-10lvQoVMjrQi9hYE6Ipdx5kADwzyQoAPbGw4bOAmtdRKIirOpqYxBbLzQWF5EHmtofTOSjC5IJJzl2qN5HazRVGIKynidV8EUsqdTzN4H_sIgLwoVb7o=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fcopsys-technologies-inc"
-  },
-  {
-    "company": "Crosbie Salamis Limited",
+    "company": "Sparrow Acoustics Inc",
     "kind": "indeed",
-    "url": "https://crosbiegroup.com/careers/"
+    "url": "https://ca.indeed.com/q-sparrow-acoustics-jobs.html"
   },
   {
-    "company": "CSIpix",
-    "kind": "indeed",
-    "url": "https://ca.indeed.com/q-csipix-jobs.html"
-  },
-  {
-    "company": "Design By Analysis Engineering Inc.",
+    "company": "GroundControl",
     "kind": "linkedin",
-    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQGsf3gmKwE2lwAAAZ-11pXYhubYqFFMibJdQU_V2d0-R02qpZbgc4UnpV6FD6JpDTmygXEgW444f0p4UluCd19JAbdnjPpi_pr7RRji1vjlJ7UFtD6LnUsp27Y2JNk3AvxSN5g=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fdesign-by-analysis-engineering-inc-"
+    "url": "https://uk.linkedin.com/showcase/ground-control-careers/"
+  },
+  {
+    "company": "HiTech Communications",
+    "kind": "indeed",
+    "url": "https://ca.indeed.com/cmp/Hi--tech-Communications"
+  },
+  {
+    "company": "Ignite Financial Solutions",
+    "kind": "linkedin",
+    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQEKI2_nuPzGcwAAAZ-6-TDo0rRjdtOMjT5PArv8DleBFOIUs1ls2pVZ8mVpJr31-ktRu4CcV3o5FM-EQCqdqy_OiEBI9TY-BeGahs9UpeMdCdZGsAg9WkhIAW6aT75UdAsmQlU=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fignite-financial-solutions"
+  },
+  {
+    "company": "Keyin College",
+    "kind": "linkedin",
+    "url": "https://keyin.com/careers"
+  },
+  {
+    "company": "Killick Capital",
+    "kind": "blocked",
+    "url": "https://www.killickcapital.com/.well-known/sgcaptcha/?r=%2Fcareers%2Fjobs&y=ipr:142.177.86.56:1785548471.208"
+  },
+  {
+    "company": "Landmark Surveys & Engineering Limited",
+    "kind": "indeed",
+    "url": "https://www.indeed.com/q-Landmark-Surveying-&-Engineering-jobs.html"
+  },
+  {
+    "company": "Luxsonic Technologies, Inc.",
+    "kind": "linkedin",
+    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQEYs3WITg1FAwAAAZ-6_zP4jwYgMlWkgvHX9RMwUflHNz-7wEqW9Hvzl0pWxaYVuGOq2ytF4PuZmBfvWlNxcKtkBommOyMOxI_M5IXEhLrETs-ZOXOW-pnQEO-4_dZ_dlZjcP8=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fluxsonic-healthcare"
+  },
+  {
+    "company": "MEDICURO Virtual Health Inc.",
+    "kind": "linkedin",
+    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQFYcgrMnSL1ugAAAZ-7APkYRXktBuHCm3jHjdUPZR-Qm5guD8MpdLftvlVF0WOLkysZ7bD16I3yQdEvxLdc7rmFw1wyqvDgM9_Wv6391VRHCzoq9SblPIAPaCjijmJiiE2IEVs=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fmedicuro"
   }
 ]
