@@ -1,67 +1,47 @@
 [
   {
-    "company": "The Idea Factory",
+    "company": "TxtSquad",
+    "kind": "linkedin",
+    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQGcQXNgXfn7EAAAAZ_KaaUIqP6RY3VDU5sxZXPtDkJzX5wnxOgEtpo49cEn-op0CImh8toHNdmdMGNRtNOUNMVH1Ur71FI7NGftAF1g47RbrJ429EYwo72f1xkQtdzFL2CTyds=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fgetcarrick"
+  },
+  {
+    "company": "Verisult",
     "kind": "blocked",
-    "url": "https://ifactory.ca/.well-known/sgcaptcha/?r=%2Fcareers%2F&y=ipr:142.177.86.56:1785720983.658"
+    "url": "https://verisult.com/.well-known/sgcaptcha/?r=%2Fservice%2Fcareer-center%2F&y=ipr:142.177.86.56:1785807451.026"
   },
   {
-    "company": "Thinkwell Research + Strategy",
+    "company": "Vifta Technology Limited",
     "kind": "linkedin",
-    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQEjr4hO1n_T8QAAAZ_FRErYLFDW8RXlJojIpJ5iv1jC3gYZd4U4gGBjhFjgJCqazth3F7xDOO7LJD_IMroGZtr0uwDthRY9LZtmXD8l0dSq4ErXHTtBcU3zUxrJuTeVZH_A5rE=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fjobs%2Fthinkwell-research-%2B-strategy-jobs-worldwide%3Ff_C%3D2735878"
+    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQEo_YDkII_9gwAAAZ_Ka0MYZ2pBuDoMgUiYFqSVahstnOUjaNZD3aO3rL7oFfPeBEBhlxxRd6pBdRYNMmtg4EEOupRYAMGF3heRMhb-UR3UbsbYEGEAsMSPh-kgJBfdf2JZNqQ=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fvifta"
   },
   {
-    "company": "Training Works Inc.",
+    "company": "Cloud North Bookkeeping & Tax",
     "kind": "linkedin",
-    "url": "https://www.training-works.ca/careers"
+    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQHM4pRSsqmYeQAAAZ_Ka8vQP8PRjP6dPG-trJDVk5poYx83ucmtD8S9eakZN2NSql1xMLt8d_GLo2l2uuYjM84SZaYpwY4nJZdFKGayE_01P3f0wu0JFG2zbXefzuL1ncsgC9c=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fcloud-north-bookkeeping-tax"
   },
   {
-    "company": "MoodBox Inc.",
-    "kind": "linkedin",
-    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQE0qiwyCdUz3wAAAZ_FRMAIztWr3BjddAng92LIolweYB5j9VqGNSVTvzBMoR4UpeDM_nnKJQPbDnq348MwXZUrnLfVyjPcsreHcBv2TWxRYdvgNzrhjygwWEkjgmdho-qoJ2k=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fmoodbox-inc"
-  },
-  {
-    "company": "NDITIVE",
-    "kind": "linkedin",
-    "url": "https://www.linkedin.com/company/moodbox-inc"
-  },
-  {
-    "company": "NewSight Technologies Inc.",
-    "kind": "linkedin",
-    "url": "https://www.linkedin.com/talent/post-a-job?trk=homepage-basic_talent-finder-cta"
-  },
-  {
-    "company": "NLOWE - Newfoundland & Labrador Organization of Women Entrepreneurs",
-    "kind": "blocked",
-    "url": "https://www.nlowe.org/.well-known/sgcaptcha/?r=%2Fview-announcements%2F&y=ipr:142.177.86.56:1785721131.272"
-  },
-  {
-    "company": "NLWIC-College of the North Atlantic",
+    "company": "College of the North Atlantic",
     "kind": "blocked",
     "url": "https://ps-hr-web.cna.nl.ca/psc/HRPROD/EMPLOYEE/HRMS/c/HRS_HRAM_EMP_FL.HRS_CG_SEARCH_FL.GBL?Page=HRS_APP_SCHJOB_FL&Action=U&FOCUS=Employee&SiteId=1&cmd=login&languageCd=ENG&"
   },
   {
-    "company": "NLWIC-College of the North Atlantic",
-    "kind": "blocked",
-    "url": "https://ps-hr-web.cna.nl.ca/psc/HRPROD/EMPLOYEE/HRMS/c/HRS_HRAM_EMP_FL.HRS_CG_SEARCH_FL.GBL?Page=HRS_APP_SCHJOB_FL&Action=U&FOCUS=Employee&SiteId=1&cmd=login"
-  },
-  {
-    "company": "PARDY'S Waste Management and Industrial Services Limited",
-    "kind": "blocked",
-    "url": "https://pardyswaste.com/.well-known/sgcaptcha/?r=%2Fcareers%2F&y=ipr:142.177.86.56:1785721385.266"
-  },
-  {
-    "company": "PELMO International",
+    "company": "Copsys Technologies",
     "kind": "linkedin",
-    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQHOyZk9VNHi3wAAAZ_FSf_ICXE6c29UKQNqbkLJlEDXs926laMQc_e8I6lO10hnVLx2lSp4n-2I59_UII9j1ea70F2xwKMlRc0WXjRsPJLGwAOue0-3m62CFhbnDBM0tts_SWM=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fpelmo-international-inc%2F%3ForiginalSubdomain%3Dca"
+    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQE4yM-UfjHHHgAAAZ_KbilI0zsGmcjfd6K8ioIph02ZYeR-_Xhnq9YoBaRdQCzuBsYpmduey69aQvhV2zam_KDAUxKr6R9J_QI3emrkn5fi40qefVDcrBKemzoDOGrtaLorcao=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fcopsys-technologies-inc"
   },
   {
-    "company": "Pinnacle Networks",
+    "company": "Crosbie Salamis Limited",
     "kind": "indeed",
-    "url": "https://ca.indeed.com/Pinnacle-Networks-jobs?vjk=3be379be97059e0e"
+    "url": "https://crosbiegroup.com/careers/"
   },
   {
-    "company": "Robot Interactive Marketing",
+    "company": "CSIpix",
+    "kind": "indeed",
+    "url": "https://ca.indeed.com/q-csipix-jobs.html"
+  },
+  {
+    "company": "Design By Analysis Engineering Inc.",
     "kind": "linkedin",
-    "url": "https://ca.linkedin.com/company/robot-interactive-marketing"
+    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQEieVcLYuOJtwAAAZ_KcnrAp3jt3Adl8cmf7Q62tXe3om21gw9Se36nQ6tdV03fScaRCphaXe-OafLGwoQQdIuJ0v5sAKueJ7Ds3YEeRsR0s73glqYzMm3W-6l4BW_eoRuaGxE=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fdesign-by-analysis-engineering-inc-"
   }
 ]
