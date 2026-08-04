@@ -49,6 +49,11 @@ def main():
         "companies": companies,
         "boards": boards,
     }
+    
+    sh_reconcile_path = "data/sh_reconcile.json"
+    if os.path.exists(sh_reconcile_path):
+        with open(sh_reconcile_path, encoding="utf-8") as f:
+            summary["sh_reconcile"] = json.load(f)
 
     os.makedirs("docs", exist_ok=True)
     # The dashboard only needs OPEN jobs; closed ones stay in data/ for history.
