@@ -133,7 +133,8 @@ JUNK_TITLES = {"careers", "career", "jobs", "job", "open positions", "openings",
                "job opportunity", "details", "position", "opportunity",
                "current opportunities", "search jobs", "all jobs", "apply",
                "apply now", "view job", "view jobs", "td careers", "explore careers @ launch",
-               "explore careers", "careers @ launch", "careers - launch consulting"}
+               "explore careers", "careers @ launch", "careers - launch consulting",
+               "job portal"}
 
 
 def best_title(anchor_title: str, page_title: str) -> str:
@@ -144,8 +145,8 @@ def best_title(anchor_title: str, page_title: str) -> str:
     return a
 
 
-def pick_title(anchor: str, h1: str, page_title: str, json_ld_title: str | None = None) -> str:
-    """Prefer the structured JSON-LD title, then page's <h1>, then fallback to best_title."""
+def pick_title(anchor: str, h1: str, page_title: str, json_ld_title: str | None = None, url: str | None = None) -> str:
+    """Prefer the structured JSON-LD title, then page's <h1>, then slug-derived title, then fallback to best_title."""
     if json_ld_title:
         j_title = re.sub(r"\s+", " ", json_ld_title).strip()
         if j_title and 3 <= len(j_title) <= 120 and j_title.lower() not in JUNK_TITLES:
@@ -154,6 +155,17 @@ def pick_title(anchor: str, h1: str, page_title: str, json_ld_title: str | None 
     h = re.sub(r"\s+", " ", (h1 or "")).strip()
     if h and 3 <= len(h) <= 100 and h.lower() not in JUNK_TITLES:
         return h
+        
+    if url:
+        path = urlparse(url).path.rstrip("/")
+        if path:
+            slug_part = path.split("/")[-1]
+            slug_part = re.sub(r"-\d+$", "", slug_part)
+            slug_title = " ".join(word.capitalize() for word in slug_part.split("-") if word)
+            if slug_title and 3 <= len(slug_title) <= 100 and slug_title.lower() not in JUNK_TITLES:
+                if re.search(r"[A-Za-z]{3,}", slug_title):
+                    return slug_title
+
     return best_title(anchor, page_title)
 
 
@@ -375,7 +387,7 @@ async def validate_and_describe(context, company: str, candidates: list[dict],
                 except Exception:
                     continue
 
-            title = pick_title(c.get("title", ""), data.get("h1"), data.get("title"), json_ld_title)
+            title = pick_title(c.get("title", ""), data.get("h1"), data.get("title"), json_ld_title, url)
             
             # Fallback description to JSON-LD if page text is mostly boilerplate or empty
             desc = json_ld_desc.strip() if json_ld_desc else text
