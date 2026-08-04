@@ -42,6 +42,10 @@
   .job.open-desc .desc{max-height:600px}
   .more{color:var(--accent);font-size:12px;cursor:pointer;margin-top:6px;display:inline-block}
   .empty{text-align:center;color:var(--muted);padding:60px 20px}
+  .coverage-gaps{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:20px auto;max-width:980px}
+  .coverage-gaps h3{margin:0 0 10px;font-size:16px}
+  .coverage-gaps ul{margin:0;padding-left:20px;font-size:13px;color:var(--muted)}
+  .coverage-gaps li{margin-bottom:4px}
   footer{max-width:980px;margin:0 auto;padding:0 16px 40px;color:var(--muted);font-size:12px}
   a{color:var(--accent)}
 </style>
@@ -69,6 +73,7 @@
 </div>
 
 <main id="list"><div class="empty">Loading…</div></main>
+<div id="gaps" class="coverage-gaps" style="display:none"></div>
 <footer>
   Raw feed: <a href="open_jobs.json">open_jobs.json</a> ·
   Built by <a href="https://github.com/danielterwilliger/techNL-crawler" target="_blank" rel="noopener">techNL-crawler</a>.
@@ -129,6 +134,25 @@ async function load(){
       $("#generated").textContent = "generated " + (sum.generated||"").replace("T"," ").replace("+00:00"," UTC");
       fillSelect($("#company"), sum.companies||[]);
       fillSelect($("#board"), sum.boards||[]);
+      
+      if (sum.sh_reconcile) {
+        const gapsDiv = $("#gaps");
+        const notInRoster = sum.sh_reconcile.not_in_roster || [];
+        const scrapeGap = sum.sh_reconcile.scrape_gap || [];
+        
+        if (notInRoster.length > 0 || scrapeGap.length > 0) {
+          let html = "<h3>Silicon Harbour Coverage Gaps</h3><ul>";
+          for (const c of notInRoster) {
+            html += `<li><strong>${esc(c.company_name)}</strong> (Not in roster) - ${c.job_count} jobs. URLs: ${c.urls.map(u => `<a href="${esc(u)}" target="_blank" rel="noopener">link</a>`).join(', ')}</li>`;
+          }
+          for (const c of scrapeGap) {
+            html += `<li><strong>${esc(c.company_name)}</strong> (Scrape gap) - ${c.job_count} jobs. ATS hints: ${c.urls.map(u => `<a href="${esc(u)}" target="_blank" rel="noopener">link</a>`).join(', ')}</li>`;
+          }
+          html += "</ul>";
+          gapsDiv.innerHTML = html;
+          gapsDiv.style.display = "block";
+        }
+      }
     }
     render();
   }catch(e){

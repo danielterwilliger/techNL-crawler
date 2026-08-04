@@ -27,6 +27,10 @@ uv run python src/scrape.py --llm --batch 40  # navigator over the 40 least-rece
                                          # ~171 over ~4-5 daily runs, within the free-tier
                                          # daily quota + a sane runtime)
 uv run python src/publish.py             # build feed + dashboard data
+uv run python src/reconcile_sh.py \
+  || echo "(SH reconcile failed; continuing)"  # reconcile against Silicon Harbour AFTER
+                                         # publish. Guarded: set -e must never let this
+                                         # optional step kill the nightly run.
 
 # NB: src/map_llm_fallback.py (LLM careers-page *mapping*) is intentionally not run
 # here — that task needs web search, which hangs the agentic CLI. Mapping stays

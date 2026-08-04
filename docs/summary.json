@@ -1,7 +1,7 @@
 {
-  "generated": "2026-08-04T01:53:15+00:00",
+  "generated": "2026-08-04T09:34:58+00:00",
   "open_count": 497,
-  "new_count": 197,
+  "new_count": 177,
   "company_count": 74,
   "total_tracked": 2106,
   "companies": [
@@ -88,5 +88,128 @@
     "own-site",
     "rippling",
     "workday"
-  ]
+  ],
+  "sh_reconcile": {
+    "generated": "2026-08-04T09:30:44+00:00",
+    "not_in_roster": [
+      {
+        "company_name": "CarteNav Solutions",
+        "job_count": 1,
+        "urls": [
+          "https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=06351502-0666-4c6f-9a0b-165c5faeab35&jobId=705379&selectedMenuKey=CurrentOpenings"
+        ]
+      },
+      {
+        "company_name": "Data Farms",
+        "job_count": 2,
+        "urls": [
+          "https://datafarms.ca/customer-engagement-specialist/",
+          "https://datafarms.ca/full-stack-software-developer/"
+        ]
+      },
+      {
+        "company_name": "Intact Financial",
+        "job_count": 2,
+        "urls": [
+          "https://careers.intactfc.com/principal-cloud-strategy-autonomous-enterprise/job/R152363",
+          "https://careers.intactfc.com/senior-java-angular-developer/job/R154519"
+        ]
+      },
+      {
+        "company_name": "Nasdaq Verafin",
+        "job_count": 3,
+        "urls": [
+          "https://nasdaq.wd1.myworkdayjobs.com/Global_External_Site/job/Canada---St-Johns---Newfoundland--Labrador/Verafin---MITACs-Research-Intern--Fall-2026-_R0026283",
+          "https://nasdaq.wd1.myworkdayjobs.com/Global_External_Site/job/Canada---St-Johns---Newfoundland--Labrador/Verafin---Senior-Cloud-Security-Developer_R0026252",
+          "https://nasdaq.wd1.myworkdayjobs.com/Global_External_Site/job/Canada---St-Johns---Newfoundland--Labrador/Verafin---Senior-Software-Developer--Scenario-Builder-_R0026230"
+        ]
+      },
+      {
+        "company_name": "WSP",
+        "job_count": 2,
+        "urls": [
+          "https://emit.fa.ca3.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_2001/job/85639",
+          "https://emit.fa.ca3.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_2001/job/89688"
+        ]
+      }
+    ],
+    "scrape_gap": [
+      {
+        "company_name": "Avalon Holographics",
+        "job_count": 3,
+        "urls": [
+          "https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=384f5e8d-ce48-4dbd-8c5e-fd9601da7e77&jobId=572528&selectedMenuKey=CurrentOpenings",
+          "https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=384f5e8d-ce48-4dbd-8c5e-fd9601da7e77&jobId=581272&selectedMenuKey=CurrentOpenings",
+          "https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=384f5e8d-ce48-4dbd-8c5e-fd9601da7e77&jobId=583438&selectedMenuKey=CurrentOpenings"
+        ]
+      },
+      {
+        "company_name": "Digital Six Consulting",
+        "job_count": 6,
+        "urls": [
+          "https://digitalsixconsulting.com/jobs/senior-business-analyst-contractual/",
+          "https://digitalsixconsulting.com/jobs/senior-change-manager-contractual/",
+          "https://digitalsixconsulting.com/jobs/senior-cloud-architect-contractual/",
+          "https://digitalsixconsulting.com/jobs/senior-full-stack-developer-contractual/",
+          "https://digitalsixconsulting.com/jobs/senior-oracle-fusion-functional-analyst-contractual/",
+          "https://digitalsixconsulting.com/jobs/senior-project-manager-contractual/"
+        ]
+      },
+      {
+        "company_name": "NetBenefit Software",
+        "job_count": 3,
+        "urls": [
+          "https://technl.ca/job/netbenefit-software-st-johns-full-time-content-marketing-specialist/",
+          "https://technl.ca/job/netbenefit-software-st-johns-full-time-senior-software-developer-team-lead/",
+          "https://technl.ca/job/netbenefit-software-st-johns-full-time-senior-software-developer/"
+        ]
+      },
+      {
+        "company_name": "SiftMed",
+        "job_count": 6,
+        "urls": [
+          "https://secure.collage.co/jobs/siftmed/61710",
+          "https://secure.collage.co/jobs/siftmed/63461",
+          "https://secure.collage.co/jobs/siftmed/63462",
+          "https://secure.collage.co/jobs/siftmed/63803",
+          "https://secure.collage.co/jobs/siftmed/64477",
+          "https://secure.collage.co/jobs/siftmed/64499"
+        ]
+      },
+      {
+        "company_name": "Spellbook",
+        "job_count": 20,
+        "urls": [
+          "https://jobs.ashbyhq.com/spellbook.legal/06cb21f1-882a-4e6f-a2d5-39e5187aee4d",
+          "https://jobs.ashbyhq.com/spellbook.legal/12e7e924-cb65-42c1-8541-7b91a9c73fc0",
+          "https://jobs.ashbyhq.com/spellbook.legal/2013e90d-c265-4f48-ab97-fbe1063b5edc",
+          "https://jobs.ashbyhq.com/spellbook.legal/22a80c7b-2e4d-4f89-834d-db7d3387a5c8",
+          "https://jobs.ashbyhq.com/spellbook.legal/2a5ad730-e433-4974-b9f8-3657043f2937",
+          "https://jobs.ashbyhq.com/spellbook.legal/381788d0-507c-4232-b9ca-8c5b39070276",
+          "https://jobs.ashbyhq.com/spellbook.legal/638c8845-6bc9-4767-a0a6-386ccbf5f8c5",
+          "https://jobs.ashbyhq.com/spellbook.legal/74cbb48c-389d-4171-8884-4621d8ab0f83",
+          "https://jobs.ashbyhq.com/spellbook.legal/93028c2d-6e93-4fd9-8592-0cf23bfd1c22",
+          "https://jobs.ashbyhq.com/spellbook.legal/9484d7ba-31d8-4347-a316-b9e8f4f48d3e",
+          "https://jobs.ashbyhq.com/spellbook.legal/9cb21ddb-472c-4048-915f-ffd87bb39cdf",
+          "https://jobs.ashbyhq.com/spellbook.legal/c8b34b2a-635f-4a84-8d9c-3e7b1174aa03",
+          "https://jobs.ashbyhq.com/spellbook.legal/d4e09e10-2520-4165-9d64-72e3227c3a56",
+          "https://jobs.ashbyhq.com/spellbook.legal/d82549cd-12ee-4894-9f09-d7cdfa2656ea",
+          "https://jobs.ashbyhq.com/spellbook.legal/d92285f3-73a5-4ad1-8b1a-df1d2ab034df",
+          "https://jobs.ashbyhq.com/spellbook.legal/e09ace55-fd22-4549-8b33-691ff7c260ad",
+          "https://jobs.ashbyhq.com/spellbook.legal/e0f6f3e7-b8ca-4e2c-90f1-5419b4df57bf",
+          "https://jobs.ashbyhq.com/spellbook.legal/e41772f0-d9d3-4bc5-9d40-cf92efdb076b",
+          "https://jobs.ashbyhq.com/spellbook.legal/f758da9b-9744-4aee-a957-d7a8cecdabe8",
+          "https://jobs.ashbyhq.com/spellbook.legal/fd975f98-a9ae-4046-bf0c-a012a56af728"
+        ]
+      },
+      {
+        "company_name": "TxtSquad",
+        "job_count": 1,
+        "urls": [
+          "https://ca.indeed.com/viewjob?jk=ec91f543453b5304"
+        ]
+      }
+    ],
+    "overlap": 17
+  }
 }
