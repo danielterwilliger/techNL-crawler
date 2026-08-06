@@ -1,42 +1,52 @@
 [
   {
-    "company": "Voronoi Health Analytics Incorporated",
+    "company": "Sentinel Institute",
     "kind": "linkedin",
-    "url": "https://ca.linkedin.com/company/voronoi-health-analytics-incorporated"
+    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQHJxX2of683sgAAAZ_UtPWo5juN_BezN_I9qhIOGhyFK-jq5et1isx9RAbQprJym8FvVlWwn5ImVuhQMPgM1rkMRljQU5MtnqTTXo-jVhRQ6LdXrAlJ5jeWXfE_CqwtcVXtceE=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fsentinelresearchsociety"
   },
   {
-    "company": "GroundControl",
-    "kind": "linkedin",
-    "url": "https://uk.linkedin.com/showcase/ground-control-careers/"
-  },
-  {
-    "company": "HiTech Communications",
-    "kind": "indeed",
-    "url": "https://ca.indeed.com/cmp/Hi--tech-Communications"
-  },
-  {
-    "company": "Ignite Financial Solutions",
-    "kind": "linkedin",
-    "url": "https://www.linkedin.com/company/ignite-financial-solutions"
-  },
-  {
-    "company": "Killick Capital",
+    "company": "SmartICE Monitoring & Information Inc.",
     "kind": "blocked",
-    "url": "https://www.killickcapital.com/.well-known/sgcaptcha/?r=%2Fcareers%2Fjobs&y=ipr:142.177.86.56:1785894288.863"
+    "url": "https://smartice.org/jobs/"
   },
   {
-    "company": "Landmark Surveys & Engineering Limited",
+    "company": "Sparrow Acoustics Inc",
     "kind": "indeed",
-    "url": "https://www.indeed.com/q-Landmark-Surveying-&-Engineering-jobs.html"
+    "url": "https://ca.indeed.com/q-sparrow-acoustics-jobs.html"
   },
   {
-    "company": "Luxsonic Technologies, Inc.",
+    "company": "AbbaTek Group Inc",
     "kind": "linkedin",
-    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQGK5FX2uxMw9QAAAZ_PnCKAzTyz473WJRCNEXsz-AsBVWcoWY3f8cHoWbYuheidlQWyN4js1nxzUxD27NX4P1BYsIznqwymnZJrtY5Uvj1lNbZbQG-0f3iOXwAJmrRP7BiL1o4=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fluxsonic-technologies-inc-"
+    "url": "https://ca.linkedin.com/company/abbatek"
   },
   {
-    "company": "MEDICURO Virtual Health Inc.",
+    "company": "Angler Solutions Inc.",
     "kind": "linkedin",
-    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQG2S8DaSUoMmAAAAZ_PnuWIRZyDrPFwKxxN56lO7dr650FmQ5f4EzpGUJ9JzSWjauC_DWeLT7g4lLKppjVy5958KgYwT-a4CZZVwLSozuCuhCd4_h2nsj6I1xHS8248smh0cbU=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fmedicuro"
+    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQEfbpgd8x3PoAAAAZ_UuWpI3UHfZfFUgHomjcobB_Gc3B1KwG5dkCOqGN9kRInsdwduUqDQcQaoBTEEIN1HmbWYpe6SOCpUF2Lzph4N1sv8AN-tO4KVqaanEx-Tkk1C7ibIm_0=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fangler-solutions-inc"
+  },
+  {
+    "company": "Atlantic XL",
+    "kind": "linkedin",
+    "url": "https://uk.linkedin.com/company/atlantic-xl-inc."
+  },
+  {
+    "company": "Avalon Holographics",
+    "kind": "blocked",
+    "url": "https://avalonholographics.com/careers/"
+  },
+  {
+    "company": "Big Land Networks Ltd",
+    "kind": "blocked",
+    "url": "https://blnx.ca/jobs/apply/"
+  },
+  {
+    "company": "Milk Moovement",
+    "kind": "blocked",
+    "url": "https://jobs.lever.co/milk-moovement"
+  },
+  {
+    "company": "Repairify",
+    "kind": "blocked",
+    "url": "https://uscareers-repairify.icims.com/jobs/intro?hashed=-625944553&mobile=false&width=1264&height=500&bga=true&needsRedirect=false&jan1offset=-210&jun1offset=-150"
   }
 ]

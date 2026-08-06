@@ -1,9 +1,9 @@
 {
-  "generated": "2026-08-05T01:53:17+00:00",
+  "generated": "2026-08-06T01:52:00+00:00",
   "open_count": 501,
-  "new_count": 185,
+  "new_count": 189,
   "company_count": 75,
-  "total_tracked": 2115,
+  "total_tracked": 2160,
   "companies": [
     "AXIS Career Services-Association for New Canadians",
     "Academy Canada",
@@ -85,13 +85,14 @@
     "ashby",
     "bamboohr",
     "greenhouse",
+    "indeed",
     "on-page",
     "own-site",
     "rippling",
     "workday"
   ],
   "sh_reconcile": {
-    "generated": "2026-08-04T09:52:51+00:00",
+    "generated": "2026-08-05T01:53:19+00:00",
     "not_in_roster": [
       {
         "company_name": "CarteNav Solutions",
