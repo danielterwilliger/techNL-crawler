@@ -1,9 +1,9 @@
 {
-  "generated": "2026-08-06T01:52:00+00:00",
-  "open_count": 501,
-  "new_count": 189,
-  "company_count": 75,
-  "total_tracked": 2160,
+  "generated": "2026-08-07T01:54:48+00:00",
+  "open_count": 508,
+  "new_count": 195,
+  "company_count": 74,
+  "total_tracked": 2186,
   "companies": [
     "AXIS Career Services-Association for New Canadians",
     "Academy Canada",
@@ -59,7 +59,6 @@
     "Port of Argentia",
     "Propel",
     "RBCx",
-    "Retellio",
     "SEM Ltd.",
     "Sequence Bio Inc.",
     "Solace Power Inc",
@@ -92,7 +91,7 @@
     "workday"
   ],
   "sh_reconcile": {
-    "generated": "2026-08-05T01:53:19+00:00",
+    "generated": "2026-08-06T01:52:01+00:00",
     "not_in_roster": [
       {
         "company_name": "CarteNav Solutions",
