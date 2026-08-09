@@ -1,9 +1,9 @@
 {
-  "generated": "2026-08-08T01:52:32+00:00",
-  "open_count": 501,
-  "new_count": 179,
-  "company_count": 74,
-  "total_tracked": 2212,
+  "generated": "2026-08-09T01:50:53+00:00",
+  "open_count": 499,
+  "new_count": 182,
+  "company_count": 73,
+  "total_tracked": 2249,
   "companies": [
     "AXIS Career Services-Association for New Canadians",
     "Academy Canada",
@@ -39,7 +39,6 @@
     "Hatch Ltd.",
     "Higher Talent Inc.",
     "IMP Solutions",
-    "Innovation, Science & Economic Development Canada",
     "JAC Digital Marketing Agency",
     "KBRS & Meridia Recruitment Solution",
     "KPMG LLP",
@@ -91,7 +90,7 @@
     "workday"
   ],
   "sh_reconcile": {
-    "generated": "2026-08-07T01:54:49+00:00",
+    "generated": "2026-08-08T01:52:33+00:00",
     "not_in_roster": [
       {
         "company_name": "CarteNav Solutions",

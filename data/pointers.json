@@ -1,47 +1,52 @@
 [
   {
-    "company": "The Idea Factory",
-    "kind": "blocked",
-    "url": "https://ifactory.ca/careers/"
-  },
-  {
-    "company": "Thinkwell Research + Strategy",
+    "company": "TxtSquad",
     "kind": "linkedin",
-    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQFEb7zPEu7QkgAAAZ_fAxzYDvQCBBz30O5g3cY1KXPQIO2PR89zdzeS8WEN_Twu0MUt9QLpUktgvbsEDDMjPQKbb5roiYEEPV1qZZGo1rZy8exbWkAUakNI6vQ-ELREOHuxdao=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fjobs%2Fthinkwell-research-%2B-strategy-jobs-worldwide%3Ff_C%3D2735878"
+    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQHX-f_Oc7Db4QAAAZ_kKBVgXQyR19SyoI1dg8lyS-TyVqLth1M-GxZJb2Qy2s6rKpfdb2lUJ2J81qFNzYFmZSPinDUqtOH_zlM0hqYbkS7g7xOJ8cxM5NDb_ZyO3cMu9lT3v_c=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fgetcarrick"
   },
   {
-    "company": "Training Works Inc.",
+    "company": "Verisult",
     "kind": "blocked",
-    "url": "https://www.training-works.ca/careers"
+    "url": "https://verisult.com/service/career-center/"
   },
   {
-    "company": "Cloud North Bookkeeping & Tax",
+    "company": "Vifta Technology Limited",
     "kind": "linkedin",
-    "url": "https://ca.linkedin.com/company/cloud-north-bookkeeping-tax"
+    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQFMBNMUz_vNigAAAZ_kKaPQXQJBJmhzA5pPMP3r0L5TtKLhjECdT7bi9wqEJz4Z7eVoG-6iXear36lkhV9LJCwRoNxHt5j5jaywZpYedlanEEJi6FfYPPJIzbZMMcy2aPVOg0w=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fvifta"
   },
   {
-    "company": "College of the North Atlantic",
-    "kind": "blocked",
-    "url": "https://ps-hr-web.cna.nl.ca/psc/HRPROD/EMPLOYEE/HRMS/c/HRS_HRAM_EMP_FL.HRS_CG_SEARCH_FL.GBL?Page=HRS_APP_SCHJOB_FL&Action=U&FOCUS=Employee&SiteId=1&cmd=login&languageCd=ENG&"
-  },
-  {
-    "company": "Copsys Technologies",
+    "company": "GroundControl",
     "kind": "linkedin",
-    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQEeb7oCfL_L0gAAAZ_fBy_QnqtIgXY56vqALWv53NEe-4TLSsBHL0D_uqO72HSVnR4AHuVXGCa-4DMNzB-Wm-ZScyPb-UlVVFbdb-m80r4lZuCgFUNFF9pkEfgQofdtZCXlnKA=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fcopsys-technologies-inc"
+    "url": "https://uk.linkedin.com/showcase/ground-control-careers/"
   },
   {
-    "company": "Crosbie Salamis Limited",
+    "company": "HiTech Communications",
     "kind": "indeed",
-    "url": "https://crosbiegroup.com/careers/"
+    "url": "https://ca.indeed.com/cmp/Hi--tech-Communications"
   },
   {
-    "company": "CSIpix",
-    "kind": "indeed",
-    "url": "https://ca.indeed.com/q-csipix-jobs.html"
-  },
-  {
-    "company": "Design By Analysis Engineering Inc.",
+    "company": "Ignite Financial Solutions",
     "kind": "linkedin",
-    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQHmTb7S5n8BdgAAAZ_fCz7gke3djcedYEbkSmUTnPMTi3ORPTxXbpqOcx39aanW4q7ULC5a5MPMUcKWpaljtyKm9n5Np-N7FuuanEqk8iwJokx7RCTNrLq0M90ipo8K8HvYtxo=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fdesign-by-analysis-engineering-inc-"
+    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQGo8ds1razZ2QAAAZ_kLtvAlIdBgbW0yzeAslGOk9SZRJU3vee4S-1lgbUUaLLfmwkAuapV7l3uOSWAc5KVc_VcoP6P0XwncAam4nUjgOWAKVFtti7tsLCHqMd8woLbVL9o55c=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fignite-financial-solutions"
+  },
+  {
+    "company": "Killick Capital",
+    "kind": "blocked",
+    "url": "https://www.killickcapital.com/careers/jobs"
+  },
+  {
+    "company": "Landmark Surveys & Engineering Limited",
+    "kind": "indeed",
+    "url": "https://www.indeed.com/q-Landmark-Surveying-&-Engineering-jobs.html"
+  },
+  {
+    "company": "Luxsonic Technologies, Inc.",
+    "kind": "linkedin",
+    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQHs5aBoa3d1xgAAAZ_kNFYYygjl52Q7xYQMvKfb_AlGkhdxQC2wi2uMPJJUSKTBtJFWQ4E-8Grkg1hb5jQTIzcQ_6ueas6ieklMD1k5_SqBABhcGa85KUcgvkSqwnfb8QniGqw=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fluxsonic-healthcare"
+  },
+  {
+    "company": "MEDICURO Virtual Health Inc.",
+    "kind": "linkedin",
+    "url": "https://ca.linkedin.com/company/medicuro"
   }
 ]
