@@ -1,52 +1,42 @@
 [
   {
-    "company": "TxtSquad",
+    "company": "Voronoi Health Analytics Incorporated",
     "kind": "linkedin",
-    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQHX-f_Oc7Db4QAAAZ_kKBVgXQyR19SyoI1dg8lyS-TyVqLth1M-GxZJb2Qy2s6rKpfdb2lUJ2J81qFNzYFmZSPinDUqtOH_zlM0hqYbkS7g7xOJ8cxM5NDb_ZyO3cMu9lT3v_c=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fgetcarrick"
+    "url": "https://ca.linkedin.com/company/voronoi-health-analytics-incorporated"
   },
   {
-    "company": "Verisult",
+    "company": "AbbaTek Group Inc",
+    "kind": "linkedin",
+    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQGwwmucXoqC2gAAAZ_pUhMQ_Sn8byqhlChZn06KdJHyLeoC8gBWyTrEwLcGAbwlYj5HxVUth9kA7sfHN_U3urPsJBiEuIqm4LBo2KnqyPUFcOjl3ZPCRt23tu01A16lCkCoYHY=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fabbatek"
+  },
+  {
+    "company": "Angler Solutions Inc.",
+    "kind": "linkedin",
+    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQEfbkD95TlrPAAAAZ_pVFkYVTiignhH33ssW5h22RffM-HEFoOYyR-4eN5LpKUkLNl7osLKaCBAmSXTr0JqCVw6oQWd2vnWoj7alA7B6h0URN_msAqg8QO66ZEJeyG6NMYxdbQ=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fangler-solutions-inc"
+  },
+  {
+    "company": "Atlantic XL",
+    "kind": "linkedin",
+    "url": "https://uk.linkedin.com/company/atlantic-xl-inc."
+  },
+  {
+    "company": "Avalon Holographics",
     "kind": "blocked",
-    "url": "https://verisult.com/service/career-center/"
+    "url": "https://avalonholographics.com/careers/"
   },
   {
-    "company": "Vifta Technology Limited",
-    "kind": "linkedin",
-    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQFMBNMUz_vNigAAAZ_kKaPQXQJBJmhzA5pPMP3r0L5TtKLhjECdT7bi9wqEJz4Z7eVoG-6iXear36lkhV9LJCwRoNxHt5j5jaywZpYedlanEEJi6FfYPPJIzbZMMcy2aPVOg0w=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fvifta"
-  },
-  {
-    "company": "GroundControl",
-    "kind": "linkedin",
-    "url": "https://uk.linkedin.com/showcase/ground-control-careers/"
-  },
-  {
-    "company": "HiTech Communications",
-    "kind": "indeed",
-    "url": "https://ca.indeed.com/cmp/Hi--tech-Communications"
-  },
-  {
-    "company": "Ignite Financial Solutions",
-    "kind": "linkedin",
-    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQGo8ds1razZ2QAAAZ_kLtvAlIdBgbW0yzeAslGOk9SZRJU3vee4S-1lgbUUaLLfmwkAuapV7l3uOSWAc5KVc_VcoP6P0XwncAam4nUjgOWAKVFtti7tsLCHqMd8woLbVL9o55c=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fignite-financial-solutions"
-  },
-  {
-    "company": "Killick Capital",
+    "company": "Big Land Networks Ltd",
     "kind": "blocked",
-    "url": "https://www.killickcapital.com/careers/jobs"
+    "url": "https://blnx.ca/jobs/apply/"
   },
   {
-    "company": "Landmark Surveys & Engineering Limited",
-    "kind": "indeed",
-    "url": "https://www.indeed.com/q-Landmark-Surveying-&-Engineering-jobs.html"
+    "company": "Milk Moovement",
+    "kind": "blocked",
+    "url": "https://jobs.lever.co/milk-moovement"
   },
   {
-    "company": "Luxsonic Technologies, Inc.",
-    "kind": "linkedin",
-    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQHs5aBoa3d1xgAAAZ_kNFYYygjl52Q7xYQMvKfb_AlGkhdxQC2wi2uMPJJUSKTBtJFWQ4E-8Grkg1hb5jQTIzcQ_6ueas6ieklMD1k5_SqBABhcGa85KUcgvkSqwnfb8QniGqw=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fluxsonic-healthcare"
-  },
-  {
-    "company": "MEDICURO Virtual Health Inc.",
-    "kind": "linkedin",
-    "url": "https://ca.linkedin.com/company/medicuro"
+    "company": "Repairify",
+    "kind": "blocked",
+    "url": "https://uscareers-repairify.icims.com/jobs/intro?hashed=-625944553&mobile=false&width=1264&height=500&bga=true&needsRedirect=false&jan1offset=-210&jun1offset=-150"
   }
 ]
