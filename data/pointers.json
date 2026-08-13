@@ -1,27 +1,52 @@
 [
   {
-    "company": "Starluv",
-    "kind": "linkedin",
-    "url": "https://ca.linkedin.com/company/starluv-inc"
+    "company": "The Idea Factory",
+    "kind": "blocked",
+    "url": "https://ifactory.ca/careers/"
   },
   {
-    "company": "Cloud North Bookkeeping & Tax",
+    "company": "Thinkwell Research + Strategy",
     "kind": "linkedin",
-    "url": "https://ca.linkedin.com/company/cloud-north-bookkeeping-tax"
+    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQHf2x9Lnn-ObQAAAZ_4wxPQNgWXMs_SB3HCAk97hoYdPtZlrYA2J6zTZuLQfcOmKGOhtbe3orzdUsHzBV8k7b7vAly6Q9aGebbAz_R-kh8KciUU394c9XiSsTtJkRzHtLPUu4o=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fjobs%2Fthinkwell-research-%2B-strategy-jobs-worldwide%3Ff_C%3D2735878"
   },
   {
-    "company": "Copsys Technologies",
+    "company": "Training Works Inc.",
     "kind": "linkedin",
-    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQEzSQIAIDNt7AAAAZ_zoa1Y-DvYrTN5RLbSdVbVqCohRu4YNZdPugZt2gueDyhC2HN-TW2XaFwxR7It5VmcW4v9Ink2raGnPmD6wADJtz9MROUoF54kMWhW3PBMTTkJreGc_tA=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fcopsys-technologies-inc"
+    "url": "https://www.training-works.ca/careers"
   },
   {
-    "company": "CSIpix",
+    "company": "GroundControl",
+    "kind": "linkedin",
+    "url": "https://uk.linkedin.com/showcase/ground-control-careers/"
+  },
+  {
+    "company": "HiTech Communications",
     "kind": "indeed",
-    "url": "https://ca.indeed.com/q-csipix-jobs.html"
+    "url": "https://ca.indeed.com/cmp/Hi--tech-Communications"
   },
   {
-    "company": "Design By Analysis Engineering Inc.",
+    "company": "Ignite Financial Solutions",
     "kind": "linkedin",
-    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQE6SZoaf5qWygAAAZ_zpsIg2TvEnD5GiH4F06HT_U0p1uKJXMuPCH5J0kDxRU23VFSlRQ_boeOfynWITYRrjEv9OLSQjdu158DStM79iLC1Gs8vmXIn4PIo2ZsXTwlprLAQIDg=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fdesign-by-analysis-engineering-inc-"
+    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQGNwGD4VMzOPwAAAZ_4yG7oLC86-d589hDeP_lSV0NpnFiCdf45liyG3k9ye3XKlRlG708z9CjQRN80U1kZZgZXb_NW4ak3nUuzussFx2mAxODjvzfJ7WfKwLrOCjVgCkRYcxs=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fignite-financial-solutions"
+  },
+  {
+    "company": "Killick Capital",
+    "kind": "blocked",
+    "url": "https://www.killickcapital.com/careers/jobs"
+  },
+  {
+    "company": "Landmark Surveys & Engineering Limited",
+    "kind": "indeed",
+    "url": "https://www.indeed.com/q-Landmark-Surveying-&-Engineering-jobs.html"
+  },
+  {
+    "company": "Luxsonic Technologies, Inc.",
+    "kind": "linkedin",
+    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQHx7t1TBrT9qQAAAZ_4zn2wK69G-aOhrOlTxIic6ooTjs4ZpF5lJyTtkt7030QDggP0OHR3UTDTL8Rdon3VSmxnUNpZLIKP5Ti1EzTN_Sf0HCoTl23VAZtnGyNZtlRHBYy4ozM=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fluxsonic-healthcare"
+  },
+  {
+    "company": "MEDICURO Virtual Health Inc.",
+    "kind": "linkedin",
+    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQHA3a58DsoVmAAAAZ_40NdAXOl4nx3qIbzWsl5zLprOc74rzLcDbhsUounuTfG0nW7eHwyP1c_KBtUvE04-Oq2MmG1wBrWCvCcLgyEr_Z0tIPj6tisGtfbIfWqavrMdQKhmqtc=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fmedicuro"
   }
 ]
