@@ -1,9 +1,9 @@
 {
-  "generated": "2026-08-14T01:52:13+00:00",
-  "open_count": 496,
-  "new_count": 147,
-  "company_count": 74,
-  "total_tracked": 2393,
+  "generated": "2026-08-15T01:47:30+00:00",
+  "open_count": 511,
+  "new_count": 150,
+  "company_count": 75,
+  "total_tracked": 2425,
   "companies": [
     "AXIS Career Services-Association for New Canadians",
     "Academy Canada",
@@ -55,6 +55,7 @@
     "Office of the Chief Information Officer (OCIO)",
     "Omega 365 Canada Inc",
     "Osler, Hoskin & Harcourt, LLP",
+    "PAL Aerospace",
     "Port of Argentia",
     "Propel",
     "RBCx",
@@ -81,6 +82,7 @@
     "trophi.ai"
   ],
   "boards": [
+    "adp",
     "ashby",
     "bamboohr",
     "greenhouse",
@@ -91,7 +93,7 @@
     "workday"
   ],
   "sh_reconcile": {
-    "generated": "2026-08-13T01:52:06+00:00",
+    "generated": "2026-08-14T01:52:14+00:00",
     "not_in_roster": [
       {
         "company_name": "CarteNav Solutions",
@@ -170,6 +172,13 @@
           "https://technl.ca/job/netbenefit-software-st-johns-full-time-content-marketing-specialist/",
           "https://technl.ca/job/netbenefit-software-st-johns-full-time-senior-software-developer-team-lead/",
           "https://technl.ca/job/netbenefit-software-st-johns-full-time-senior-software-developer/"
+        ]
+      },
+      {
+        "company_name": "Repairify",
+        "job_count": 1,
+        "urls": [
+          "https://uscareers-repairify.icims.com/jobs/2660/qa-automation-engineer/job"
         ]
       },
       {
