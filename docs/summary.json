@@ -1,9 +1,9 @@
 {
-  "generated": "2026-08-15T01:47:30+00:00",
-  "open_count": 511,
-  "new_count": 150,
+  "generated": "2026-08-16T01:52:11+00:00",
+  "open_count": 522,
+  "new_count": 175,
   "company_count": 75,
-  "total_tracked": 2425,
+  "total_tracked": 2468,
   "companies": [
     "AXIS Career Services-Association for New Canadians",
     "Academy Canada",
@@ -20,6 +20,7 @@
     "Canadian Global Maritime",
     "Canadian Manufacturers & Exporters",
     "ChecKin",
+    "City of St. John's - Economic Development",
     "ClearRisk",
     "CoLab Software",
     "College of the North Atlantic",
@@ -30,7 +31,6 @@
     "Deloitte Management Services LP",
     "Digital Nova Scotia",
     "Dovre Group",
-    "Enaimco",
     "Ethree Online Inc.",
     "Focus FS",
     "Genoa Design International Ltd.",
@@ -93,7 +93,7 @@
     "workday"
   ],
   "sh_reconcile": {
-    "generated": "2026-08-14T01:52:14+00:00",
+    "generated": "2026-08-15T01:47:31+00:00",
     "not_in_roster": [
       {
         "company_name": "CarteNav Solutions",
