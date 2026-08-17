@@ -1,9 +1,9 @@
 {
-  "generated": "2026-08-16T01:52:11+00:00",
-  "open_count": 522,
-  "new_count": 175,
+  "generated": "2026-08-17T01:54:39+00:00",
+  "open_count": 520,
+  "new_count": 172,
   "company_count": 75,
-  "total_tracked": 2468,
+  "total_tracked": 2494,
   "companies": [
     "AXIS Career Services-Association for New Canadians",
     "Academy Canada",
@@ -93,15 +93,8 @@
     "workday"
   ],
   "sh_reconcile": {
-    "generated": "2026-08-15T01:47:31+00:00",
+    "generated": "2026-08-16T01:52:12+00:00",
     "not_in_roster": [
-      {
-        "company_name": "CarteNav Solutions",
-        "job_count": 1,
-        "urls": [
-          "https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=06351502-0666-4c6f-9a0b-165c5faeab35&jobId=705379&selectedMenuKey=CurrentOpenings"
-        ]
-      },
       {
         "company_name": "Data Farms",
         "job_count": 2,
@@ -139,11 +132,12 @@
     "scrape_gap": [
       {
         "company_name": "Avalon Holographics",
-        "job_count": 3,
+        "job_count": 4,
         "urls": [
           "https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=384f5e8d-ce48-4dbd-8c5e-fd9601da7e77&jobId=572528&selectedMenuKey=CurrentOpenings",
           "https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=384f5e8d-ce48-4dbd-8c5e-fd9601da7e77&jobId=581272&selectedMenuKey=CurrentOpenings",
-          "https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=384f5e8d-ce48-4dbd-8c5e-fd9601da7e77&jobId=583438&selectedMenuKey=CurrentOpenings"
+          "https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=384f5e8d-ce48-4dbd-8c5e-fd9601da7e77&jobId=583438&selectedMenuKey=CurrentOpenings",
+          "https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=384f5e8d-ce48-4dbd-8c5e-fd9601da7e77&jobId=589130&selectedMenuKey=CurrentOpenings"
         ]
       },
       {
@@ -225,6 +219,6 @@
         ]
       }
     ],
-    "overlap": 17
+    "overlap": 16
   }
 }
