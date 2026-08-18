@@ -1,42 +1,52 @@
 [
   {
-    "company": "Starluv",
-    "kind": "linkedin",
-    "url": "https://ca.linkedin.com/company/starluv-inc"
-  },
-  {
-    "company": "GroundControl",
-    "kind": "linkedin",
-    "url": "https://uk.linkedin.com/showcase/ground-control-careers/"
-  },
-  {
-    "company": "HiTech Communications",
-    "kind": "indeed",
-    "url": "https://ca.indeed.com/cmp/Hi--tech-Communications"
-  },
-  {
-    "company": "Ignite Financial Solutions",
-    "kind": "linkedin",
-    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQG7jkPAvDN4-wAAAaANZDSQThSexcI8A3XNMpQ0gKSfVhU7ppI_o_g3f2j5lkHqtA79twHD5I63C36CNRy9S3QUdiz1iLEAQW_Sapx7HZCA5g0mRics6OfhJbHogCbWZKi9MeY=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fignite-financial-solutions"
-  },
-  {
-    "company": "Killick Capital",
+    "company": "The Idea Factory",
     "kind": "blocked",
-    "url": "https://www.killickcapital.com/careers/jobs"
+    "url": "https://ifactory.ca/careers/"
   },
   {
-    "company": "Landmark Surveys & Engineering Limited",
-    "kind": "indeed",
-    "url": "https://www.indeed.com/q-Landmark-Surveying-&-Engineering-jobs.html"
-  },
-  {
-    "company": "Luxsonic Technologies, Inc.",
+    "company": "Thinkwell Research + Strategy",
     "kind": "linkedin",
-    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQESHG0BNzUrXwAAAaANaeWYUfkCCCVVKmZEe-RKRFZAMbfSrNT9kGGewbPDGyPF703tTUjuw1Wfvhh1vQ4BVC9ePOjJHlAAHhscBDbvbJNFDSpTE3SO8ntlEgI45wnumxFFvd4=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fluxsonic-technologies-inc-"
+    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQF68eQLjvyUjgAAAaASgyI4leeLlZv-xIeKbJepACy8OFno0GueIM8ssF1MDj-hszT5kzQFwwUuizjTUYMGrwuFJB7b3v2Hbc_g7edSOhDnqGu6eF17_o-j0f0NCJlH7kf5Z18=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fjobs%2Fthinkwell-research-%2B-strategy-jobs-worldwide%3Ff_C%3D2735878"
   },
   {
-    "company": "MEDICURO Virtual Health Inc.",
+    "company": "Training Works Inc.",
     "kind": "linkedin",
-    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQGDm3IC2oQk7gAAAaANbEb4dBKtLFWsdfOTe6MDQKwp07gBC2AsyFb6zJatF94eIE-ifLJgA3zw-kTznLpdIIJrqS9hJtWcY2TEC0gUcq_IuxHzSrBSxIwg6b-DGh8Qd4ymqyE=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fmedicuro"
+    "url": "https://www.training-works.ca/careers"
+  },
+  {
+    "company": "AbbaTek Group Inc",
+    "kind": "linkedin",
+    "url": "https://ca.linkedin.com/company/abbatek"
+  },
+  {
+    "company": "Angler Solutions Inc.",
+    "kind": "linkedin",
+    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQHhev-cWkLKBgAAAaAShgCYuIScLcbo4L3Wh0x6u0r-XzbZTLtE-lS8nyjg_R1b-DQGaEgKQMoR1I_jczVDI68bUy3LktIJD4xfyoIaWuXaNgfu3oXs7ASdQRpB5PgTMqg9Tgc=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fangler-solutions-inc"
+  },
+  {
+    "company": "Atlantic XL",
+    "kind": "linkedin",
+    "url": "https://uk.linkedin.com/company/atlantic-xl-inc."
+  },
+  {
+    "company": "Avalon Holographics",
+    "kind": "blocked",
+    "url": "https://avalonholographics.com/careers/"
+  },
+  {
+    "company": "Big Land Networks Ltd",
+    "kind": "blocked",
+    "url": "https://blnx.ca/jobs/apply/"
+  },
+  {
+    "company": "Milk Moovement",
+    "kind": "blocked",
+    "url": "https://jobs.lever.co/milk-moovement"
+  },
+  {
+    "company": "Repairify",
+    "kind": "blocked",
+    "url": "https://uscareers-repairify.icims.com/jobs/intro?hashed=-625944553&mobile=false&width=1264&height=500&bga=true&needsRedirect=false&jan1offset=-210&jun1offset=-150"
   }
 ]

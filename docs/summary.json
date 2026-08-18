@@ -1,9 +1,9 @@
 {
-  "generated": "2026-08-17T01:54:39+00:00",
-  "open_count": 520,
-  "new_count": 172,
+  "generated": "2026-08-18T01:52:02+00:00",
+  "open_count": 513,
+  "new_count": 178,
   "company_count": 75,
-  "total_tracked": 2494,
+  "total_tracked": 2536,
   "companies": [
     "AXIS Career Services-Association for New Canadians",
     "Academy Canada",
@@ -93,7 +93,7 @@
     "workday"
   ],
   "sh_reconcile": {
-    "generated": "2026-08-16T01:52:12+00:00",
+    "generated": "2026-08-17T01:54:40+00:00",
     "not_in_roster": [
       {
         "company_name": "Data Farms",
