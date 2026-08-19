@@ -1,9 +1,9 @@
 {
-  "generated": "2026-08-18T01:52:02+00:00",
-  "open_count": 513,
-  "new_count": 178,
-  "company_count": 75,
-  "total_tracked": 2536,
+  "generated": "2026-08-19T01:46:13+00:00",
+  "open_count": 505,
+  "new_count": 182,
+  "company_count": 74,
+  "total_tracked": 2567,
   "companies": [
     "AXIS Career Services-Association for New Canadians",
     "Academy Canada",
@@ -55,7 +55,6 @@
     "Office of the Chief Information Officer (OCIO)",
     "Omega 365 Canada Inc",
     "Osler, Hoskin & Harcourt, LLP",
-    "PAL Aerospace",
     "Port of Argentia",
     "Propel",
     "RBCx",
@@ -82,7 +81,6 @@
     "trophi.ai"
   ],
   "boards": [
-    "adp",
     "ashby",
     "bamboohr",
     "greenhouse",
@@ -93,7 +91,7 @@
     "workday"
   ],
   "sh_reconcile": {
-    "generated": "2026-08-17T01:54:40+00:00",
+    "generated": "2026-08-18T01:52:04+00:00",
     "not_in_roster": [
       {
         "company_name": "Data Farms",
