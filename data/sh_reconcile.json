@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-19T01:46:15+00:00",
+  "generated": "2026-08-20T01:59:31+00:00",
   "not_in_roster": [
     {
       "company_name": "Data Farms",
@@ -28,9 +28,10 @@
     },
     {
       "company_name": "WSP",
-      "job_count": 2,
+      "job_count": 3,
       "urls": [
         "https://emit.fa.ca3.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_2001/job/85639",
+        "https://emit.fa.ca3.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_2001/job/88535",
         "https://emit.fa.ca3.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_2001/job/89688"
       ]
     }
