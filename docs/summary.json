@@ -1,9 +1,9 @@
 {
-  "generated": "2026-08-20T01:59:30+00:00",
-  "open_count": 511,
-  "new_count": 204,
-  "company_count": 74,
-  "total_tracked": 2634,
+  "generated": "2026-08-21T01:53:23+00:00",
+  "open_count": 528,
+  "new_count": 221,
+  "company_count": 75,
+  "total_tracked": 2671,
   "companies": [
     "AXIS Career Services-Association for New Canadians",
     "Academy Canada",
@@ -60,6 +60,7 @@
     "RBCx",
     "Retellio",
     "SEM Ltd.",
+    "Seafair",
     "Sequence Bio Inc.",
     "Solace Power Inc",
     "Springboard Atlantic",
@@ -91,7 +92,7 @@
     "workday"
   ],
   "sh_reconcile": {
-    "generated": "2026-08-19T01:46:15+00:00",
+    "generated": "2026-08-20T01:59:31+00:00",
     "not_in_roster": [
       {
         "company_name": "Data Farms",
@@ -120,9 +121,10 @@
       },
       {
         "company_name": "WSP",
-        "job_count": 2,
+        "job_count": 3,
         "urls": [
           "https://emit.fa.ca3.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_2001/job/85639",
+          "https://emit.fa.ca3.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_2001/job/88535",
           "https://emit.fa.ca3.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_2001/job/89688"
         ]
       }
