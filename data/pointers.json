@@ -1,47 +1,42 @@
 [
   {
-    "company": "SmartICE Monitoring & Information Inc.",
+    "company": "Starluv",
+    "kind": "linkedin",
+    "url": "https://ca.linkedin.com/company/starluv-inc"
+  },
+  {
+    "company": "AbbaTek Group Inc",
+    "kind": "linkedin",
+    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQGm_iQjMp2jeAAAAaAnHufgE1zDqSR4eAhzzWSmTAGztgRS86lRXQ9qSSWIBHlcgbJ_lPMuvjiyGNXscGT_ReyoLCFRmayTuUMzhNwypPmujnFhp2CkJ4SOguB6176IvfuOzDM=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fabbatek"
+  },
+  {
+    "company": "Angler Solutions Inc.",
+    "kind": "linkedin",
+    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQFXeJUSRxJiqAAAAaAnIKkYbAdqmWEsnaRXpIeMYePqeTbDNPVGy0kZF6LPdpOZ6OwQRyRE_HSIIJPciwKV3secoAMtJxICJjXx2jtf55ZOEwU8Ygc-w_fS9x9TrYGfPTJMAUQ=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fangler-solutions-inc"
+  },
+  {
+    "company": "Atlantic XL",
+    "kind": "linkedin",
+    "url": "https://uk.linkedin.com/company/atlantic-xl-inc."
+  },
+  {
+    "company": "Avalon Holographics",
     "kind": "blocked",
-    "url": "https://smartice.org/jobs/"
+    "url": "https://avalonholographics.com/careers/"
   },
   {
-    "company": "Sparrow Acoustics Inc",
-    "kind": "indeed",
-    "url": "https://ca.indeed.com/q-sparrow-acoustics-jobs.html"
-  },
-  {
-    "company": "GroundControl",
-    "kind": "linkedin",
-    "url": "https://uk.linkedin.com/showcase/ground-control-careers/"
-  },
-  {
-    "company": "HiTech Communications",
-    "kind": "indeed",
-    "url": "https://ca.indeed.com/cmp/Hi--tech-Communications"
-  },
-  {
-    "company": "Ignite Financial Solutions",
-    "kind": "linkedin",
-    "url": "https://www.linkedin.com/company/ignite-financial-solutions"
-  },
-  {
-    "company": "Killick Capital",
+    "company": "Big Land Networks Ltd",
     "kind": "blocked",
-    "url": "https://www.killickcapital.com/careers/jobs"
+    "url": "https://blnx.ca/jobs/apply/"
   },
   {
-    "company": "Landmark Surveys & Engineering Limited",
-    "kind": "indeed",
-    "url": "https://www.indeed.com/q-Landmark-Surveying-&-Engineering-jobs.html"
+    "company": "Milk Moovement",
+    "kind": "blocked",
+    "url": "https://jobs.lever.co/milk-moovement"
   },
   {
-    "company": "Luxsonic Technologies, Inc.",
-    "kind": "linkedin",
-    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQGHDSrUTCIOXQAAAaAiAavQnXALrV_obF8i1R6M9yQPLOQW9qwV5yhOEsXvuLs9yYzwTcIGsIrDvCo8dXBgbWJxadNckK8HbWzHRB9t9vGcq0AUnn-z72LbNp1qytDDF_wi5mA=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fluxsonic-healthcare"
-  },
-  {
-    "company": "MEDICURO Virtual Health Inc.",
-    "kind": "linkedin",
-    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQHkfs4CpLSGYQAAAaAiA-YgBFbz8_HWQGM__24uwumyr0ForummaH-ZD38Vcnid8X-bkdCrzNz2emZ4sjyPe8m55hqCF0QhIlOUdP8dgs0AaBetoE9UPEpcGVLzyuDu5-t1byg=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fmedicuro"
+    "company": "Repairify",
+    "kind": "blocked",
+    "url": "https://uscareers-repairify.icims.com/jobs/intro?hashed=-625944553&mobile=false&width=1264&height=500&bga=true&needsRedirect=false&jan1offset=-210&jun1offset=-150"
   }
 ]
