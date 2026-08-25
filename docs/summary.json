@@ -1,9 +1,9 @@
 {
-  "generated": "2026-08-24T01:51:22+00:00",
-  "open_count": 515,
-  "new_count": 190,
-  "company_count": 75,
-  "total_tracked": 2767,
+  "generated": "2026-08-25T01:53:17+00:00",
+  "open_count": 519,
+  "new_count": 182,
+  "company_count": 76,
+  "total_tracked": 2793,
   "companies": [
     "AXIS Career Services-Association for New Canadians",
     "Academy Canada",
@@ -38,6 +38,7 @@
     "Hatch Ltd.",
     "Higher Talent Inc.",
     "IMP Solutions",
+    "Innovation, Science & Economic Development Canada",
     "JAC Digital Marketing Agency",
     "KBRS & Meridia Recruitment Solution",
     "KPMG LLP",
@@ -92,7 +93,7 @@
     "workday"
   ],
   "sh_reconcile": {
-    "generated": "2026-08-23T01:47:25+00:00",
+    "generated": "2026-08-24T01:51:24+00:00",
     "not_in_roster": [
       {
         "company_name": "Data Farms",
