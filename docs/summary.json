@@ -1,9 +1,9 @@
 {
-  "generated": "2026-08-25T01:53:17+00:00",
-  "open_count": 519,
-  "new_count": 182,
-  "company_count": 76,
-  "total_tracked": 2793,
+  "generated": "2026-08-26T01:48:19+00:00",
+  "open_count": 513,
+  "new_count": 187,
+  "company_count": 75,
+  "total_tracked": 2835,
   "companies": [
     "AXIS Career Services-Association for New Canadians",
     "Academy Canada",
@@ -17,7 +17,6 @@
     "Breton Group",
     "C-CORE",
     "CGI Inc.",
-    "Canadian Global Maritime",
     "Canadian Manufacturers & Exporters",
     "ChecKin",
     "ClearRisk",
@@ -93,8 +92,15 @@
     "workday"
   ],
   "sh_reconcile": {
-    "generated": "2026-08-24T01:51:24+00:00",
+    "generated": "2026-08-25T01:53:18+00:00",
     "not_in_roster": [
+      {
+        "company_name": "CarteNav Solutions",
+        "job_count": 1,
+        "urls": [
+          "https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=06351502-0666-4c6f-9a0b-165c5faeab35&jobId=721260&selectedMenuKey=CurrentOpenings"
+        ]
+      },
       {
         "company_name": "Data Farms",
         "job_count": 2,
@@ -105,8 +111,9 @@
       },
       {
         "company_name": "Intact Financial",
-        "job_count": 2,
+        "job_count": 3,
         "urls": [
+          "https://careers.intactfc.com/it-technical-advisor-senior/job/R153366",
           "https://careers.intactfc.com/principal-cloud-strategy-autonomous-enterprise/job/R152363",
           "https://careers.intactfc.com/senior-java-angular-developer/job/R154519"
         ]
