@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-26T01:48:20+00:00",
+  "generated": "2026-08-27T01:45:23+00:00",
   "not_in_roster": [
     {
       "company_name": "CarteNav Solutions",
@@ -127,6 +127,13 @@
       ]
     },
     {
+      "company_name": "StrobelTEK",
+      "job_count": 3,
+      "urls": [
+        "https://strobeltek.com/careers-2/"
+      ]
+    },
+    {
       "company_name": "Triware Technologies",
       "job_count": 1,
       "urls": [
@@ -141,5 +148,5 @@
       ]
     }
   ],
-  "overlap": 16
+  "overlap": 15
 }

@@ -1,9 +1,9 @@
 {
-  "generated": "2026-08-26T01:48:19+00:00",
-  "open_count": 513,
-  "new_count": 187,
-  "company_count": 75,
-  "total_tracked": 2835,
+  "generated": "2026-08-27T01:45:22+00:00",
+  "open_count": 509,
+  "new_count": 189,
+  "company_count": 74,
+  "total_tracked": 2857,
   "companies": [
     "AXIS Career Services-Association for New Canadians",
     "Academy Canada",
@@ -64,7 +64,6 @@
     "Sequence Bio Inc.",
     "Solace Power Inc",
     "Springboard Atlantic",
-    "StrobelTEK",
     "Strong Data Inc",
     "TD Commercial Banking",
     "Telelink",
@@ -92,7 +91,7 @@
     "workday"
   ],
   "sh_reconcile": {
-    "generated": "2026-08-25T01:53:18+00:00",
+    "generated": "2026-08-26T01:48:20+00:00",
     "not_in_roster": [
       {
         "company_name": "CarteNav Solutions",
@@ -217,6 +216,13 @@
           "https://jobs.ashbyhq.com/spellbook.legal/e41772f0-d9d3-4bc5-9d40-cf92efdb076b",
           "https://jobs.ashbyhq.com/spellbook.legal/f758da9b-9744-4aee-a957-d7a8cecdabe8",
           "https://jobs.ashbyhq.com/spellbook.legal/fd975f98-a9ae-4046-bf0c-a012a56af728"
+        ]
+      },
+      {
+        "company_name": "Triware Technologies",
+        "job_count": 1,
+        "urls": [
+          "https://triware.ca/job/account-manager/"
         ]
       },
       {
