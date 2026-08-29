@@ -1,9 +1,9 @@
 {
-  "generated": "2026-08-28T01:51:35+00:00",
-  "open_count": 506,
-  "new_count": 164,
-  "company_count": 74,
-  "total_tracked": 2891,
+  "generated": "2026-08-29T01:57:41+00:00",
+  "open_count": 510,
+  "new_count": 176,
+  "company_count": 75,
+  "total_tracked": 2935,
   "companies": [
     "AXIS Career Services-Association for New Canadians",
     "Academy Canada",
@@ -70,6 +70,7 @@
     "Telelink",
     "The Newfoundland and Labrador Construction Association",
     "Tiller Engineering Inc.",
+    "Triware Technologies Inc.",
     "Trudell Medical Limited",
     "Venor",
     "Virtual Marine Inc.",
@@ -91,7 +92,7 @@
     "workday"
   ],
   "sh_reconcile": {
-    "generated": "2026-08-27T01:45:23+00:00",
+    "generated": "2026-08-28T01:51:36+00:00",
     "not_in_roster": [
       {
         "company_name": "CarteNav Solutions",
