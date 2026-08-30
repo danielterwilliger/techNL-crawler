@@ -1,16 +1,15 @@
 {
-  "generated": "2026-08-29T01:57:41+00:00",
-  "open_count": 510,
-  "new_count": 176,
+  "generated": "2026-08-30T01:55:29+00:00",
+  "open_count": 483,
+  "new_count": 162,
   "company_count": 75,
-  "total_tracked": 2935,
+  "total_tracked": 2966,
   "companies": [
     "AXIS Career Services-Association for New Canadians",
     "Academy Canada",
     "Alt Hotel St John's - Germain Hotels",
     "AltoMaxx Technologies Inc",
     "Amal Youth & Family Centre",
-    "BDO Canada LLP",
     "Barrington Consulting",
     "Big Land Networks Ltd",
     "BreatheSuite",
@@ -78,6 +77,7 @@
     "Vision33 Inc.",
     "Wedgwood Insurance Limited",
     "Whitecap Scientific Corporation",
+    "Women in Resource Development Corporation",
     "launch consulting",
     "trophi.ai"
   ],
@@ -92,7 +92,7 @@
     "workday"
   ],
   "sh_reconcile": {
-    "generated": "2026-08-28T01:51:36+00:00",
+    "generated": "2026-08-29T01:57:42+00:00",
     "not_in_roster": [
       {
         "company_name": "CarteNav Solutions",
@@ -119,12 +119,32 @@
         ]
       },
       {
-        "company_name": "Nasdaq Verafin",
-        "job_count": 3,
+        "company_name": "Mysa",
+        "job_count": 1,
         "urls": [
-          "https://nasdaq.wd1.myworkdayjobs.com/Global_External_Site/job/Canada---St-Johns---Newfoundland--Labrador/Verafin---MITACs-Research-Intern--Fall-2026-_R0026283",
-          "https://nasdaq.wd1.myworkdayjobs.com/Global_External_Site/job/Canada---St-Johns---Newfoundland--Labrador/Verafin---Senior-Cloud-Security-Developer_R0026252",
-          "https://nasdaq.wd1.myworkdayjobs.com/Global_External_Site/job/Canada---St-Johns---Newfoundland--Labrador/Verafin---Senior-Software-Developer--Scenario-Builder-_R0026230"
+          "https://www.kyrix.ai/j/9316ejt0/31"
+        ]
+      },
+      {
+        "company_name": "Nasdaq Verafin",
+        "job_count": 2,
+        "urls": [
+          "https://nasdaq.wd1.myworkdayjobs.com/Global_External_Site/job/Canada---St-Johns---Newfoundland--Labrador/Commercial-Lawyer_R0026657",
+          "https://nasdaq.wd1.myworkdayjobs.com/Global_External_Site/job/Canada---St-Johns---Newfoundland--Labrador/Senior-Specialist--Digital-Marketing---Web--AI-and-SEO_R0026815"
+        ]
+      },
+      {
+        "company_name": "Verlo",
+        "job_count": 8,
+        "urls": [
+          "https://jobs.ashbyhq.com/verlo/1e13ac13-8516-4546-b4ae-170138ee678b",
+          "https://jobs.ashbyhq.com/verlo/1ead43a6-286a-4f68-8a82-4c6e35be11a2",
+          "https://jobs.ashbyhq.com/verlo/46347d53-6724-406d-925b-2d3cb2f9d8b0",
+          "https://jobs.ashbyhq.com/verlo/5c8b6209-1d1c-4877-a31d-c56b7b08eadf",
+          "https://jobs.ashbyhq.com/verlo/96a30e37-d08b-4c72-99cd-bae43ffcfb12",
+          "https://jobs.ashbyhq.com/verlo/a6d8f3c7-f535-4d5b-8b60-17d50c380af9",
+          "https://jobs.ashbyhq.com/verlo/ab555567-26d7-4954-b05e-29e08a3a412f",
+          "https://jobs.ashbyhq.com/verlo/f433193e-1584-4c1e-885b-283497e4c40a"
         ]
       },
       {
@@ -161,13 +181,6 @@
         ]
       },
       {
-        "company_name": "Genesis",
-        "job_count": 1,
-        "urls": [
-          "https://www.careerbeacon.com/en/job/2234974/genesis/senior-manager-programs/newfoundland-and-labrador"
-        ]
-      },
-      {
         "company_name": "NetBenefit Software",
         "job_count": 3,
         "urls": [
@@ -195,28 +208,22 @@
       },
       {
         "company_name": "Spellbook",
-        "job_count": 20,
+        "job_count": 14,
         "urls": [
-          "https://jobs.ashbyhq.com/spellbook.legal/06cb21f1-882a-4e6f-a2d5-39e5187aee4d",
-          "https://jobs.ashbyhq.com/spellbook.legal/12e7e924-cb65-42c1-8541-7b91a9c73fc0",
-          "https://jobs.ashbyhq.com/spellbook.legal/2013e90d-c265-4f48-ab97-fbe1063b5edc",
-          "https://jobs.ashbyhq.com/spellbook.legal/22a80c7b-2e4d-4f89-834d-db7d3387a5c8",
-          "https://jobs.ashbyhq.com/spellbook.legal/2a5ad730-e433-4974-b9f8-3657043f2937",
-          "https://jobs.ashbyhq.com/spellbook.legal/381788d0-507c-4232-b9ca-8c5b39070276",
-          "https://jobs.ashbyhq.com/spellbook.legal/638c8845-6bc9-4767-a0a6-386ccbf5f8c5",
-          "https://jobs.ashbyhq.com/spellbook.legal/74cbb48c-389d-4171-8884-4621d8ab0f83",
-          "https://jobs.ashbyhq.com/spellbook.legal/93028c2d-6e93-4fd9-8592-0cf23bfd1c22",
-          "https://jobs.ashbyhq.com/spellbook.legal/9484d7ba-31d8-4347-a316-b9e8f4f48d3e",
-          "https://jobs.ashbyhq.com/spellbook.legal/9cb21ddb-472c-4048-915f-ffd87bb39cdf",
-          "https://jobs.ashbyhq.com/spellbook.legal/c8b34b2a-635f-4a84-8d9c-3e7b1174aa03",
-          "https://jobs.ashbyhq.com/spellbook.legal/d4e09e10-2520-4165-9d64-72e3227c3a56",
-          "https://jobs.ashbyhq.com/spellbook.legal/d82549cd-12ee-4894-9f09-d7cdfa2656ea",
-          "https://jobs.ashbyhq.com/spellbook.legal/d92285f3-73a5-4ad1-8b1a-df1d2ab034df",
-          "https://jobs.ashbyhq.com/spellbook.legal/e09ace55-fd22-4549-8b33-691ff7c260ad",
-          "https://jobs.ashbyhq.com/spellbook.legal/e0f6f3e7-b8ca-4e2c-90f1-5419b4df57bf",
-          "https://jobs.ashbyhq.com/spellbook.legal/e41772f0-d9d3-4bc5-9d40-cf92efdb076b",
-          "https://jobs.ashbyhq.com/spellbook.legal/f758da9b-9744-4aee-a957-d7a8cecdabe8",
-          "https://jobs.ashbyhq.com/spellbook.legal/fd975f98-a9ae-4046-bf0c-a012a56af728"
+          "https://jobs.ashbyhq.com/spellbook.com/1b70d152-fd96-4ac7-afb7-574a23fba4f8",
+          "https://jobs.ashbyhq.com/spellbook.com/22a80c7b-2e4d-4f89-834d-db7d3387a5c8",
+          "https://jobs.ashbyhq.com/spellbook.com/381788d0-507c-4232-b9ca-8c5b39070276",
+          "https://jobs.ashbyhq.com/spellbook.com/638c8845-6bc9-4767-a0a6-386ccbf5f8c5",
+          "https://jobs.ashbyhq.com/spellbook.com/6d6e7a5e-3bc4-46f6-b82f-309ae9d3a3de",
+          "https://jobs.ashbyhq.com/spellbook.com/9cb21ddb-472c-4048-915f-ffd87bb39cdf",
+          "https://jobs.ashbyhq.com/spellbook.com/a029530c-3629-4a11-8cf7-d183cf766628",
+          "https://jobs.ashbyhq.com/spellbook.com/a358e75b-252f-4d09-8d31-da1c6d63bbd9",
+          "https://jobs.ashbyhq.com/spellbook.com/ae3a9134-2f98-436e-bd61-388acb75e79f",
+          "https://jobs.ashbyhq.com/spellbook.com/b92d5601-74c0-47a3-b1ad-9968b899bdba",
+          "https://jobs.ashbyhq.com/spellbook.com/c53f284e-e0bd-4d17-8c9b-e96050bfb213",
+          "https://jobs.ashbyhq.com/spellbook.com/d82549cd-12ee-4894-9f09-d7cdfa2656ea",
+          "https://jobs.ashbyhq.com/spellbook.com/d92285f3-73a5-4ad1-8b1a-df1d2ab034df",
+          "https://jobs.ashbyhq.com/spellbook.com/e0f6f3e7-b8ca-4e2c-90f1-5419b4df57bf"
         ]
       },
       {
@@ -227,13 +234,6 @@
         ]
       },
       {
-        "company_name": "Triware Technologies",
-        "job_count": 1,
-        "urls": [
-          "https://triware.ca/job/account-manager/"
-        ]
-      },
-      {
         "company_name": "TxtSquad",
         "job_count": 1,
         "urls": [
@@ -241,6 +241,6 @@
         ]
       }
     ],
-    "overlap": 15
+    "overlap": 16
   }
 }
