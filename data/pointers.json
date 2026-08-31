@@ -1,47 +1,67 @@
 [
   {
-    "company": "Voronoi Health Analytics Incorporated",
+    "company": "SmartICE Monitoring & Information Inc.",
+    "kind": "blocked",
+    "url": "https://smartice.org/.well-known/sgcaptcha/?r=%2Fjobs%2F&y=ipr:142.177.86.56:1788140010.451"
+  },
+  {
+    "company": "Sparrow Acoustics Inc",
+    "kind": "indeed",
+    "url": "https://ca.indeed.com/q-sparrow-acoustics-jobs.html"
+  },
+  {
+    "company": "MoodBox Inc.",
     "kind": "linkedin",
-    "url": "https://ca.linkedin.com/company/voronoi-health-analytics-incorporated"
+    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQFj3ZEFM76qcgAAAaBVdFsgU5zmtxQmUVtw7wVQBdV2DfQGsBiNlssFoVO0Yg-RlKtQ0kRM2ZOe2AeVDyl7TOiYQTrJ0vvV_2RW-ppnHZTzDNuJHBYDGRndsA0GrTBqe_hTT7A=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fmoodbox-inc"
   },
   {
-    "company": "AbbaTek Group Inc",
+    "company": "Munn Insurance",
+    "kind": "blocked",
+    "url": "https://careers.risepeople.com/munn-insurance-limited/en/16799_business-development-manager--commercial-insurance--nl-"
+  },
+  {
+    "company": "NDITIVE",
     "kind": "linkedin",
-    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQHXczDxzeku7QAAAaBQUGCA_ZSu5NocrXt5VjuUnPnVnhoIUrBhsEj77G6bZB3MAD9UMW2iGWh75g0E8QU0BmL6DkNXVrGnOQBhV-eGchOScCoqV8ipvmHZlA5s-8HPGD_mhvM=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fabbatek"
+    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQEGJtAY2kapBAAAAaBVdZeIcWmwu8OA6mxbrTNMPBI3Zf7sL5CmFzIGoPRipyaGsssvDh8TSY5vh_S8IPpo7W0hPUzUP7nRAf6csDb7wv5CBo1zkmXYHvWG-02om2e9ykr8QjA=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fmoodbox-inc"
   },
   {
-    "company": "Angler Solutions Inc.",
+    "company": "NLOWE - Newfoundland & Labrador Organization of Women Entrepreneurs",
+    "kind": "blocked",
+    "url": "https://www.nlowe.org/view-announcements/"
+  },
+  {
+    "company": "NLWIC-College of the North Atlantic",
+    "kind": "blocked",
+    "url": "https://ps-hr-web.cna.nl.ca/psc/HRPROD/EMPLOYEE/HRMS/c/HRS_HRAM_EMP_FL.HRS_CG_SEARCH_FL.GBL?Page=HRS_APP_SCHJOB_FL&Action=U&FOCUS=Employee&SiteId=1&cmd=login&languageCd=ENG&"
+  },
+  {
+    "company": "NLWIC-College of the North Atlantic",
+    "kind": "blocked",
+    "url": "https://ps-hr-web.cna.nl.ca/psc/HRPROD/EMPLOYEE/HRMS/c/HRS_HRAM_EMP_FL.HRS_CG_SEARCH_FL.GBL?Page=HRS_APP_SCHJOB_FL&Action=U&FOCUS=Employee&SiteId=1&cmd=login"
+  },
+  {
+    "company": "PARDY'S Waste Management and Industrial Services Limited",
+    "kind": "blocked",
+    "url": "https://pardyswaste.com/.well-known/sgcaptcha/?r=%2Fcareers%2F&y=ipr:142.177.86.56:1788140586.345"
+  },
+  {
+    "company": "PELMO International",
     "kind": "linkedin",
-    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQE0A2qlQBa0jAAAAaBQUq5YI8Gr02bQCSc5QDS4j9Vy7TQU9giCLyLkDAkiES8P8ktUAzaUaMHbdkTmUgc8acATX27ctKvYRt1eF2hEh7UfMlangr1HdO8yuQYXNlivnMa_ZfE=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fangler-solutions-inc"
+    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQEmvY6Lz_-ebwAAAaBVfBOw4R2wFhiWKe4YfN2OHNfTL_NCpQ_hBvN3ZjIvlL0h-XDTqWqU9hWiepCKs5xj54vI1eb3HYue0s3VafwtHlTrRY0SiDJnvKVERm2uX-7mI1rKphE=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fpelmo-international-inc%2F%3ForiginalSubdomain%3Dca"
   },
   {
-    "company": "Atlantic XL",
+    "company": "Pinnacle Networks",
+    "kind": "indeed",
+    "url": "https://ca.indeed.com/Pinnacle-Networks-jobs?vjk=189535a988f199c8"
+  },
+  {
+    "company": "Robot Interactive Marketing",
     "kind": "linkedin",
-    "url": "https://uk.linkedin.com/company/atlantic-xl-inc."
+    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQFAugvUxZRkjQAAAaBVf6moIkOgnGC4Xpe_87SUPzP5WKgJoNHzYdJLyAnjMDSxYAD0qX0t0VaLSmOtgjR3GZSHe8eZGuWcq-qV14nCrhQFAUt7RksCTdY20HKPhb2r-Os1CkU=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Frobot-agency"
   },
   {
-    "company": "Avalon Holographics",
-    "kind": "blocked",
-    "url": "https://avalonholographics.com/careers/"
-  },
-  {
-    "company": "Big Land Networks Ltd",
-    "kind": "blocked",
-    "url": "https://blnx.ca/jobs/apply/"
-  },
-  {
-    "company": "Canadian Global Maritime",
-    "kind": "blocked",
-    "url": "https://globalmaritime.com/careers/"
-  },
-  {
-    "company": "Milk Moovement",
-    "kind": "blocked",
-    "url": "https://jobs.lever.co/milk-moovement"
-  },
-  {
-    "company": "Repairify",
-    "kind": "blocked",
-    "url": "https://uscareers-repairify.icims.com/jobs/intro?hashed=-625944553&mobile=false&width=1264&height=500&bga=true&needsRedirect=false&jan1offset=-210&jun1offset=-150"
+    "company": "Sentinel Institute",
+    "kind": "linkedin",
+    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQHBFXH84qawDwAAAaBVf_fIyrvOsf5ydQ9EYssdLn03EEGsBeWbVxnbIiuWElYLkZBQKDrDKIIl1fG7JZgPt9clt6Zy4f6IRND2YYAFKEHgT-6jmMhRvDCUaSFyrdPvs0y_c6g=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fsentinelinstitute"
   }
 ]

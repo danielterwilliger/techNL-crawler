@@ -1,9 +1,9 @@
 {
-  "generated": "2026-08-30T01:55:29+00:00",
-  "open_count": 483,
-  "new_count": 162,
-  "company_count": 75,
-  "total_tracked": 2966,
+  "generated": "2026-08-31T01:47:29+00:00",
+  "open_count": 488,
+  "new_count": 165,
+  "company_count": 74,
+  "total_tracked": 2984,
   "companies": [
     "AXIS Career Services-Association for New Canadians",
     "Academy Canada",
@@ -58,7 +58,6 @@
     "Port of Argentia",
     "Propel",
     "RBCx",
-    "Retellio",
     "SEM Ltd.",
     "Seafair",
     "Sequence Bio Inc.",
@@ -92,7 +91,7 @@
     "workday"
   ],
   "sh_reconcile": {
-    "generated": "2026-08-29T01:57:42+00:00",
+    "generated": "2026-08-30T01:55:30+00:00",
     "not_in_roster": [
       {
         "company_name": "CarteNav Solutions",
@@ -178,15 +177,6 @@
           "https://digitalsixconsulting.com/jobs/senior-full-stack-developer-contractual/",
           "https://digitalsixconsulting.com/jobs/senior-oracle-fusion-functional-analyst-contractual/",
           "https://digitalsixconsulting.com/jobs/senior-project-manager-contractual/"
-        ]
-      },
-      {
-        "company_name": "NetBenefit Software",
-        "job_count": 3,
-        "urls": [
-          "https://technl.ca/job/netbenefit-software-st-johns-full-time-content-marketing-specialist/",
-          "https://technl.ca/job/netbenefit-software-st-johns-full-time-senior-software-developer-team-lead/",
-          "https://technl.ca/job/netbenefit-software-st-johns-full-time-senior-software-developer/"
         ]
       },
       {
