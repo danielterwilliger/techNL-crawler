@@ -1,9 +1,9 @@
 {
-  "generated": "2026-08-31T01:47:29+00:00",
-  "open_count": 488,
+  "generated": "2026-09-01T01:56:07+00:00",
+  "open_count": 479,
   "new_count": 165,
   "company_count": 74,
-  "total_tracked": 2984,
+  "total_tracked": 3006,
   "companies": [
     "AXIS Career Services-Association for New Canadians",
     "Academy Canada",
@@ -18,7 +18,6 @@
     "CGI Inc.",
     "Canadian Manufacturers & Exporters",
     "ChecKin",
-    "City of St. John's - Economic Development",
     "ClearRisk",
     "CoLab Software",
     "College of the North Atlantic",
@@ -77,6 +76,7 @@
     "Wedgwood Insurance Limited",
     "Whitecap Scientific Corporation",
     "Women in Resource Development Corporation",
+    "econext",
     "launch consulting",
     "trophi.ai"
   ],
@@ -91,7 +91,7 @@
     "workday"
   ],
   "sh_reconcile": {
-    "generated": "2026-08-30T01:55:30+00:00",
+    "generated": "2026-08-31T01:47:31+00:00",
     "not_in_roster": [
       {
         "company_name": "CarteNav Solutions",
