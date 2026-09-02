@@ -1,42 +1,57 @@
 [
   {
-    "company": "Starluv",
-    "kind": "linkedin",
-    "url": "https://ca.linkedin.com/company/starluv-inc"
-  },
-  {
-    "company": "Cloud North Bookkeeping & Tax",
-    "kind": "linkedin",
-    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQGRV8DTfl0esgAAAaBanfNASFMfs3r1hBD53fq_qWDIeffil7E6-06-33kaBGN90zW8SKsJNzSLpjjh09n6FpwxJIOdlnFJdJ4aTcMG5G6Kz1Vdl9MzCfFhpt5HNGgl2mTjS4g=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fcloud-north-bookkeeping-tax"
-  },
-  {
-    "company": "College of the North Atlantic",
+    "company": "The Idea Factory",
     "kind": "blocked",
-    "url": "https://ps-hr-web.cna.nl.ca/psc/HRPROD/EMPLOYEE/HRMS/c/HRS_HRAM_EMP_FL.HRS_CG_SEARCH_FL.GBL?Page=HRS_APP_SCHJOB_FL&Action=U&FOCUS=Employee&SiteId=1&cmd=login&languageCd=ENG&"
+    "url": "https://ifactory.ca/careers/"
   },
   {
-    "company": "Copsys Technologies",
+    "company": "Thinkwell Research + Strategy",
     "kind": "linkedin",
-    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQExpjVRtdwpnwAAAaBaoKaoZo70HYdXohUGNyMONiQ4OMwnwqGWvAeX09xMNioEmNnawPhSLWQ_JdC-48w7USYaexSU8wRz1nYl2Y5se-C1Lquf0uxCqHoSuz_skGUKEXE0_uo=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fcopsys-technologies-inc"
+    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQGLYjpxDV7brwAAAaBfv3UQJLWE7JVW7HUdIkgBFsQirqQhOzCXuwRKy8eF3bz7Rr-vaW8NyGWF8nQ-OwKt55nGTqciAVyR2p8goPhgDZ8RjFDl1jqP6XKfU_hd1M4fApOrybE=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fjobs%2Fthinkwell-research-%2B-strategy-jobs-worldwide%3Ff_C%3D2735878"
   },
   {
-    "company": "CSIpix",
+    "company": "Tiller Engineering Inc.",
+    "kind": "blocked",
+    "url": "https://tillerengineering.com/tiller/careers/"
+  },
+  {
+    "company": "Training Works Inc.",
+    "kind": "linkedin",
+    "url": "https://www.training-works.ca/careers"
+  },
+  {
+    "company": "GroundControl",
+    "kind": "linkedin",
+    "url": "https://uk.linkedin.com/showcase/ground-control-careers/"
+  },
+  {
+    "company": "HiTech Communications",
     "kind": "indeed",
-    "url": "https://ca.indeed.com/q-csipix-jobs.html"
+    "url": "https://ca.indeed.com/cmp/Hi--tech-Communications"
   },
   {
-    "company": "Design By Analysis Engineering Inc.",
+    "company": "Ignite Financial Solutions",
     "kind": "linkedin",
-    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQEOMrCRZxXYsgAAAaBapccottNk16Ocj6zbAYkwIXbJh1VxkvK4zZTGO55zZ4RgXrBn21rwLqW6UPVCncRESSDZ8CYUOYtQHyu3YaaZDLvW89Yz6ustLnO6s3SaKwA-G9KIvAk=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fdesign-by-analysis-engineering-inc-"
+    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQF-2dn-SUUZYwAAAaBfxRKQBUXyKag7eM7YrUpzXh65Bn4viqxLuUFWJj6s0dRbDXTUP9IVKMwFzCQcYne1CoO8BJjrgvvhZ1bsOEEDYV_Vc2_twf8B5PGudUM5fDboyYiZHko=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fignite-financial-solutions"
   },
   {
-    "company": "Enaimco",
+    "company": "Killick Capital",
     "kind": "blocked",
-    "url": "https://enaimco.com/careers/"
+    "url": "https://www.killickcapital.com/careers/jobs"
   },
   {
-    "company": "NewSight Technologies Inc.",
+    "company": "Landmark Surveys & Engineering Limited",
+    "kind": "indeed",
+    "url": "https://www.indeed.com/q-Landmark-Surveying-&-Engineering-jobs.html"
+  },
+  {
+    "company": "Luxsonic Technologies, Inc.",
     "kind": "linkedin",
-    "url": "https://www.linkedin.com/talent/post-a-job?trk=homepage-basic_talent-finder-cta"
+    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQEXyOhnmlynUgAAAaBfyvJ4_gW0HDB0DzLEtEn8hHbQTVX5xsAg0j2o_zSPyUr_frViCjpaFW9BBFWzDrK_QiJPfaToIgrG_3HgCn01aAzulNS2cRRNRlbE4-65C0g7HXRi7Ms=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fluxsonic-healthcare"
+  },
+  {
+    "company": "MEDICURO Virtual Health Inc.",
+    "kind": "linkedin",
+    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQGaeatW8Q7HQQAAAaBfzOKQAzmpDFYSlkgqaUTxVAX1DWSm1HKGIXuPw9egBe7njklllFvRX16XXz--I0BfpzQEtKpGBwSFM7DCSLQwGq9Sy1hLQwj1IQdhiWy3aSYVkzHbV3A=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fmedicuro"
   }
 ]
