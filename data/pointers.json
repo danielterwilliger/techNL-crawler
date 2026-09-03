@@ -1,57 +1,57 @@
 [
   {
-    "company": "The Idea Factory",
+    "company": "TxtSquad",
+    "kind": "linkedin",
+    "url": "https://ca.linkedin.com/company/getcarrick"
+  },
+  {
+    "company": "Verisult",
     "kind": "blocked",
-    "url": "https://ifactory.ca/careers/"
+    "url": "https://verisult.com/service/career-center/"
   },
   {
-    "company": "Thinkwell Research + Strategy",
+    "company": "Vifta Technology Limited",
     "kind": "linkedin",
-    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQGLYjpxDV7brwAAAaBfv3UQJLWE7JVW7HUdIkgBFsQirqQhOzCXuwRKy8eF3bz7Rr-vaW8NyGWF8nQ-OwKt55nGTqciAVyR2p8goPhgDZ8RjFDl1jqP6XKfU_hd1M4fApOrybE=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fjobs%2Fthinkwell-research-%2B-strategy-jobs-worldwide%3Ff_C%3D2735878"
+    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQFHhZgetPqR8QAAAaBk6LNYZcFAqcUK0KjonD9PG5bX1PkmWD5GeX-jvsg-eELVBdTRQy-cew-_IRjnPBnD1m-Rgxxu4qS4h1M13Mpa8RtoHaIs-Npl7H1ACy9elU1WKyaLCiU=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fvifta"
   },
   {
-    "company": "Tiller Engineering Inc.",
+    "company": "AbbaTek Group Inc",
+    "kind": "linkedin",
+    "url": "https://ca.linkedin.com/company/abbatek"
+  },
+  {
+    "company": "Angler Solutions Inc.",
+    "kind": "linkedin",
+    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQFtaTzpR3lJkQAAAaBk6rMQDENXl64tAyC2lcae4tfCc-Cl6DshRmIGqMSGg97Vemwr2z-txrwWJfbwasW94mHKLbL7uEDNMcNAOyKZUUQ2VuH9SFm01JB3AlIhs8wDVX3UFNM=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fangler-solutions-inc"
+  },
+  {
+    "company": "Atlantic XL",
+    "kind": "linkedin",
+    "url": "https://uk.linkedin.com/company/atlantic-xl-inc."
+  },
+  {
+    "company": "Avalon Holographics",
     "kind": "blocked",
-    "url": "https://tillerengineering.com/tiller/careers/"
+    "url": "https://avalonholographics.com/careers/"
   },
   {
-    "company": "Training Works Inc.",
-    "kind": "linkedin",
-    "url": "https://www.training-works.ca/careers"
-  },
-  {
-    "company": "GroundControl",
-    "kind": "linkedin",
-    "url": "https://uk.linkedin.com/showcase/ground-control-careers/"
-  },
-  {
-    "company": "HiTech Communications",
-    "kind": "indeed",
-    "url": "https://ca.indeed.com/cmp/Hi--tech-Communications"
-  },
-  {
-    "company": "Ignite Financial Solutions",
-    "kind": "linkedin",
-    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQF-2dn-SUUZYwAAAaBfxRKQBUXyKag7eM7YrUpzXh65Bn4viqxLuUFWJj6s0dRbDXTUP9IVKMwFzCQcYne1CoO8BJjrgvvhZ1bsOEEDYV_Vc2_twf8B5PGudUM5fDboyYiZHko=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fignite-financial-solutions"
-  },
-  {
-    "company": "Killick Capital",
+    "company": "Big Land Networks Ltd",
     "kind": "blocked",
-    "url": "https://www.killickcapital.com/careers/jobs"
+    "url": "https://blnx.ca/jobs/apply/"
   },
   {
-    "company": "Landmark Surveys & Engineering Limited",
-    "kind": "indeed",
-    "url": "https://www.indeed.com/q-Landmark-Surveying-&-Engineering-jobs.html"
+    "company": "Canadian Global Maritime",
+    "kind": "blocked",
+    "url": "https://globalmaritime.com/careers/"
   },
   {
-    "company": "Luxsonic Technologies, Inc.",
-    "kind": "linkedin",
-    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQEXyOhnmlynUgAAAaBfyvJ4_gW0HDB0DzLEtEn8hHbQTVX5xsAg0j2o_zSPyUr_frViCjpaFW9BBFWzDrK_QiJPfaToIgrG_3HgCn01aAzulNS2cRRNRlbE4-65C0g7HXRi7Ms=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fluxsonic-healthcare"
+    "company": "Milk Moovement",
+    "kind": "blocked",
+    "url": "https://jobs.lever.co/milk-moovement"
   },
   {
-    "company": "MEDICURO Virtual Health Inc.",
-    "kind": "linkedin",
-    "url": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQGaeatW8Q7HQQAAAaBfzOKQAzmpDFYSlkgqaUTxVAX1DWSm1HKGIXuPw9egBe7njklllFvRX16XXz--I0BfpzQEtKpGBwSFM7DCSLQwGq9Sy1hLQwj1IQdhiWy3aSYVkzHbV3A=&original_referer=&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Fmedicuro"
+    "company": "Repairify",
+    "kind": "blocked",
+    "url": "https://uscareers-repairify.icims.com/jobs/intro?hashed=-625944553&mobile=false&width=1264&height=500&bga=true&needsRedirect=false&jan1offset=-210&jun1offset=-150"
   }
 ]

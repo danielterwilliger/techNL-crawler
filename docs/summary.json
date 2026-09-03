@@ -1,21 +1,21 @@
 {
-  "generated": "2026-09-02T01:49:20+00:00",
-  "open_count": 472,
-  "new_count": 157,
+  "generated": "2026-09-03T01:50:49+00:00",
+  "open_count": 468,
+  "new_count": 158,
   "company_count": 73,
-  "total_tracked": 3028,
+  "total_tracked": 3054,
   "companies": [
     "AXIS Career Services-Association for New Canadians",
     "Academy Canada",
     "Alt Hotel St John's - Germain Hotels",
     "AltoMaxx Technologies Inc",
     "Amal Youth & Family Centre",
+    "BDO Canada LLP",
     "Barrington Consulting",
     "Big Land Networks Ltd",
     "BreatheSuite",
     "Breton Group",
     "C-CORE",
-    "CGI Inc.",
     "Canadian Manufacturers & Exporters",
     "ChecKin",
     "ClearRisk",
@@ -90,13 +90,14 @@
     "workday"
   ],
   "sh_reconcile": {
-    "generated": "2026-09-01T01:56:08+00:00",
+    "generated": "2026-09-02T01:49:21+00:00",
     "not_in_roster": [
       {
         "company_name": "CarteNav Solutions",
-        "job_count": 1,
+        "job_count": 2,
         "urls": [
-          "https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=06351502-0666-4c6f-9a0b-165c5faeab35&jobId=721260&selectedMenuKey=CurrentOpenings"
+          "https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=06351502-0666-4c6f-9a0b-165c5faeab35&jobId=721260&selectedMenuKey=CurrentOpenings",
+          "https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=06351502-0666-4c6f-9a0b-165c5faeab35&jobId=723720&selectedMenuKey=CurrentOpenings"
         ]
       },
       {
