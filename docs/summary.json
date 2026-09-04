@@ -1,9 +1,9 @@
 {
-  "generated": "2026-09-03T01:50:49+00:00",
-  "open_count": 468,
-  "new_count": 158,
+  "generated": "2026-09-04T01:45:50+00:00",
+  "open_count": 459,
+  "new_count": 151,
   "company_count": 73,
-  "total_tracked": 3054,
+  "total_tracked": 3079,
   "companies": [
     "AXIS Career Services-Association for New Canadians",
     "Academy Canada",
@@ -57,6 +57,7 @@
     "Port of Argentia",
     "Propel",
     "RBCx",
+    "Retellio",
     "SEM Ltd.",
     "Seafair",
     "Sequence Bio Inc.",
@@ -74,7 +75,6 @@
     "Vision33 Inc.",
     "Wedgwood Insurance Limited",
     "Whitecap Scientific Corporation",
-    "Women in Resource Development Corporation",
     "econext",
     "launch consulting",
     "trophi.ai"
@@ -90,7 +90,7 @@
     "workday"
   ],
   "sh_reconcile": {
-    "generated": "2026-09-02T01:49:21+00:00",
+    "generated": "2026-09-03T01:50:50+00:00",
     "not_in_roster": [
       {
         "company_name": "CarteNav Solutions",
@@ -126,10 +126,11 @@
       },
       {
         "company_name": "Nasdaq Verafin",
-        "job_count": 2,
+        "job_count": 3,
         "urls": [
           "https://nasdaq.wd1.myworkdayjobs.com/Global_External_Site/job/Canada---St-Johns---Newfoundland--Labrador/Commercial-Lawyer_R0026657",
-          "https://nasdaq.wd1.myworkdayjobs.com/Global_External_Site/job/Canada---St-Johns---Newfoundland--Labrador/Senior-Specialist--Digital-Marketing---Web--AI-and-SEO_R0026815"
+          "https://nasdaq.wd1.myworkdayjobs.com/Global_External_Site/job/Canada---St-Johns---Newfoundland--Labrador/Senior-Specialist--Digital-Marketing---Web--AI-and-SEO_R0026815",
+          "https://nasdaq.wd1.myworkdayjobs.com/Global_External_Site/job/Canada---St-Johns---Newfoundland--Labrador/Verafin---Mid-Market-Account-Development-Representative_R0026840"
         ]
       },
       {
@@ -165,6 +166,13 @@
           "https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=384f5e8d-ce48-4dbd-8c5e-fd9601da7e77&jobId=581272&selectedMenuKey=CurrentOpenings",
           "https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=384f5e8d-ce48-4dbd-8c5e-fd9601da7e77&jobId=583438&selectedMenuKey=CurrentOpenings",
           "https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=384f5e8d-ce48-4dbd-8c5e-fd9601da7e77&jobId=589130&selectedMenuKey=CurrentOpenings"
+        ]
+      },
+      {
+        "company_name": "Carnegie Learning Canada",
+        "job_count": 1,
+        "urls": [
+          "https://www.paycomonline.net/v4/ats/web.php/portal/9B60CD2D19720F7445BDFDD8C71C98A2/jobs/592712"
         ]
       },
       {

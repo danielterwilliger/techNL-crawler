@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-03T01:50:50+00:00",
+  "generated": "2026-09-04T01:45:51+00:00",
   "not_in_roster": [
     {
       "company_name": "CarteNav Solutions",
@@ -27,19 +27,13 @@
       ]
     },
     {
-      "company_name": "Mysa",
-      "job_count": 1,
-      "urls": [
-        "https://www.kyrix.ai/j/9316ejt0/31"
-      ]
-    },
-    {
       "company_name": "Nasdaq Verafin",
-      "job_count": 3,
+      "job_count": 4,
       "urls": [
         "https://nasdaq.wd1.myworkdayjobs.com/Global_External_Site/job/Canada---St-Johns---Newfoundland--Labrador/Commercial-Lawyer_R0026657",
         "https://nasdaq.wd1.myworkdayjobs.com/Global_External_Site/job/Canada---St-Johns---Newfoundland--Labrador/Senior-Specialist--Digital-Marketing---Web--AI-and-SEO_R0026815",
-        "https://nasdaq.wd1.myworkdayjobs.com/Global_External_Site/job/Canada---St-Johns---Newfoundland--Labrador/Verafin---Mid-Market-Account-Development-Representative_R0026840"
+        "https://nasdaq.wd1.myworkdayjobs.com/Global_External_Site/job/Canada---St-Johns---Newfoundland--Labrador/Verafin---Mid-Market-Account-Development-Representative_R0026840",
+        "https://nasdaq.wd1.myworkdayjobs.com/Global_External_Site/job/Canada---St-Johns---Newfoundland--Labrador/Verafin---Sales-Development-Representative_R0026851"
       ]
     },
     {
@@ -148,5 +142,5 @@
       ]
     }
   ],
-  "overlap": 16
+  "overlap": 15
 }
